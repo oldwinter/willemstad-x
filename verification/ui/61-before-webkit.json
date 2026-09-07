@@ -1,0 +1,64 @@
+{
+  "mode": "headers",
+  "engine": "webkit",
+  "classes": "theme-light is-ios is-mobile is-phone",
+  "body": {
+    "--toggle-border-width": "0",
+    "--toggle-s-border-width": "0px",
+    "--text-muted": "oklch(30% 0 0)",
+    "--opp-text-muted": "",
+    "--background-secondary": "oklch(95% 0 0)",
+    "--workspace-background-translucent": "color-mix(in oklch, white 60%, transparent)",
+    "--l": "clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975)"
+  },
+  "headings": [
+    {
+      "tag": "H1",
+      "color": "oklch(0.975 0.03 202.509995)",
+      "background-color": "oklch(0.4014 0.0638 202.509995)",
+      "link": {
+        "color": "oklch(0.975 0.03 202.509995)"
+      }
+    },
+    {
+      "tag": "H2",
+      "color": "oklch(0.3 0.03 155.300003)",
+      "background-color": "oklch(0.707 0.1737 155.300003)",
+      "link": {
+        "color": "oklch(0.3 0.03 155.300003)"
+      }
+    },
+    {
+      "tag": "H3",
+      "color": "oklch(0.3 0.03 79.599998)",
+      "background-color": "oklch(0.8277 0.1667 79.599998)",
+      "link": {
+        "color": "oklch(0.3 0.03 79.599998)"
+      }
+    },
+    {
+      "tag": "H4",
+      "color": "oklch(0.975 0.03 202.509995)",
+      "background-color": "oklch(0.4014 0.0638 202.509995)",
+      "link": {
+        "color": "oklch(0.975 0.03 202.509995)"
+      }
+    },
+    {
+      "tag": "H5",
+      "color": "oklch(0.3 0.03 155.300003)",
+      "background-color": "oklch(0.707 0.1737 155.300003)",
+      "link": {
+        "color": "oklch(0.3 0.03 155.300003)"
+      }
+    },
+    {
+      "tag": "H6",
+      "color": "oklch(0.3 0.03 79.599998)",
+      "background-color": "oklch(0.8277 0.1667 79.599998)",
+      "link": {
+        "color": "oklch(0.3 0.03 79.599998)"
+      }
+    }
+  ]
+}

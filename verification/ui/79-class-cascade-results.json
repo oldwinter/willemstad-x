@@ -1,0 +1,125 @@
+[
+  {
+    "variant": "opaque-window",
+    "note": "Windows Obsidian 1.13.7 renderer with macOS, fullscreen, and translucency body classes. Native macOS vibrancy is not available.",
+    "bodyClasses": "theme-dark is-frameless is-hidden-frameless is-focused obsidian-app styled-scrollbars show-inline-title is-floating-nav auto-full-screen show-ribbon show-view-header mod-macos ssopt-col-base-lightness-d-vivid ssopt-col-base-tone-d-hagia-sophia ssopt-col-accent-d-nebula",
+    "baseSecondary": "oklch(0.26 0.05 295)",
+    "nativeBackdrop": "color-mix(in oklch, black 60%, transparent)",
+    "regions": [
+      {
+        "classes": "titlebar",
+        "color": "oklch(0.26 0.05 295)"
+      },
+      {
+        "classes": "app-container no-transition",
+        "color": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+        "color": "oklch(0.26 0.05 295)"
+      },
+      {
+        "classes": "workspace-tab-header-container",
+        "color": "oklch(0.26 0.05 295)"
+      },
+      {
+        "classes": "workspace-split mod-vertical mod-root",
+        "color": "oklch(0.15 0.04 300)"
+      },
+      {
+        "classes": "workspace-tab-header-container",
+        "color": "oklch(0.26 0.05 295)"
+      },
+      {
+        "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+        "color": "oklch(0.26 0.05 295)"
+      },
+      {
+        "classes": "workspace-tab-header-container",
+        "color": "oklch(0.26 0.05 295)"
+      }
+    ]
+  },
+  {
+    "variant": "translucent-window",
+    "note": "Windows Obsidian 1.13.7 renderer with macOS, fullscreen, and translucency body classes. Native macOS vibrancy is not available.",
+    "bodyClasses": "theme-dark is-frameless is-hidden-frameless is-focused obsidian-app styled-scrollbars show-inline-title is-floating-nav auto-full-screen show-ribbon show-view-header mod-macos ssopt-col-base-lightness-d-vivid ssopt-col-base-tone-d-hagia-sophia ssopt-col-accent-d-nebula is-translucent",
+    "baseSecondary": "oklch(0.26 0.05 295)",
+    "nativeBackdrop": "color-mix(in oklch, black 60%, transparent)",
+    "regions": [
+      {
+        "classes": "titlebar",
+        "color": "oklch(0 0 none / 0.6)"
+      },
+      {
+        "classes": "app-container",
+        "color": "oklch(0 0 none / 0.6)"
+      },
+      {
+        "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+        "color": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "classes": "workspace-tab-header-container",
+        "color": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "classes": "workspace-split mod-vertical mod-root",
+        "color": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "classes": "workspace-tab-header-container",
+        "color": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+        "color": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "classes": "workspace-tab-header-container",
+        "color": "rgba(0, 0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "variant": "translucent-fullscreen",
+    "note": "Windows Obsidian 1.13.7 renderer with macOS, fullscreen, and translucency body classes. Native macOS vibrancy is not available.",
+    "bodyClasses": "theme-dark is-frameless is-hidden-frameless is-focused obsidian-app styled-scrollbars show-inline-title is-floating-nav auto-full-screen show-ribbon show-view-header mod-macos ssopt-col-base-lightness-d-vivid ssopt-col-base-tone-d-hagia-sophia ssopt-col-accent-d-nebula is-translucent is-fullscreen",
+    "baseSecondary": "oklch(0.26 0.05 295)",
+    "nativeBackdrop": "color-mix(in oklch, black 60%, transparent)",
+    "regions": [
+      {
+        "classes": "titlebar",
+        "color": "oklch(0.26 0.05 295)"
+      },
+      {
+        "classes": "app-container",
+        "color": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+        "color": "oklch(0.26 0.05 295)"
+      },
+      {
+        "classes": "workspace-tab-header-container",
+        "color": "oklch(0.26 0.05 295)"
+      },
+      {
+        "classes": "workspace-split mod-vertical mod-root",
+        "color": "oklch(0.15 0.04 300)"
+      },
+      {
+        "classes": "workspace-tab-header-container",
+        "color": "oklch(0.26 0.05 295)"
+      },
+      {
+        "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+        "color": "oklch(0.26 0.05 295)"
+      },
+      {
+        "classes": "workspace-tab-header-container",
+        "color": "oklch(0.26 0.05 295)"
+      }
+    ]
+  }
+]

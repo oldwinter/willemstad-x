@@ -1,0 +1,3029 @@
+{
+  "environment": "Real Obsidian 1.13.7 Windows renderer; macOS/fullscreen/translucency body-class cascade, not native macOS vibrancy.",
+  "cases": [
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "none",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.83 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.02 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "none",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.83 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.999994 0.0000497986 none / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.999994 0.0000497986 none / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "none",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.83 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.02 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "inverted",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.27 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.02 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.025 295)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "inverted",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.27 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.999994 0.0000497986 none / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.999994 0.0000497986 none / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "inverted",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.27 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.02 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.025 295)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "imported",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.26 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.02 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "imported",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.26 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.999994 0.0000497986 none / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.999994 0.0000497986 none / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "imported",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.26 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.02 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "none",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.83 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.035 185)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "none",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.83 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.999994 0.0000497986 none / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.999994 0.0000497986 none / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "none",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.83 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.035 185)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "inverted",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.27 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.035 185)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.085 183)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "inverted",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.27 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.999994 0.0000497986 none / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.999994 0.0000497986 none / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "inverted",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.27 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.035 185)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.085 183)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "imported",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.26 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.035 185)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "imported",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.26 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.999994 0.0000497986 none / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.999994 0.0000497986 none / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "imported",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.26 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.035 185)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "none",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.26 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.04 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "none",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.26 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0 0 none / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0 0 none / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "none",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.26 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.04 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "inverted",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.84 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.04 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.05 295)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "inverted",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.84 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0 0 none / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0 0 none / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "inverted",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.84 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.04 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.05 295)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "imported",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.83 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.04 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "imported",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.83 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0 0 none / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0 0 none / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "imported",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.83 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.04 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "none",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.26 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.25 178)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "none",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.26 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0 0 none / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0 0 none / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "none",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.26 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.25 178)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "inverted",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.84 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.25 178)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.22 180)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "inverted",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.84 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0 0 none / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0 0 none / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "inverted",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.84 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.25 178)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.22 180)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "imported",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.83 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.25 178)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "imported",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.83 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0 0 none / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0 0 none / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "imported",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.83 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.25 178)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "none",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.83 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.02 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "none",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.83 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.025 295 / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.83 0.025 295 / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "none",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.83 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.02 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "inverted",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.27 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.02 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.025 295)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "inverted",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.27 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.27 0.025 295 / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.27 0.025 295 / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "inverted",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.27 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.02 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.27 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.025 295)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "imported",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.26 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.02 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "imported",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.26 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.22 180 / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.26 0.22 180 / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "hagia-sophia",
+      "contrast": "imported",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.26 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.02 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "none",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.83 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.035 185)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "none",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.83 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.085 183 / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.83 0.085 183 / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "none",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.83 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.035 185)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "inverted",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.27 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.035 185)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.085 183)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "inverted",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.27 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.27 0.085 183 / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.27 0.085 183 / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "inverted",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.27 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.035 185)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.27 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.27 0.085 183)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "imported",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.26 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.035 185)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "imported",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.26 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.05 295 / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.26 0.05 295 / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "palette": "tropical-lagoon",
+      "contrast": "imported",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.26 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.96 0.035 185)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "none",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.26 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.04 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "none",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.26 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.05 295 / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.26 0.05 295 / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "none",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.26 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.04 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.05 295)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "inverted",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.84 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.04 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.05 295)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "inverted",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.84 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.84 0.05 295 / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.84 0.05 295 / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "inverted",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.84 0.05 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.04 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.84 0.05 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.05 295)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "imported",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.83 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.04 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "imported",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.83 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.085 183 / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.83 0.085 183 / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "hagia-sophia",
+      "contrast": "imported",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.83 0.085 183 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.04 300)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.085 183)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.085 183)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "none",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.26 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.25 178)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "none",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.26 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.22 180 / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.26 0.22 180 / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "none",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.26 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.25 178)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.26 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.26 0.22 180)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "inverted",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.84 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.25 178)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.22 180)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "inverted",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.84 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.84 0.22 180 / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.84 0.22 180 / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "inverted",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.84 0.22 180 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.25 178)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.84 0.22 180)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.84 0.22 180)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "imported",
+      "windowMode": "opaque",
+      "expectedTint": "oklch(0.83 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.25 178)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "imported",
+      "windowMode": "translucent",
+      "expectedTint": "oklch(0.83 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.025 295 / 0.6)"
+        },
+        {
+          "classes": "app-container",
+          "background": "oklch(0.83 0.025 295 / 0.6)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "palette": "tropical-lagoon",
+      "contrast": "imported",
+      "windowMode": "fullscreen",
+      "expectedTint": "oklch(0.83 0.025 295 / 0.6)",
+      "regions": [
+        {
+          "classes": "titlebar",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "app-container",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-left-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-vertical mod-root",
+          "background": "oklch(0.15 0.25 178)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-split mod-horizontal mod-sidedock mod-right-split",
+          "background": "oklch(0.83 0.025 295)"
+        },
+        {
+          "classes": "workspace-tab-header-container",
+          "background": "oklch(0.83 0.025 295)"
+        }
+      ]
+    }
+  ]
+}

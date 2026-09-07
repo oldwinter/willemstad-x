@@ -1,0 +1,111 @@
+{
+  "mode": "toggles",
+  "engine": "chromium",
+  "classes": "theme-dark mod-windows is-focused",
+  "body": {
+    "--toggle-border-width": "0",
+    "--toggle-s-border-width": "0px",
+    "--text-muted": "oklch(0.68 0 0)",
+    "--opp-text-muted": "",
+    "--background-secondary": "oklch(0.19 0 0)",
+    "--workspace-background-translucent": "rgba(0, 0, 0, 0.6)",
+    "--l": "clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975)"
+  },
+  "toggles": [
+    {
+      "classes": "checkbox-container ",
+      "width": 16,
+      "height": 16,
+      "background-color": "oklch(0.24 0 0)",
+      "--toggle-width": "40px",
+      "--toggle-s-width": "34px",
+      "after": {
+        "display": "none",
+        "width": "18px",
+        "height": "18px"
+      }
+    },
+    {
+      "classes": "checkbox-container is-enabled",
+      "width": 16,
+      "height": 16,
+      "background-color": "oklch(0.4014 0.0638 202.51)",
+      "--toggle-width": "40px",
+      "--toggle-s-width": "34px",
+      "after": {
+        "display": "none",
+        "width": "18px",
+        "height": "18px"
+      }
+    },
+    {
+      "classes": "checkbox-container is-disabled",
+      "width": 16,
+      "height": 16,
+      "background-color": "oklch(0.24 0 0)",
+      "--toggle-width": "40px",
+      "--toggle-s-width": "34px",
+      "after": {
+        "display": "none",
+        "width": "18px",
+        "height": "18px"
+      }
+    },
+    {
+      "classes": "checkbox-container ",
+      "width": 16,
+      "height": 16,
+      "background-color": "oklch(0.24 0 0)",
+      "--toggle-width": "40px",
+      "--toggle-s-width": "34px",
+      "after": {
+        "display": "none",
+        "width": "18px",
+        "height": "18px"
+      }
+    },
+    {
+      "classes": "checkbox-container is-enabled",
+      "width": 16,
+      "height": 16,
+      "background-color": "oklch(0.4014 0.0638 202.51)",
+      "--toggle-width": "40px",
+      "--toggle-s-width": "34px",
+      "after": {
+        "display": "none",
+        "width": "18px",
+        "height": "18px"
+      }
+    },
+    {
+      "classes": "checkbox-container mod-small",
+      "width": 16,
+      "height": 16,
+      "background-color": "oklch(0.24 0 0)",
+      "--toggle-width": "40px",
+      "--toggle-s-width": "34px",
+      "after": {
+        "display": "none",
+        "width": "15px",
+        "height": "15px"
+      }
+    },
+    {
+      "classes": "checkbox-container mod-small is-enabled",
+      "width": 16,
+      "height": 16,
+      "background-color": "oklch(0.4014 0.0638 202.51)",
+      "--toggle-width": "40px",
+      "--toggle-s-width": "34px",
+      "after": {
+        "display": "none",
+        "width": "15px",
+        "height": "15px"
+      }
+    }
+  ],
+  "interaction": {
+    "clicked": "true",
+    "keyboard": "false"
+  }
+}
