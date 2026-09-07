@@ -1,0 +1,5206 @@
+{
+  "baseline": "a8bd0eb",
+  "environment": "Windows-hosted WebKit CSS fixtures with Obsidian 1.13.7 app.css; native iOS app/hardware not available",
+  "settings": [
+    {
+      "id": "ssopt-no-coloured-headers",
+      "title": "No Background Coloured Headers",
+      "type": "class-toggle",
+      "default": false,
+      "description": "Headers with background colours are enabled by default in Willemstad. When enabled, this will remove the background colouring for headers, and also optionally allows you to set headers with coloured text."
+    },
+    {
+      "id": "ssopt-headers-custom-colours",
+      "title": "Custom Header Colours (Background Colours)",
+      "type": "class-toggle",
+      "default": false,
+      "description": "When enabled, this will allow you to set custom header colours."
+    },
+    {
+      "id": "ssopt-headers-old-willemstad",
+      "title": "Old Willemstad Header Colours",
+      "type": "class-toggle",
+      "default": false,
+      "description": "When enabled, this will use the old Willemstad header colours. There are two options for the old header colours: the original Willemstad colours, and the old Willemstad-style Nord colours."
+    },
+    {
+      "id": "ssopt-headers-old-style-col-palette",
+      "title": "Old Header Colour Palettes",
+      "type": "class-select",
+      "default": "ssopt-headers-old-style-willemstad",
+      "description": "Use the dropdown to choose either the original Willemstad colours, or the old Willemstad-style Nord colours.",
+      "options": [
+        {
+          "label": "Original Willemstad",
+          "value": "ssopt-headers-old-style-willemstad"
+        },
+        {
+          "label": "Previous Willemstad-style Nord",
+          "value": "ssopt-headers-old-style-nord"
+        }
+      ]
+    },
+    {
+      "id": "col-accent-custom-headers-0",
+      "title": "Custom Header Colour 0",
+      "type": "variable-themed-color",
+      "defaultLight": "hsl(211, 100%, 19%)",
+      "defaultDark": "hsl(211, 100%, 19%)",
+      "description": "This header colour is applied to H1 (and H4 headers, if 'Complete Header Colour Control' is not enabled)."
+    },
+    {
+      "id": "col-accent-custom-headers-1",
+      "title": "Custom Header Colour 1",
+      "type": "variable-themed-color",
+      "defaultLight": "hsl(181, 100%, 32%)",
+      "defaultDark": "hsl(181, 100%, 32%)",
+      "description": "This header colour is applied to H2 (and H5 headers, if 'Complete Header Colour Control' is not enabled)."
+    },
+    {
+      "id": "col-accent-custom-headers-2",
+      "title": "Custom Header Colour 2",
+      "type": "variable-themed-color",
+      "defaultLight": "hsl(161, 100%, 41%)",
+      "defaultDark": "hsl(161, 100%, 41%)",
+      "description": "This header colour is applied to H3 (and H6 headers, if 'Complete Header Colour Control' is not enabled)."
+    },
+    {
+      "id": "ssopt-headers-custom-colours-max",
+      "title": "Complete Header Colour Control",
+      "type": "class-toggle",
+      "default": false,
+      "description": "When enabled, this will allow you to fully customise all header colours."
+    },
+    {
+      "id": "col-accent-custom-headers-0B",
+      "title": "Custom Header Colour H4",
+      "type": "variable-themed-color",
+      "defaultLight": "hsl(211, 100%, 19%)",
+      "defaultDark": "hsl(211, 100%, 19%)",
+      "description": "This header colour is applied to H4 headers."
+    },
+    {
+      "id": "col-accent-custom-headers-1B",
+      "title": "Custom Header Colour H5",
+      "type": "variable-themed-color",
+      "defaultLight": "hsl(181, 100%, 32%)",
+      "defaultDark": "hsl(181, 100%, 32%)",
+      "description": "This header colour is applied to H5 headers."
+    },
+    {
+      "id": "col-accent-custom-headers-2B",
+      "title": "Custom Header Colour H6",
+      "type": "variable-themed-color",
+      "defaultLight": "hsl(161, 100%, 41%)",
+      "defaultDark": "hsl(161, 100%, 41%)",
+      "description": "This header colour is applied to H6 headers."
+    },
+    {
+      "id": "col-custom-headers-H1",
+      "title": "Custom Header Text Colour H1",
+      "type": "variable-themed-color",
+      "defaultLight": "hsl(0, 0%, 100%)",
+      "defaultDark": "hsl(0, 0%, 100%)",
+      "description": "This text colour is applied to H1 headers."
+    },
+    {
+      "id": "col-custom-headers-H2",
+      "title": "Custom Header Text Colour H2",
+      "type": "variable-themed-color",
+      "defaultLight": "hsl(0, 0%, 100%)",
+      "defaultDark": "hsl(0, 0%, 100%)",
+      "description": "This text colour is applied to H2 headers."
+    },
+    {
+      "id": "col-custom-headers-H3",
+      "title": "Custom Header Text Colour H3",
+      "type": "variable-themed-color",
+      "defaultLight": "hsl(0, 0%, 100%)",
+      "defaultDark": "hsl(0, 0%, 100%)",
+      "description": "This text colour is applied to H3 headers."
+    },
+    {
+      "id": "col-custom-headers-H4",
+      "title": "Custom Header Text Colour H4",
+      "type": "variable-themed-color",
+      "defaultLight": "hsl(0, 0%, 100%)",
+      "defaultDark": "hsl(0, 0%, 100%)",
+      "description": "This text colour is applied to H4 headers."
+    },
+    {
+      "id": "col-custom-headers-H5",
+      "title": "Custom Header Text Colour H5",
+      "type": "variable-themed-color",
+      "defaultLight": "hsl(0, 0%, 100%)",
+      "defaultDark": "hsl(0, 0%, 100%)",
+      "description": "This text colour is applied to H5 headers."
+    },
+    {
+      "id": "col-custom-headers-H6",
+      "title": "Custom Header Text Colour H6",
+      "type": "variable-themed-color",
+      "defaultLight": "hsl(0, 0%, 100%)",
+      "defaultDark": "hsl(0, 0%, 100%)",
+      "description": "This text colour is applied to H6 headers."
+    },
+    {
+      "id": "header-text-colours",
+      "title": "Header Text Colours",
+      "type": "heading",
+      "description": "These settings allow you to set the color for each header level from the set accent and rainbow palettes, should you prefer coloured text. These settings will automatically show you the options for the current light/dark theme mode. You are able to set different header text colours for both modes without them affecting each other."
+    },
+    {
+      "id": "header-text-colours-light",
+      "title": "Light Mode",
+      "type": "heading"
+    },
+    {
+      "id": "h1-color-light",
+      "title": "H1 Color",
+      "type": "variable-select",
+      "default": "inherit",
+      "options": [
+        {
+          "label": "Default (Inherit)",
+          "value": "inherit"
+        },
+        {
+          "label": "  Accent Colours  ",
+          "value": "no-stuff-break-accent"
+        },
+        {
+          "label": "Accent",
+          "value": "var(--color-accent)"
+        },
+        {
+          "label": "Accent 1",
+          "value": "var(--color-accent-1)"
+        },
+        {
+          "label": "Accent 2",
+          "value": "var(--color-accent-2)"
+        },
+        {
+          "label": "  Rainbow Colours  ",
+          "value": "no-stuff-break-rainbow"
+        },
+        {
+          "label": "Red",
+          "value": "var(--color-red)"
+        },
+        {
+          "label": "Orange",
+          "value": "var(--color-orange)"
+        },
+        {
+          "label": "Yellow",
+          "value": "var(--color-yellow)"
+        },
+        {
+          "label": "Green",
+          "value": "var(--color-green)"
+        },
+        {
+          "label": "Cyan",
+          "value": "var(--color-cyan)"
+        },
+        {
+          "label": "Blue",
+          "value": "var(--color-blue)"
+        },
+        {
+          "label": "Purple",
+          "value": "var(--color-purple)"
+        },
+        {
+          "label": "Pink",
+          "value": "var(--color-pink)"
+        }
+      ]
+    },
+    {
+      "id": "h2-color-light",
+      "title": "H2 Color",
+      "type": "variable-select",
+      "default": "inherit",
+      "options": [
+        {
+          "label": "Default (Inherit)",
+          "value": "inherit"
+        },
+        {
+          "label": "  Accent Colours  ",
+          "value": "no-stuff-break-accent"
+        },
+        {
+          "label": "Accent",
+          "value": "var(--color-accent)"
+        },
+        {
+          "label": "Accent 1",
+          "value": "var(--color-accent-1)"
+        },
+        {
+          "label": "Accent 2",
+          "value": "var(--color-accent-2)"
+        },
+        {
+          "label": "  Rainbow Colours  ",
+          "value": "no-stuff-break-rainbow"
+        },
+        {
+          "label": "Red",
+          "value": "var(--color-red)"
+        },
+        {
+          "label": "Orange",
+          "value": "var(--color-orange)"
+        },
+        {
+          "label": "Yellow",
+          "value": "var(--color-yellow)"
+        },
+        {
+          "label": "Green",
+          "value": "var(--color-green)"
+        },
+        {
+          "label": "Cyan",
+          "value": "var(--color-cyan)"
+        },
+        {
+          "label": "Blue",
+          "value": "var(--color-blue)"
+        },
+        {
+          "label": "Purple",
+          "value": "var(--color-purple)"
+        },
+        {
+          "label": "Pink",
+          "value": "var(--color-pink)"
+        }
+      ]
+    },
+    {
+      "id": "h3-color-light",
+      "title": "H3 Color",
+      "type": "variable-select",
+      "default": "inherit",
+      "options": [
+        {
+          "label": "Default (Inherit)",
+          "value": "inherit"
+        },
+        {
+          "label": "  Accent Colours  ",
+          "value": "no-stuff-break-accent"
+        },
+        {
+          "label": "Accent",
+          "value": "var(--color-accent)"
+        },
+        {
+          "label": "Accent 1",
+          "value": "var(--color-accent-1)"
+        },
+        {
+          "label": "Accent 2",
+          "value": "var(--color-accent-2)"
+        },
+        {
+          "label": "  Rainbow Colours  ",
+          "value": "no-stuff-break-rainbow"
+        },
+        {
+          "label": "Red",
+          "value": "var(--color-red)"
+        },
+        {
+          "label": "Orange",
+          "value": "var(--color-orange)"
+        },
+        {
+          "label": "Yellow",
+          "value": "var(--color-yellow)"
+        },
+        {
+          "label": "Green",
+          "value": "var(--color-green)"
+        },
+        {
+          "label": "Cyan",
+          "value": "var(--color-cyan)"
+        },
+        {
+          "label": "Blue",
+          "value": "var(--color-blue)"
+        },
+        {
+          "label": "Purple",
+          "value": "var(--color-purple)"
+        },
+        {
+          "label": "Pink",
+          "value": "var(--color-pink)"
+        }
+      ]
+    },
+    {
+      "id": "h4-color-light",
+      "title": "H4 Color",
+      "type": "variable-select",
+      "default": "inherit",
+      "options": [
+        {
+          "label": "Default (Inherit)",
+          "value": "inherit"
+        },
+        {
+          "label": "  Accent Colours  ",
+          "value": "no-stuff-break-accent"
+        },
+        {
+          "label": "Accent",
+          "value": "var(--color-accent)"
+        },
+        {
+          "label": "Accent 1",
+          "value": "var(--color-accent-1)"
+        },
+        {
+          "label": "Accent 2",
+          "value": "var(--color-accent-2)"
+        },
+        {
+          "label": "  Rainbow Colours  ",
+          "value": "no-stuff-break-rainbow"
+        },
+        {
+          "label": "Red",
+          "value": "var(--color-red)"
+        },
+        {
+          "label": "Orange",
+          "value": "var(--color-orange)"
+        },
+        {
+          "label": "Yellow",
+          "value": "var(--color-yellow)"
+        },
+        {
+          "label": "Green",
+          "value": "var(--color-green)"
+        },
+        {
+          "label": "Cyan",
+          "value": "var(--color-cyan)"
+        },
+        {
+          "label": "Blue",
+          "value": "var(--color-blue)"
+        },
+        {
+          "label": "Purple",
+          "value": "var(--color-purple)"
+        },
+        {
+          "label": "Pink",
+          "value": "var(--color-pink)"
+        }
+      ]
+    },
+    {
+      "id": "h5-color-light",
+      "title": "H5 Color",
+      "type": "variable-select",
+      "default": "inherit",
+      "options": [
+        {
+          "label": "Default (Inherit)",
+          "value": "inherit"
+        },
+        {
+          "label": "  Accent Colours  ",
+          "value": "no-stuff-break-accent"
+        },
+        {
+          "label": "Accent",
+          "value": "var(--color-accent)"
+        },
+        {
+          "label": "Accent 1",
+          "value": "var(--color-accent-1)"
+        },
+        {
+          "label": "Accent 2",
+          "value": "var(--color-accent-2)"
+        },
+        {
+          "label": "  Rainbow Colours  ",
+          "value": "no-stuff-break-rainbow"
+        },
+        {
+          "label": "Red",
+          "value": "var(--color-red)"
+        },
+        {
+          "label": "Orange",
+          "value": "var(--color-orange)"
+        },
+        {
+          "label": "Yellow",
+          "value": "var(--color-yellow)"
+        },
+        {
+          "label": "Green",
+          "value": "var(--color-green)"
+        },
+        {
+          "label": "Cyan",
+          "value": "var(--color-cyan)"
+        },
+        {
+          "label": "Blue",
+          "value": "var(--color-blue)"
+        },
+        {
+          "label": "Purple",
+          "value": "var(--color-purple)"
+        },
+        {
+          "label": "Pink",
+          "value": "var(--color-pink)"
+        }
+      ]
+    },
+    {
+      "id": "h6-color-light",
+      "title": "H6 Color",
+      "type": "variable-select",
+      "default": "inherit",
+      "options": [
+        {
+          "label": "Default (Inherit)",
+          "value": "inherit"
+        },
+        {
+          "label": "  Accent Colours  ",
+          "value": "no-stuff-break-accent"
+        },
+        {
+          "label": "Accent",
+          "value": "var(--color-accent)"
+        },
+        {
+          "label": "Accent 1",
+          "value": "var(--color-accent-1)"
+        },
+        {
+          "label": "Accent 2",
+          "value": "var(--color-accent-2)"
+        },
+        {
+          "label": "  Rainbow Colours  ",
+          "value": "no-stuff-break-rainbow"
+        },
+        {
+          "label": "Red",
+          "value": "var(--color-red)"
+        },
+        {
+          "label": "Orange",
+          "value": "var(--color-orange)"
+        },
+        {
+          "label": "Yellow",
+          "value": "var(--color-yellow)"
+        },
+        {
+          "label": "Green",
+          "value": "var(--color-green)"
+        },
+        {
+          "label": "Cyan",
+          "value": "var(--color-cyan)"
+        },
+        {
+          "label": "Blue",
+          "value": "var(--color-blue)"
+        },
+        {
+          "label": "Purple",
+          "value": "var(--color-purple)"
+        },
+        {
+          "label": "Pink",
+          "value": "var(--color-pink)"
+        }
+      ]
+    },
+    {
+      "id": "header-text-colours-dark",
+      "title": "Dark Mode",
+      "type": "heading"
+    },
+    {
+      "id": "h1-color-dark",
+      "title": "H1 Color",
+      "type": "variable-select",
+      "default": "inherit",
+      "options": [
+        {
+          "label": "Default (Inherit)",
+          "value": "inherit"
+        },
+        {
+          "label": "  Accent Colours  ",
+          "value": "no-stuff-break-accent"
+        },
+        {
+          "label": "Accent",
+          "value": "var(--color-accent)"
+        },
+        {
+          "label": "Accent 1",
+          "value": "var(--color-accent-1)"
+        },
+        {
+          "label": "Accent 2",
+          "value": "var(--color-accent-2)"
+        },
+        {
+          "label": "  Rainbow Colours  ",
+          "value": "no-stuff-break-rainbow"
+        },
+        {
+          "label": "Red",
+          "value": "var(--color-red)"
+        },
+        {
+          "label": "Orange",
+          "value": "var(--color-orange)"
+        },
+        {
+          "label": "Yellow",
+          "value": "var(--color-yellow)"
+        },
+        {
+          "label": "Green",
+          "value": "var(--color-green)"
+        },
+        {
+          "label": "Cyan",
+          "value": "var(--color-cyan)"
+        },
+        {
+          "label": "Blue",
+          "value": "var(--color-blue)"
+        },
+        {
+          "label": "Purple",
+          "value": "var(--color-purple)"
+        },
+        {
+          "label": "Pink",
+          "value": "var(--color-pink)"
+        }
+      ]
+    },
+    {
+      "id": "h2-color-dark",
+      "title": "H2 Color",
+      "type": "variable-select",
+      "default": "inherit",
+      "options": [
+        {
+          "label": "Default (Inherit)",
+          "value": "inherit"
+        },
+        {
+          "label": "  Accent Colours  ",
+          "value": "no-stuff-break-accent"
+        },
+        {
+          "label": "Accent",
+          "value": "var(--color-accent)"
+        },
+        {
+          "label": "Accent 1",
+          "value": "var(--color-accent-1)"
+        },
+        {
+          "label": "Accent 2",
+          "value": "var(--color-accent-2)"
+        },
+        {
+          "label": "  Rainbow Colours  ",
+          "value": "no-stuff-break-rainbow"
+        },
+        {
+          "label": "Red",
+          "value": "var(--color-red)"
+        },
+        {
+          "label": "Orange",
+          "value": "var(--color-orange)"
+        },
+        {
+          "label": "Yellow",
+          "value": "var(--color-yellow)"
+        },
+        {
+          "label": "Green",
+          "value": "var(--color-green)"
+        },
+        {
+          "label": "Cyan",
+          "value": "var(--color-cyan)"
+        },
+        {
+          "label": "Blue",
+          "value": "var(--color-blue)"
+        },
+        {
+          "label": "Purple",
+          "value": "var(--color-purple)"
+        },
+        {
+          "label": "Pink",
+          "value": "var(--color-pink)"
+        }
+      ]
+    },
+    {
+      "id": "h3-color-dark",
+      "title": "H3 Color",
+      "type": "variable-select",
+      "default": "inherit",
+      "options": [
+        {
+          "label": "Default (Inherit)",
+          "value": "inherit"
+        },
+        {
+          "label": "  Accent Colours  ",
+          "value": "no-stuff-break-accent"
+        },
+        {
+          "label": "Accent",
+          "value": "var(--color-accent)"
+        },
+        {
+          "label": "Accent 1",
+          "value": "var(--color-accent-1)"
+        },
+        {
+          "label": "Accent 2",
+          "value": "var(--color-accent-2)"
+        },
+        {
+          "label": "  Rainbow Colours  ",
+          "value": "no-stuff-break-rainbow"
+        },
+        {
+          "label": "Red",
+          "value": "var(--color-red)"
+        },
+        {
+          "label": "Orange",
+          "value": "var(--color-orange)"
+        },
+        {
+          "label": "Yellow",
+          "value": "var(--color-yellow)"
+        },
+        {
+          "label": "Green",
+          "value": "var(--color-green)"
+        },
+        {
+          "label": "Cyan",
+          "value": "var(--color-cyan)"
+        },
+        {
+          "label": "Blue",
+          "value": "var(--color-blue)"
+        },
+        {
+          "label": "Purple",
+          "value": "var(--color-purple)"
+        },
+        {
+          "label": "Pink",
+          "value": "var(--color-pink)"
+        }
+      ]
+    },
+    {
+      "id": "h4-color-dark",
+      "title": "H4 Color",
+      "type": "variable-select",
+      "default": "inherit",
+      "options": [
+        {
+          "label": "Default (Inherit)",
+          "value": "inherit"
+        },
+        {
+          "label": "  Accent Colours  ",
+          "value": "no-stuff-break-accent"
+        },
+        {
+          "label": "Accent",
+          "value": "var(--color-accent)"
+        },
+        {
+          "label": "Accent 1",
+          "value": "var(--color-accent-1)"
+        },
+        {
+          "label": "Accent 2",
+          "value": "var(--color-accent-2)"
+        },
+        {
+          "label": "  Rainbow Colours  ",
+          "value": "no-stuff-break-rainbow"
+        },
+        {
+          "label": "Red",
+          "value": "var(--color-red)"
+        },
+        {
+          "label": "Orange",
+          "value": "var(--color-orange)"
+        },
+        {
+          "label": "Yellow",
+          "value": "var(--color-yellow)"
+        },
+        {
+          "label": "Green",
+          "value": "var(--color-green)"
+        },
+        {
+          "label": "Cyan",
+          "value": "var(--color-cyan)"
+        },
+        {
+          "label": "Blue",
+          "value": "var(--color-blue)"
+        },
+        {
+          "label": "Purple",
+          "value": "var(--color-purple)"
+        },
+        {
+          "label": "Pink",
+          "value": "var(--color-pink)"
+        }
+      ]
+    },
+    {
+      "id": "h5-color-dark",
+      "title": "H5 Color",
+      "type": "variable-select",
+      "default": "inherit",
+      "options": [
+        {
+          "label": "Default (Inherit)",
+          "value": "inherit"
+        },
+        {
+          "label": "  Accent Colours  ",
+          "value": "no-stuff-break-accent"
+        },
+        {
+          "label": "Accent",
+          "value": "var(--color-accent)"
+        },
+        {
+          "label": "Accent 1",
+          "value": "var(--color-accent-1)"
+        },
+        {
+          "label": "Accent 2",
+          "value": "var(--color-accent-2)"
+        },
+        {
+          "label": "  Rainbow Colours  ",
+          "value": "no-stuff-break-rainbow"
+        },
+        {
+          "label": "Red",
+          "value": "var(--color-red)"
+        },
+        {
+          "label": "Orange",
+          "value": "var(--color-orange)"
+        },
+        {
+          "label": "Yellow",
+          "value": "var(--color-yellow)"
+        },
+        {
+          "label": "Green",
+          "value": "var(--color-green)"
+        },
+        {
+          "label": "Cyan",
+          "value": "var(--color-cyan)"
+        },
+        {
+          "label": "Blue",
+          "value": "var(--color-blue)"
+        },
+        {
+          "label": "Purple",
+          "value": "var(--color-purple)"
+        },
+        {
+          "label": "Pink",
+          "value": "var(--color-pink)"
+        }
+      ]
+    },
+    {
+      "id": "h6-color-dark",
+      "title": "H6 Color",
+      "type": "variable-select",
+      "default": "inherit",
+      "options": [
+        {
+          "label": "Default (Inherit)",
+          "value": "inherit"
+        },
+        {
+          "label": "  Accent Colours  ",
+          "value": "no-stuff-break-accent"
+        },
+        {
+          "label": "Accent",
+          "value": "var(--color-accent)"
+        },
+        {
+          "label": "Accent 1",
+          "value": "var(--color-accent-1)"
+        },
+        {
+          "label": "Accent 2",
+          "value": "var(--color-accent-2)"
+        },
+        {
+          "label": "  Rainbow Colours  ",
+          "value": "no-stuff-break-rainbow"
+        },
+        {
+          "label": "Red",
+          "value": "var(--color-red)"
+        },
+        {
+          "label": "Orange",
+          "value": "var(--color-orange)"
+        },
+        {
+          "label": "Yellow",
+          "value": "var(--color-yellow)"
+        },
+        {
+          "label": "Green",
+          "value": "var(--color-green)"
+        },
+        {
+          "label": "Cyan",
+          "value": "var(--color-cyan)"
+        },
+        {
+          "label": "Blue",
+          "value": "var(--color-blue)"
+        },
+        {
+          "label": "Purple",
+          "value": "var(--color-purple)"
+        },
+        {
+          "label": "Pink",
+          "value": "var(--color-pink)"
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "light",
+      "case": "standard-accent",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "light",
+      "case": "global-base-preset",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-col-base-lightness-l-vivid ssopt-col-base-tone-l-hagia-sophia",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "light",
+      "case": "accent-nebula",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-col-accent-l-nebula",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.975 0.03 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.975 0.03 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.975 0.03 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.975 0.03 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.975 0.03 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.975 0.03 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.88 0.07 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.88 0.07 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.88 0.07 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.88 0.07 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.88 0.07 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.88 0.07 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "light",
+      "case": "custom-default",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-headers-custom-colours",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "light",
+      "case": "custom-dark",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-headers-custom-colours",
+      "variables": {
+        "--col-accent-custom-headers-0": "#112233",
+        "--col-accent-custom-headers-1": "#182c22",
+        "--col-accent-custom-headers-2": "#25152f"
+      },
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.975 0.03 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.975 0.03 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.975 0.03 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.975 0.03 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.975 0.03 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.975 0.03 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.88 0.07 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.88 0.07 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.88 0.07 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.88 0.07 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.88 0.07 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.88 0.07 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "light",
+      "case": "custom-base-colours",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-headers-custom-colours ssopt-col-base-tone-l-hagia-sophia",
+      "variables": {
+        "--col-accent-custom-headers-0": "var(--color-base-95)",
+        "--col-accent-custom-headers-1": "var(--color-base-05)",
+        "--col-accent-custom-headers-2": "var(--color-base-45)"
+      },
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.01 0.0438 276.25)",
+          "title": "oklch(0.975 0.03 276.25)",
+          "link": "oklch(0.975 0.03 276.25)",
+          "backgroundLightness": 0.01,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.99 0.0213 298.75)",
+          "title": "oklch(0.3 0.03 298.75)",
+          "link": "oklch(0.3 0.03 298.75)",
+          "backgroundLightness": 0.99,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.6 0.0313 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.975 0.03 288.75)",
+          "backgroundLightness": 0.6,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.01 0.0438 276.25)",
+          "title": "oklch(0.975 0.03 276.25)",
+          "link": "oklch(0.975 0.03 276.25)",
+          "backgroundLightness": 0.01,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.99 0.0213 298.75)",
+          "title": "oklch(0.3 0.03 298.75)",
+          "link": "oklch(0.3 0.03 298.75)",
+          "backgroundLightness": 0.99,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.6 0.0313 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.975 0.03 288.75)",
+          "backgroundLightness": 0.6,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.01 0.0438 276.25)",
+          "title": "oklch(0.975 0.03 276.25)",
+          "link": "oklch(0.88 0.07 276.25)",
+          "backgroundLightness": 0.01,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.99 0.0213 298.75)",
+          "title": "oklch(0.3 0.03 298.75)",
+          "link": "oklch(0.34 0.07 298.75)",
+          "backgroundLightness": 0.99,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.6 0.0313 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.88 0.07 288.75)",
+          "backgroundLightness": 0.6,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.01 0.0438 276.25)",
+          "title": "oklch(0.975 0.03 276.25)",
+          "link": "oklch(0.88 0.07 276.25)",
+          "backgroundLightness": 0.01,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.99 0.0213 298.75)",
+          "title": "oklch(0.3 0.03 298.75)",
+          "link": "oklch(0.34 0.07 298.75)",
+          "backgroundLightness": 0.99,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.6 0.0313 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.88 0.07 288.75)",
+          "backgroundLightness": 0.6,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "light",
+      "case": "custom-mixed",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-headers-custom-colours",
+      "variables": {
+        "--col-accent-custom-headers-0": "oklch(0.4 0.1 260)",
+        "--col-accent-custom-headers-1": "#f0ede8",
+        "--col-accent-custom-headers-2": "hsl(211deg 100% 19%)"
+      },
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.975 0.03 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.3 0.03 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.975 0.03 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.3 0.03 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.88 0.07 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.34 0.07 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.88 0.07 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.34 0.07 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "light",
+      "case": "complete-manual",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-headers-custom-colours ssopt-headers-custom-colours-max",
+      "variables": {
+        "--col-custom-headers-H1": "#000000",
+        "--col-custom-headers-H2": "#000000",
+        "--col-custom-headers-H3": "#000000",
+        "--col-custom-headers-H4": "#000000",
+        "--col-custom-headers-H5": "#000000",
+        "--col-custom-headers-H6": "#000000"
+      },
+      "automaticTitleContrast": false,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "dark",
+      "case": "standard-accent",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "dark",
+      "case": "global-base-preset",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-col-base-lightness-d-vivid ssopt-col-base-tone-d-hagia-sophia",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "dark",
+      "case": "accent-nebula",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-col-accent-d-nebula",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.975 0.03 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.975 0.03 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.975 0.03 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.975 0.03 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.975 0.03 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.975 0.03 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.88 0.07 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.88 0.07 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.88 0.07 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.88 0.07 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.88 0.07 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.88 0.07 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "dark",
+      "case": "custom-default",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-headers-custom-colours",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "dark",
+      "case": "custom-dark",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-headers-custom-colours",
+      "variables": {
+        "--col-accent-custom-headers-0": "#112233",
+        "--col-accent-custom-headers-1": "#182c22",
+        "--col-accent-custom-headers-2": "#25152f"
+      },
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.975 0.03 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.975 0.03 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.975 0.03 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.975 0.03 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.975 0.03 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.975 0.03 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.88 0.07 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.88 0.07 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.88 0.07 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.88 0.07 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.88 0.07 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.88 0.07 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "dark",
+      "case": "custom-base-colours",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-headers-custom-colours ssopt-col-base-tone-d-hagia-sophia",
+      "variables": {
+        "--col-accent-custom-headers-0": "var(--color-base-05)",
+        "--col-accent-custom-headers-1": "var(--color-base-95)",
+        "--col-accent-custom-headers-2": "var(--color-base-45)"
+      },
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.15 0.0425 298.75)",
+          "title": "oklch(0.975 0.03 298.75)",
+          "link": "oklch(0.975 0.03 298.75)",
+          "backgroundLightness": 0.15,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.96 0.0875 276.25)",
+          "title": "oklch(0.3 0.03 276.25)",
+          "link": "oklch(0.3 0.03 276.25)",
+          "backgroundLightness": 0.96,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.48 0.0625 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.975 0.03 288.75)",
+          "backgroundLightness": 0.48,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.15 0.0425 298.75)",
+          "title": "oklch(0.975 0.03 298.75)",
+          "link": "oklch(0.975 0.03 298.75)",
+          "backgroundLightness": 0.15,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.96 0.0875 276.25)",
+          "title": "oklch(0.3 0.03 276.25)",
+          "link": "oklch(0.3 0.03 276.25)",
+          "backgroundLightness": 0.96,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.48 0.0625 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.975 0.03 288.75)",
+          "backgroundLightness": 0.48,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.15 0.0425 298.75)",
+          "title": "oklch(0.975 0.03 298.75)",
+          "link": "oklch(0.88 0.07 298.75)",
+          "backgroundLightness": 0.15,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.96 0.0875 276.25)",
+          "title": "oklch(0.3 0.03 276.25)",
+          "link": "oklch(0.34 0.07 276.25)",
+          "backgroundLightness": 0.96,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.48 0.0625 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.88 0.07 288.75)",
+          "backgroundLightness": 0.48,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.15 0.0425 298.75)",
+          "title": "oklch(0.975 0.03 298.75)",
+          "link": "oklch(0.88 0.07 298.75)",
+          "backgroundLightness": 0.15,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.96 0.0875 276.25)",
+          "title": "oklch(0.3 0.03 276.25)",
+          "link": "oklch(0.34 0.07 276.25)",
+          "backgroundLightness": 0.96,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.48 0.0625 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.88 0.07 288.75)",
+          "backgroundLightness": 0.48,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "dark",
+      "case": "custom-mixed",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-headers-custom-colours",
+      "variables": {
+        "--col-accent-custom-headers-0": "oklch(0.4 0.1 260)",
+        "--col-accent-custom-headers-1": "#f0ede8",
+        "--col-accent-custom-headers-2": "hsl(211deg 100% 19%)"
+      },
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.975 0.03 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.3 0.03 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.975 0.03 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.3 0.03 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.88 0.07 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.34 0.07 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.88 0.07 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.34 0.07 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit18",
+      "version": "18.4",
+      "mode": "dark",
+      "case": "complete-manual",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-headers-custom-colours ssopt-headers-custom-colours-max",
+      "variables": {
+        "--col-custom-headers-H1": "#000000",
+        "--col-custom-headers-H2": "#000000",
+        "--col-custom-headers-H3": "#000000",
+        "--col-custom-headers-H4": "#000000",
+        "--col-custom-headers-H5": "#000000",
+        "--col-custom-headers-H6": "#000000"
+      },
+      "automaticTitleContrast": false,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "light",
+      "case": "standard-accent",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "light",
+      "case": "global-base-preset",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-col-base-lightness-l-vivid ssopt-col-base-tone-l-hagia-sophia",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "light",
+      "case": "accent-nebula",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-col-accent-l-nebula",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.975 0.03 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.975 0.03 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.975 0.03 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.975 0.03 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.975 0.03 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.975 0.03 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.88 0.07 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.88 0.07 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.88 0.07 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.88 0.07 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.88 0.07 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.88 0.07 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "light",
+      "case": "custom-default",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-headers-custom-colours",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "light",
+      "case": "custom-dark",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-headers-custom-colours",
+      "variables": {
+        "--col-accent-custom-headers-0": "#112233",
+        "--col-accent-custom-headers-1": "#182c22",
+        "--col-accent-custom-headers-2": "#25152f"
+      },
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.975 0.03 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.975 0.03 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.975 0.03 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.975 0.03 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.975 0.03 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.975 0.03 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.88 0.07 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.88 0.07 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.88 0.07 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.88 0.07 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.88 0.07 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.88 0.07 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "light",
+      "case": "custom-base-colours",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-headers-custom-colours ssopt-col-base-tone-l-hagia-sophia",
+      "variables": {
+        "--col-accent-custom-headers-0": "var(--color-base-95)",
+        "--col-accent-custom-headers-1": "var(--color-base-05)",
+        "--col-accent-custom-headers-2": "var(--color-base-45)"
+      },
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.01 0.0438 276.25)",
+          "title": "oklch(0.975 0.03 276.25)",
+          "link": "oklch(0.975 0.03 276.25)",
+          "backgroundLightness": 0.01,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.99 0.0213 298.75)",
+          "title": "oklch(0.3 0.03 298.75)",
+          "link": "oklch(0.3 0.03 298.75)",
+          "backgroundLightness": 0.99,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.6 0.0313 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.975 0.03 288.75)",
+          "backgroundLightness": 0.6,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.01 0.0438 276.25)",
+          "title": "oklch(0.975 0.03 276.25)",
+          "link": "oklch(0.975 0.03 276.25)",
+          "backgroundLightness": 0.01,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.99 0.0213 298.75)",
+          "title": "oklch(0.3 0.03 298.75)",
+          "link": "oklch(0.3 0.03 298.75)",
+          "backgroundLightness": 0.99,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.6 0.0313 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.975 0.03 288.75)",
+          "backgroundLightness": 0.6,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.01 0.0438 276.25)",
+          "title": "oklch(0.975 0.03 276.25)",
+          "link": "oklch(0.88 0.07 276.25)",
+          "backgroundLightness": 0.01,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.99 0.0213 298.75)",
+          "title": "oklch(0.3 0.03 298.75)",
+          "link": "oklch(0.34 0.07 298.75)",
+          "backgroundLightness": 0.99,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.6 0.0313 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.88 0.07 288.75)",
+          "backgroundLightness": 0.6,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.01 0.0438 276.25)",
+          "title": "oklch(0.975 0.03 276.25)",
+          "link": "oklch(0.88 0.07 276.25)",
+          "backgroundLightness": 0.01,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.99 0.0213 298.75)",
+          "title": "oklch(0.3 0.03 298.75)",
+          "link": "oklch(0.34 0.07 298.75)",
+          "backgroundLightness": 0.99,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.6 0.0313 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.88 0.07 288.75)",
+          "backgroundLightness": 0.6,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "light",
+      "case": "custom-mixed",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-headers-custom-colours",
+      "variables": {
+        "--col-accent-custom-headers-0": "oklch(0.4 0.1 260)",
+        "--col-accent-custom-headers-1": "#f0ede8",
+        "--col-accent-custom-headers-2": "hsl(211deg 100% 19%)"
+      },
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.975 0.03 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.3 0.03 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.975 0.03 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.3 0.03 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.88 0.07 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.34 0.07 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.88 0.07 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.34 0.07 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "light",
+      "case": "complete-manual",
+      "bodyClasses": "theme-light is-ios is-mobile is-phone ssopt-headers-custom-colours ssopt-headers-custom-colours-max",
+      "variables": {
+        "--col-custom-headers-H1": "#000000",
+        "--col-custom-headers-H2": "#000000",
+        "--col-custom-headers-H3": "#000000",
+        "--col-custom-headers-H4": "#000000",
+        "--col-custom-headers-H5": "#000000",
+        "--col-custom-headers-H6": "#000000"
+      },
+      "automaticTitleContrast": false,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "dark",
+      "case": "standard-accent",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "dark",
+      "case": "global-base-preset",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-col-base-lightness-d-vivid ssopt-col-base-tone-d-hagia-sophia",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.975 0.03 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.3 0.03 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.3 0.03 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4014 0.0638 202.509995)",
+          "title": "oklch(0.975 0.03 202.509995)",
+          "link": "oklch(0.88 0.07 202.509995)",
+          "backgroundLightness": 0.4014,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.707 0.1737 155.300003)",
+          "title": "oklch(0.3 0.03 155.300003)",
+          "link": "oklch(0.34 0.07 155.300003)",
+          "backgroundLightness": 0.707,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.8277 0.1667 79.599998)",
+          "title": "oklch(0.3 0.03 79.599998)",
+          "link": "oklch(0.34 0.07 79.599998)",
+          "backgroundLightness": 0.8277,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "dark",
+      "case": "accent-nebula",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-col-accent-d-nebula",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.975 0.03 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.975 0.03 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.975 0.03 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.975 0.03 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.975 0.03 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.975 0.03 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.88 0.07 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.88 0.07 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.88 0.07 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4 0.17 210)",
+          "title": "oklch(0.975 0.03 210)",
+          "link": "oklch(0.88 0.07 210)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.54 0.15 255)",
+          "title": "oklch(0.975 0.03 255)",
+          "link": "oklch(0.88 0.07 255)",
+          "backgroundLightness": 0.54,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.68 0.13 300)",
+          "title": "oklch(0.975 0.03 300)",
+          "link": "oklch(0.88 0.07 300)",
+          "backgroundLightness": 0.68,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "dark",
+      "case": "custom-default",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-headers-custom-colours",
+      "variables": {},
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "oklch(0.975 0.03 196.911957)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "oklch(0.3 0.03 161.577957)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "dark",
+      "case": "custom-dark",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-headers-custom-colours",
+      "variables": {
+        "--col-accent-custom-headers-0": "#112233",
+        "--col-accent-custom-headers-1": "#182c22",
+        "--col-accent-custom-headers-2": "#25152f"
+      },
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.975 0.03 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.975 0.03 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.975 0.03 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.975 0.03 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.975 0.03 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.975 0.03 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.88 0.07 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.88 0.07 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.88 0.07 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "rgb(17, 34, 51)",
+          "title": "oklch(0.975 0.03 249.73172)",
+          "link": "oklch(0.88 0.07 249.73172)",
+          "backgroundLightness": 0.246192,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(24, 44, 34)",
+          "title": "oklch(0.975 0.03 161.49646)",
+          "link": "oklch(0.88 0.07 161.49646)",
+          "backgroundLightness": 0.272436,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(37, 21, 47)",
+          "title": "oklch(0.975 0.03 311.235596)",
+          "link": "oklch(0.88 0.07 311.235596)",
+          "backgroundLightness": 0.230574,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "dark",
+      "case": "custom-base-colours",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-headers-custom-colours ssopt-col-base-tone-d-hagia-sophia",
+      "variables": {
+        "--col-accent-custom-headers-0": "var(--color-base-05)",
+        "--col-accent-custom-headers-1": "var(--color-base-95)",
+        "--col-accent-custom-headers-2": "var(--color-base-45)"
+      },
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.15 0.0425 298.75)",
+          "title": "oklch(0.975 0.03 298.75)",
+          "link": "oklch(0.975 0.03 298.75)",
+          "backgroundLightness": 0.15,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "oklch(0.96 0.0875 276.25)",
+          "title": "oklch(0.3 0.03 276.25)",
+          "link": "oklch(0.3 0.03 276.25)",
+          "backgroundLightness": 0.96,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "oklch(0.48 0.0625 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.975 0.03 288.75)",
+          "backgroundLightness": 0.48,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.15 0.0425 298.75)",
+          "title": "oklch(0.975 0.03 298.75)",
+          "link": "oklch(0.975 0.03 298.75)",
+          "backgroundLightness": 0.15,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "oklch(0.96 0.0875 276.25)",
+          "title": "oklch(0.3 0.03 276.25)",
+          "link": "oklch(0.3 0.03 276.25)",
+          "backgroundLightness": 0.96,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "oklch(0.48 0.0625 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.975 0.03 288.75)",
+          "backgroundLightness": 0.48,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.15 0.0425 298.75)",
+          "title": "oklch(0.975 0.03 298.75)",
+          "link": "oklch(0.88 0.07 298.75)",
+          "backgroundLightness": 0.15,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "oklch(0.96 0.0875 276.25)",
+          "title": "oklch(0.3 0.03 276.25)",
+          "link": "oklch(0.34 0.07 276.25)",
+          "backgroundLightness": 0.96,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "oklch(0.48 0.0625 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.88 0.07 288.75)",
+          "backgroundLightness": 0.48,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.15 0.0425 298.75)",
+          "title": "oklch(0.975 0.03 298.75)",
+          "link": "oklch(0.88 0.07 298.75)",
+          "backgroundLightness": 0.15,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "oklch(0.96 0.0875 276.25)",
+          "title": "oklch(0.3 0.03 276.25)",
+          "link": "oklch(0.34 0.07 276.25)",
+          "backgroundLightness": 0.96,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "oklch(0.48 0.0625 288.75)",
+          "title": "oklch(0.975 0.03 288.75)",
+          "link": "oklch(0.88 0.07 288.75)",
+          "backgroundLightness": 0.48,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "dark",
+      "case": "custom-mixed",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-headers-custom-colours",
+      "variables": {
+        "--col-accent-custom-headers-0": "oklch(0.4 0.1 260)",
+        "--col-accent-custom-headers-1": "#f0ede8",
+        "--col-accent-custom-headers-2": "hsl(211deg 100% 19%)"
+      },
+      "automaticTitleContrast": true,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.975 0.03 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.3 0.03 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.975 0.03 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.3 0.03 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.88 0.07 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.34 0.07 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "oklch(0.4 0.1 260)",
+          "title": "oklch(0.975 0.03 260)",
+          "link": "oklch(0.88 0.07 260)",
+          "backgroundLightness": 0.4,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(240, 237, 232)",
+          "title": "oklch(0.3 0.03 80.720703)",
+          "link": "oklch(0.34 0.07 80.720703)",
+          "backgroundLightness": 0.947036,
+          "titleLightness": 0.3,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "oklch(0.975 0.03 254.727234)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0.975,
+          "linkLightness": 0.88
+        }
+      ]
+    },
+    {
+      "engine": "webkit26",
+      "version": "26.6",
+      "mode": "dark",
+      "case": "complete-manual",
+      "bodyClasses": "theme-dark is-ios is-mobile is-phone ssopt-headers-custom-colours ssopt-headers-custom-colours-max",
+      "variables": {
+        "--col-custom-headers-H1": "#000000",
+        "--col-custom-headers-H2": "#000000",
+        "--col-custom-headers-H3": "#000000",
+        "--col-custom-headers-H4": "#000000",
+        "--col-custom-headers-H5": "#000000",
+        "--col-custom-headers-H6": "#000000"
+      },
+      "automaticTitleContrast": false,
+      "headings": [
+        {
+          "level": 1,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 2,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 3,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 4,
+          "view": "reading",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 5,
+          "view": "reading",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.975 0.03 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.975
+        },
+        {
+          "level": 6,
+          "view": "reading",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.3 0.03 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.3
+        },
+        {
+          "level": 1,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 2,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 3,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.34
+        },
+        {
+          "level": 4,
+          "view": "editor",
+          "background": "rgb(0, 47, 97)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 254.727234)",
+          "backgroundLightness": 0.309096,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 5,
+          "view": "editor",
+          "background": "rgb(0, 160, 163)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.88 0.07 196.911957)",
+          "backgroundLightness": 0.640099,
+          "titleLightness": 0,
+          "linkLightness": 0.88
+        },
+        {
+          "level": 6,
+          "view": "editor",
+          "background": "rgb(0, 209, 143)",
+          "title": "rgb(0, 0, 0)",
+          "link": "oklch(0.34 0.07 161.577957)",
+          "backgroundLightness": 0.760476,
+          "titleLightness": 0,
+          "linkLightness": 0.34
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "configurations": 32,
+    "headingInstances": 384,
+    "failed": 0
+  }
+}

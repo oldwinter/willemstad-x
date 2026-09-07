@@ -1,5 +1,5 @@
 {
-  "testedAt": "2026-09-07T16:51:01.317Z",
+  "testedAt": "2026-09-07T16:56:09.968Z",
   "branch": "codex-willemstad-integration-test",
   "head": "6651131c24881ddaf20a754ca2e888c2d958fdd2",
   "environment": {
@@ -336,7 +336,7 @@
       "status": "pass",
       "scroll": {
         "behavior": "auto",
-        "bottom": 20610,
+        "bottom": 21894,
         "immediateTop": 0
       }
     },

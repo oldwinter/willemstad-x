@@ -10,7 +10,7 @@ upstream review. No upstream merge or issue closure was performed.
 | [#50](https://github.com/tingmelvin/willemstad-x/issues/50) | Upstream #80/#81 already migrate the current theme; [PR #82](https://github.com/tingmelvin/willemstad-x/pull/82) completes compatibility callout distributions | Tested against Obsidian 1.13.7, not a deployed Publish site or older RGB-channel clients |
 | [#57](https://github.com/tingmelvin/willemstad-x/issues/57) | [PR #86](https://github.com/tingmelvin/willemstad-x/pull/86): remaining callout/media/text/note-embed width controls | Actual Windows app and Style Settings; third-party replacement renderers not tested |
 | [#60](https://github.com/tingmelvin/willemstad-x/issues/60) | Reporter confirmed reinstalling Style Settings resolves their symptoms; [PR #88](https://github.com/tingmelvin/willemstad-x/pull/88) documents backup/recovery | Upstream plugin startup defect is not fixed by this theme contribution and was not reproduced |
-| [#61](https://github.com/tingmelvin/willemstad-x/issues/61) | Not reproduced in WebKit 18.4 or 26.6; all six heading/link colours match expected contrast | Native iOS and reporter's exact OS/configuration remain unavailable; no speculative CSS change |
+| [#61](https://github.com/tingmelvin/willemstad-x/issues/61) | Not reproduced in WebKit 18.4 or 26.6 across 32 configurations and 384 heading instances, including base palettes/custom base-colour backgrounds and internal links | Native iOS and reporter's exact OS/configuration remain unavailable; no speculative CSS change |
 | [#66](https://github.com/tingmelvin/willemstad-x/issues/66) | [PR #83](https://github.com/tingmelvin/willemstad-x/pull/83): correct frosted mini-bar colours with sidebar-colour opt-in | Real Windows renderer plus Chromium/WebKit fixtures |
 | [#67](https://github.com/tingmelvin/willemstad-x/issues/67) | [PR #88](https://github.com/tingmelvin/willemstad-x/pull/88): cross-colour, focus, PDF and recovery guides | Repository documentation submitted; separate documentation website not deployed; unreleased ebook controls not invented |
 | [#69](https://github.com/tingmelvin/willemstad-x/issues/69) | [PR #85](https://github.com/tingmelvin/willemstad-x/pull/85): composable `no-icon` metadata and Cornell token matching | All three public CSS files tested in the real Windows renderer; print-class checks are not PDF exports |
@@ -33,6 +33,13 @@ upstream review. No upstream merge or issue closure was performed.
 - Native macOS confirmation remains needed for #72 and the OS-composited result
   of #79. A deployed Publish renderer was not exercised for #50.
 
-See [detailed UI reproduction notes](ui/triage-61-76-79.md) and the linked PRs for
-measured results and before/after screenshots. A submitted PR is a proposed
-upstream change, not a claim that the issue is already closed or merged.
+See [detailed UI reproduction notes](ui/triage-61-76-79.md), the
+[expanded heading matrix](ui/61-heading-contrast-matrix.json), and the linked PRs
+for measured results and screenshots. The combined fixes also passed
+[25 integration checks](integration-results.json), including widths with ALH and
+English/Simplified/Traditional feature controls. The one metadata merge conflict
+and its resolution are documented in the receipt and PR #89.
+
+The [delivery audit](delivery-audit.json) verifies all eight open PRs and all 33
+embedded screenshots. A submitted PR is a proposed upstream change, not a claim
+that the issue is already closed or merged.
