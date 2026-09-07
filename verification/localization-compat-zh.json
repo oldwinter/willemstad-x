@@ -1,0 +1,20 @@
+{
+  "language": "zh",
+  "pluginVersion": "1.0.9",
+  "sections": [
+    "Willemstad-Core",
+    "Willemstad-Editor",
+    "Willemstad-Ancillary",
+    "Willemstad-Plugins",
+    "Minimal-Cards",
+    "Willemstad-Adv-Settings"
+  ],
+  "errors": [],
+  "title": "禁用动画",
+  "description": "启用后，禁用本主题的所有动画。",
+  "text": "Import\nExport\nCore\n主题文档\nwillemstad.cc\n安装 javalent 的 Settings Search 插件，可更快查找设置。\nWillemstad 目前仅支持桌面端的默认编辑器（非旧版编辑器），移动端支持将在之后提供。\n配色方案\n选择配色方案。\n默认： 🟢 Revolution — London School of Hygiene and Tropical Medicine (LSHTM)\n🟢 Revolution — London School of Hygiene and Tropical Medicine (LSHTM)\n❄️ Adaptation — Noord [Willemstad-style Nord]\n🖌️ Custom Colours\n字体搭配与自定义字体\nWillemstad 提供两组推荐字体搭配，可在此选择。\n默认： 🟢 Manrope + DM Sans\n🟢 Manrope + DM Sans\n⚫ Inter (v3.19)\n⭕ Custom Fonts\n纯黑模式\n启用后，深色模式使用纯黑背景。\n禁用动画\n启用后，禁用本主题的所有动画。\n使用 Obsidian 标准图标\n启用后，用 Obsidian 标准图标替换 Willemstad 自定义图标。\n启动画面\n启动背景图片、圆点网格、加载信息前缀和渐变启动进度条。\n标题栏\n选择 Obsidian 标题栏样式。\n默认： 🌥️ Default Bar\n💫 Mini-sized Bar\n🌥️ Default Bar\n❌ No Bar — Completely removes bar\n标题栏自定义\n在此自定义标题栏元素。\n状态栏\n选择 Obsidian 状态栏样式。\n默认： 💫 Conjuring — Hidden until hovered, mini-size\n💫 Conjuring — Hidden until hovered, mini-size\n🌥️ Enduring — Persistent, mini-size\n☀️ Unchanging — Persistent, full-length (Obsidian default)\n❌ Hiding — Completely removes bar\n侧边工具栏\n选择 Obsidian 的侧边工具栏、侧边栏与侧边面板样式。 选项含义：Floating Tabs — tabs that come into full-view when hovered：悬浮标签，悬停时完整显示；Styled Bars：自定义样式工具栏；Default Bars：默认工具栏；No Bars — hide all bars：隐藏所有工具栏。\n默认： Floating Tabs — tabs that come into full-view when hovered\nFloating Tabs — tabs that come into full-view when hovered\nStyled Bars\nDefault Bars\nNo Bars — hide all bars\n侧边工具栏自定义\n在此自定义侧边工具栏和侧边栏元素。\n导航、导航面板、侧边面板与侧边栏标签页\n在此自定义上述元素。\n对话框\n调整设置、社区插件、主题和 Publish 对话框的宽度与高度。\n滚动条尺寸\n默认： 0.35\n0.35\n反向链接面板样式\n启用后，应用反向链接面板样式。\nEditor\nCallouts, CSSClass and Ancillaries\nPlugins\nMinimal Cards and Image Grid\nAdvanced Settings",
+  "storedSettings": {
+    "V1-Willemstad-Root@@no-animations": true,
+    "Willemstad-Core@@no-animations": true
+  }
+}

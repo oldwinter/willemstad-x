@@ -1,0 +1,677 @@
+[
+  {
+    "phase": "before",
+    "mode": "source",
+    "forceSmooth": true,
+    "immediate": {
+      "from": 4025,
+      "to": 4025,
+      "behavior": "smooth"
+    },
+    "navigation": [
+      {
+        "heading": "Section 34",
+        "settled": {
+          "stable": true,
+          "elapsed": 1725
+        },
+        "top": 10920,
+        "cursor": {
+          "line": 462,
+          "ch": 0
+        },
+        "headingTop": 807.875,
+        "visible": true
+      },
+      {
+        "heading": "Section 04",
+        "settled": {
+          "stable": true,
+          "elapsed": 415
+        },
+        "top": 10898,
+        "cursor": {
+          "line": 42,
+          "ch": 0
+        },
+        "headingTop": -9703.609375,
+        "visible": false
+      },
+      {
+        "heading": "Section 31",
+        "settled": {
+          "stable": true,
+          "elapsed": 802
+        },
+        "top": 10180,
+        "cursor": {
+          "line": 420,
+          "ch": 0
+        },
+        "headingTop": 495.53125,
+        "visible": true
+      },
+      {
+        "heading": "Section 07",
+        "settled": {
+          "stable": true,
+          "elapsed": 406
+        },
+        "top": 10158,
+        "cursor": {
+          "line": 84,
+          "ch": 0
+        },
+        "headingTop": -7924.15625,
+        "visible": false
+      },
+      {
+        "heading": "Section 37",
+        "settled": {
+          "stable": true,
+          "elapsed": 1084
+        },
+        "top": 12334,
+        "cursor": {
+          "line": 504,
+          "ch": 0
+        },
+        "headingTop": 496.234375,
+        "visible": true
+      },
+      {
+        "heading": "Section 16",
+        "settled": {
+          "stable": true,
+          "elapsed": 355
+        },
+        "top": 12312,
+        "cursor": {
+          "line": 210,
+          "ch": 0
+        },
+        "headingTop": -6915.453125,
+        "visible": false
+      },
+      {
+        "heading": "Section 28",
+        "settled": {
+          "stable": true,
+          "elapsed": 392
+        },
+        "top": 12290,
+        "cursor": {
+          "line": 378,
+          "ch": 0
+        },
+        "headingTop": -2669.125,
+        "visible": false
+      },
+      {
+        "heading": "Section 01",
+        "settled": {
+          "stable": true,
+          "elapsed": 413
+        },
+        "top": 12268,
+        "cursor": {
+          "line": 0,
+          "ch": 0
+        },
+        "headingTop": -12113.0625,
+        "visible": false
+      }
+    ]
+  },
+  {
+    "phase": "before",
+    "mode": "live-preview",
+    "forceSmooth": true,
+    "immediate": {
+      "from": 4000,
+      "to": 4000,
+      "behavior": "smooth"
+    },
+    "navigation": [
+      {
+        "heading": "Section 34",
+        "settled": {
+          "stable": true,
+          "elapsed": 1812
+        },
+        "top": 11273,
+        "cursor": {
+          "line": 462,
+          "ch": 0
+        },
+        "headingTop": 517.78125,
+        "visible": true
+      },
+      {
+        "heading": "Section 04",
+        "settled": {
+          "stable": true,
+          "elapsed": 357
+        },
+        "top": 11251,
+        "cursor": {
+          "line": 42,
+          "ch": 0
+        },
+        "headingTop": -10056.609375,
+        "visible": false
+      },
+      {
+        "heading": "Section 31",
+        "settled": {
+          "stable": true,
+          "elapsed": 404
+        },
+        "top": 11229,
+        "cursor": {
+          "line": 420,
+          "ch": 0
+        },
+        "headingTop": -502.15625,
+        "visible": false
+      },
+      {
+        "heading": "Section 07",
+        "settled": {
+          "stable": true,
+          "elapsed": 408
+        },
+        "top": 11207,
+        "cursor": {
+          "line": 84,
+          "ch": 0
+        },
+        "headingTop": -8973.15625,
+        "visible": false
+      },
+      {
+        "heading": "Section 37",
+        "settled": {
+          "stable": true,
+          "elapsed": 872
+        },
+        "top": 12312,
+        "cursor": {
+          "line": 504,
+          "ch": 0
+        },
+        "headingTop": 496.0625,
+        "visible": true
+      },
+      {
+        "heading": "Section 16",
+        "settled": {
+          "stable": true,
+          "elapsed": 353
+        },
+        "top": 12290,
+        "cursor": {
+          "line": 210,
+          "ch": 0
+        },
+        "headingTop": -6893.453125,
+        "visible": false
+      },
+      {
+        "heading": "Section 28",
+        "settled": {
+          "stable": true,
+          "elapsed": 405
+        },
+        "top": 12268,
+        "cursor": {
+          "line": 378,
+          "ch": 0
+        },
+        "headingTop": -2647.125,
+        "visible": false
+      },
+      {
+        "heading": "Section 01",
+        "settled": {
+          "stable": true,
+          "elapsed": 423
+        },
+        "top": 12246,
+        "cursor": {
+          "line": 0,
+          "ch": 0
+        },
+        "headingTop": -12091.0625,
+        "visible": false
+      }
+    ]
+  },
+  {
+    "phase": "before",
+    "mode": "reading",
+    "forceSmooth": true,
+    "immediate": {
+      "from": 4000,
+      "to": 4000,
+      "behavior": "smooth"
+    },
+    "navigation": [
+      {
+        "heading": "Section 34",
+        "settled": {
+          "stable": true,
+          "elapsed": 588
+        },
+        "top": 4017,
+        "visible": false
+      },
+      {
+        "heading": "Section 04",
+        "settled": {
+          "stable": true,
+          "elapsed": 581
+        },
+        "top": 2544,
+        "visible": false
+      },
+      {
+        "heading": "Section 31",
+        "settled": {
+          "stable": true,
+          "elapsed": 541
+        },
+        "top": 3020,
+        "visible": false
+      },
+      {
+        "heading": "Section 07",
+        "settled": {
+          "stable": true,
+          "elapsed": 940
+        },
+        "top": 1687,
+        "headingTop": 71.546875,
+        "visible": true
+      },
+      {
+        "heading": "Section 37",
+        "settled": {
+          "stable": true,
+          "elapsed": 519
+        },
+        "top": 2141,
+        "visible": false
+      },
+      {
+        "heading": "Section 16",
+        "settled": {
+          "stable": true,
+          "elapsed": 813
+        },
+        "top": 3992,
+        "headingTop": 174.71875,
+        "visible": true
+      },
+      {
+        "heading": "Section 28",
+        "settled": {
+          "stable": true,
+          "elapsed": 1221
+        },
+        "top": 7290,
+        "headingTop": 88.71875,
+        "visible": true
+      },
+      {
+        "heading": "Section 01",
+        "settled": {
+          "stable": true,
+          "elapsed": 543
+        },
+        "top": 6821,
+        "visible": false
+      }
+    ]
+  },
+  {
+    "phase": "after",
+    "mode": "source",
+    "forceSmooth": true,
+    "immediate": {
+      "from": 4000,
+      "to": 0,
+      "behavior": "auto"
+    },
+    "navigation": [
+      {
+        "heading": "Section 34",
+        "settled": {
+          "stable": true,
+          "elapsed": 307
+        },
+        "top": 11295,
+        "cursor": {
+          "line": 462,
+          "ch": 0
+        },
+        "headingTop": 495.78125,
+        "visible": true
+      },
+      {
+        "heading": "Section 04",
+        "settled": {
+          "stable": true,
+          "elapsed": 311
+        },
+        "top": 723,
+        "cursor": {
+          "line": 42,
+          "ch": 0
+        },
+        "headingTop": 495.875,
+        "visible": true
+      },
+      {
+        "heading": "Section 31",
+        "settled": {
+          "stable": true,
+          "elapsed": 359
+        },
+        "top": 10255,
+        "cursor": {
+          "line": 420,
+          "ch": 0
+        },
+        "headingTop": 496.328125,
+        "visible": true
+      },
+      {
+        "heading": "Section 07",
+        "settled": {
+          "stable": true,
+          "elapsed": 308
+        },
+        "top": 1785,
+        "cursor": {
+          "line": 84,
+          "ch": 0
+        },
+        "headingTop": 495.5,
+        "visible": true
+      },
+      {
+        "heading": "Section 37",
+        "settled": {
+          "stable": true,
+          "elapsed": 306
+        },
+        "top": 12401,
+        "cursor": {
+          "line": 504,
+          "ch": 0
+        },
+        "headingTop": 495.75,
+        "visible": true
+      },
+      {
+        "heading": "Section 16",
+        "settled": {
+          "stable": true,
+          "elapsed": 313
+        },
+        "top": 4969,
+        "cursor": {
+          "line": 210,
+          "ch": 0
+        },
+        "headingTop": 496.375,
+        "visible": true
+      },
+      {
+        "heading": "Section 28",
+        "settled": {
+          "stable": true,
+          "elapsed": 315
+        },
+        "top": 9216,
+        "cursor": {
+          "line": 378,
+          "ch": 0
+        },
+        "headingTop": 495.875,
+        "visible": true
+      },
+      {
+        "heading": "Section 01",
+        "settled": {
+          "stable": true,
+          "elapsed": 313
+        },
+        "top": 0,
+        "cursor": {
+          "line": 0,
+          "ch": 0
+        },
+        "headingTop": 157.25,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "phase": "after",
+    "mode": "live-preview",
+    "forceSmooth": true,
+    "immediate": {
+      "from": 3978,
+      "to": 0,
+      "behavior": "auto"
+    },
+    "navigation": [
+      {
+        "heading": "Section 34",
+        "settled": {
+          "stable": true,
+          "elapsed": 312
+        },
+        "top": 11339,
+        "cursor": {
+          "line": 462,
+          "ch": 0
+        },
+        "headingTop": 496.125,
+        "visible": true
+      },
+      {
+        "heading": "Section 04",
+        "settled": {
+          "stable": true,
+          "elapsed": 318
+        },
+        "top": 723,
+        "cursor": {
+          "line": 42,
+          "ch": 0
+        },
+        "headingTop": 495.875,
+        "visible": true
+      },
+      {
+        "heading": "Section 31",
+        "settled": {
+          "stable": true,
+          "elapsed": 306
+        },
+        "top": 10278,
+        "cursor": {
+          "line": 420,
+          "ch": 0
+        },
+        "headingTop": 495.5,
+        "visible": true
+      },
+      {
+        "heading": "Section 07",
+        "settled": {
+          "stable": true,
+          "elapsed": 309
+        },
+        "top": 1785,
+        "cursor": {
+          "line": 84,
+          "ch": 0
+        },
+        "headingTop": 495.5,
+        "visible": true
+      },
+      {
+        "heading": "Section 37",
+        "settled": {
+          "stable": true,
+          "elapsed": 310
+        },
+        "top": 12401,
+        "cursor": {
+          "line": 504,
+          "ch": 0
+        },
+        "headingTop": 495.75,
+        "visible": true
+      },
+      {
+        "heading": "Section 16",
+        "settled": {
+          "stable": true,
+          "elapsed": 308
+        },
+        "top": 4969,
+        "cursor": {
+          "line": 210,
+          "ch": 0
+        },
+        "headingTop": 496.375,
+        "visible": true
+      },
+      {
+        "heading": "Section 28",
+        "settled": {
+          "stable": true,
+          "elapsed": 361
+        },
+        "top": 9216,
+        "cursor": {
+          "line": 378,
+          "ch": 0
+        },
+        "headingTop": 495.875,
+        "visible": true
+      },
+      {
+        "heading": "Section 01",
+        "settled": {
+          "stable": true,
+          "elapsed": 306
+        },
+        "top": 0,
+        "cursor": {
+          "line": 0,
+          "ch": 0
+        },
+        "headingTop": 157.25,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "phase": "after",
+    "mode": "reading",
+    "forceSmooth": true,
+    "immediate": {
+      "from": 4000,
+      "to": 0,
+      "behavior": "auto"
+    },
+    "navigation": [
+      {
+        "heading": "Section 34",
+        "settled": {
+          "stable": true,
+          "elapsed": 321
+        },
+        "top": 8909,
+        "headingTop": 72.71875,
+        "visible": true
+      },
+      {
+        "heading": "Section 04",
+        "settled": {
+          "stable": true,
+          "elapsed": 330
+        },
+        "top": 884,
+        "headingTop": 71.65625,
+        "visible": true
+      },
+      {
+        "heading": "Section 31",
+        "settled": {
+          "stable": true,
+          "elapsed": 312
+        },
+        "top": 8108,
+        "headingTop": 71.71875,
+        "visible": true
+      },
+      {
+        "heading": "Section 07",
+        "settled": {
+          "stable": true,
+          "elapsed": 336
+        },
+        "top": 1686,
+        "headingTop": 72.71875,
+        "visible": true
+      },
+      {
+        "heading": "Section 37",
+        "settled": {
+          "stable": true,
+          "elapsed": 323
+        },
+        "top": 9713,
+        "headingTop": 71.71875,
+        "visible": true
+      },
+      {
+        "heading": "Section 16",
+        "settled": {
+          "stable": true,
+          "elapsed": 307
+        },
+        "top": 4095,
+        "headingTop": 71.71875,
+        "visible": true
+      },
+      {
+        "heading": "Section 28",
+        "settled": {
+          "stable": true,
+          "elapsed": 339
+        },
+        "top": 7305,
+        "headingTop": 72.71875,
+        "visible": true
+      },
+      {
+        "heading": "Section 01",
+        "settled": {
+          "stable": true,
+          "elapsed": 332
+        },
+        "top": 0,
+        "headingTop": 153.03125,
+        "visible": true
+      }
+    ]
+  }
+]

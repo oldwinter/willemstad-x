@@ -1,0 +1,240 @@
+[
+  {
+    "phase": "before",
+    "environment": "Standalone CodeMirror 6 with full Obsidian 1.13.7 CSS and Willemstad theme, Chromium 153 with --enable-smooth-scrolling",
+    "immediate": {
+      "from": 4000,
+      "to": 4000,
+      "behavior": "smooth"
+    },
+    "navigation": [
+      {
+        "section": 34,
+        "settled": {
+          "stable": true,
+          "elapsed": 523
+        },
+        "position": 14501,
+        "top": 3711,
+        "documentHeight": 45098,
+        "cursorTop": 13674.984375,
+        "visible": false
+      },
+      {
+        "section": 4,
+        "settled": {
+          "stable": true,
+          "elapsed": 411
+        },
+        "position": 1307,
+        "top": 3692,
+        "documentHeight": 44033,
+        "cursorTop": -2622.546875,
+        "visible": false
+      },
+      {
+        "section": 31,
+        "settled": {
+          "stable": true,
+          "elapsed": 1071
+        },
+        "position": 13178,
+        "top": 11760,
+        "documentHeight": 39366,
+        "cursorTop": -988.03125,
+        "visible": false
+      },
+      {
+        "section": 7,
+        "settled": {
+          "stable": true,
+          "elapsed": 421
+        },
+        "position": 2612,
+        "top": 11741,
+        "documentHeight": 38983,
+        "cursorTop": -9636.09375,
+        "visible": false
+      },
+      {
+        "section": 37,
+        "settled": {
+          "stable": true,
+          "elapsed": 717
+        },
+        "position": 15824,
+        "top": 12232,
+        "documentHeight": 38786,
+        "cursorTop": 380.125,
+        "visible": true
+      },
+      {
+        "section": 16,
+        "settled": {
+          "stable": true,
+          "elapsed": 412
+        },
+        "position": 6563,
+        "top": 12213,
+        "documentHeight": 38588,
+        "cursorTop": -6963.390625,
+        "visible": false
+      },
+      {
+        "section": 28,
+        "settled": {
+          "stable": true,
+          "elapsed": 414
+        },
+        "position": 11855,
+        "top": 12194,
+        "documentHeight": 38531,
+        "cursorTop": -2745.0625,
+        "visible": false
+      },
+      {
+        "section": 80,
+        "settled": {
+          "stable": true,
+          "elapsed": 735
+        },
+        "position": 34787,
+        "top": 17238,
+        "documentHeight": 34124,
+        "cursorTop": 16544.3125,
+        "visible": false
+      },
+      {
+        "section": 1,
+        "settled": {
+          "stable": true,
+          "elapsed": 416
+        },
+        "position": 2,
+        "top": 17219,
+        "documentHeight": 34048,
+        "cursorTop": -17185,
+        "visible": false
+      }
+    ]
+  },
+  {
+    "phase": "after",
+    "environment": "Standalone CodeMirror 6 with full Obsidian 1.13.7 CSS and Willemstad theme, Chromium 153 with --enable-smooth-scrolling",
+    "immediate": {
+      "from": 4000,
+      "to": 0,
+      "behavior": "auto"
+    },
+    "navigation": [
+      {
+        "section": 34,
+        "settled": {
+          "stable": true,
+          "elapsed": 403
+        },
+        "position": 14501,
+        "top": 18235,
+        "documentHeight": 46347,
+        "cursorTop": 379.90625,
+        "visible": true
+      },
+      {
+        "section": 4,
+        "settled": {
+          "stable": true,
+          "elapsed": 400
+        },
+        "position": 1307,
+        "top": 708,
+        "documentHeight": 45627,
+        "cursorTop": 379.9375,
+        "visible": true
+      },
+      {
+        "section": 31,
+        "settled": {
+          "stable": true,
+          "elapsed": 409
+        },
+        "position": 13178,
+        "top": 15701,
+        "documentHeight": 44868,
+        "cursorTop": 380.4375,
+        "visible": true
+      },
+      {
+        "section": 7,
+        "settled": {
+          "stable": true,
+          "elapsed": 407
+        },
+        "position": 2612,
+        "top": 1763,
+        "documentHeight": 44109,
+        "cursorTop": 379.5625,
+        "visible": true
+      },
+      {
+        "section": 37,
+        "settled": {
+          "stable": true,
+          "elapsed": 404
+        },
+        "position": 15824,
+        "top": 17052,
+        "documentHeight": 43351,
+        "cursorTop": 380.09375,
+        "visible": true
+      },
+      {
+        "section": 16,
+        "settled": {
+          "stable": true,
+          "elapsed": 407
+        },
+        "position": 6563,
+        "top": 5877,
+        "documentHeight": 42025,
+        "cursorTop": 379.75,
+        "visible": true
+      },
+      {
+        "section": 28,
+        "settled": {
+          "stable": true,
+          "elapsed": 407
+        },
+        "position": 11855,
+        "top": 11804,
+        "documentHeight": 41267,
+        "cursorTop": 380.15625,
+        "visible": true
+      },
+      {
+        "section": 80,
+        "settled": {
+          "stable": true,
+          "elapsed": 409
+        },
+        "position": 34787,
+        "top": 39574,
+        "documentHeight": 40374,
+        "cursorTop": 442.359375,
+        "visible": true
+      },
+      {
+        "section": 1,
+        "settled": {
+          "stable": true,
+          "elapsed": 412
+        },
+        "position": 2,
+        "top": 0,
+        "documentHeight": 40374,
+        "cursorTop": 33.3125,
+        "visible": true
+      }
+    ]
+  }
+]

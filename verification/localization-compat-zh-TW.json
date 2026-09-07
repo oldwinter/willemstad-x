@@ -1,0 +1,20 @@
+{
+  "language": "zh-TW",
+  "pluginVersion": "1.0.9",
+  "sections": [
+    "Willemstad-Core",
+    "Willemstad-Editor",
+    "Willemstad-Ancillary",
+    "Willemstad-Plugins",
+    "Minimal-Cards",
+    "Willemstad-Adv-Settings"
+  ],
+  "errors": [],
+  "title": "停用動畫",
+  "description": "啟用後，停用本主題的所有動畫。",
+  "text": "Import\nExport\nCore\n主題文件\nwillemstad.cc\n安裝 javalent 的 Settings Search 外掛，可更快查詢設定。\nWillemstad 目前僅支援桌面端的預設編輯器（非舊版編輯器），行動版支援將在之後提供。\n配色方案\n選擇配色方案。\nDefault: 🟢 Revolution — London School of Hygiene and Tropical Medicine (LSHTM)\n🟢 Revolution — London School of Hygiene and Tropical Medicine (LSHTM)\n❄️ Adaptation — Noord [Willemstad-style Nord]\n🖌️ Custom Colours\n字型搭配與自訂字型\nWillemstad 提供兩組推薦字型搭配，可在此選擇。\nDefault: 🟢 Manrope + DM Sans\n🟢 Manrope + DM Sans\n⚫ Inter (v3.19)\n⭕ Custom Fonts\n純黑模式\n啟用後，深色模式使用純黑背景。\n停用動畫\n啟用後，停用本主題的所有動畫。\n使用 Obsidian 標準圖示\n啟用後，用 Obsidian 標準圖示替換 Willemstad 自訂圖示。\n啟動畫面\n啟動背景圖片、圓點網格、載入資訊字首和漸變啟動進度條。\n標題列\n選擇 Obsidian 標題列樣式。\nDefault: 🌥️ Default Bar\n💫 Mini-sized Bar\n🌥️ Default Bar\n❌ No Bar — Completely removes bar\n標題列自訂\n在此自訂標題列元素。\n狀態列\n選擇 Obsidian 狀態列樣式。\nDefault: 💫 Conjuring — Hidden until hovered, mini-size\n💫 Conjuring — Hidden until hovered, mini-size\n🌥️ Enduring — Persistent, mini-size\n☀️ Unchanging — Persistent, full-length (Obsidian default)\n❌ Hiding — Completely removes bar\n側邊工具列\n選擇 Obsidian 的側邊工具列、側邊欄與側邊面板樣式。 選項含義：Floating Tabs — tabs that come into full-view when hovered：懸浮標籤，懸停時完整顯示；Styled Bars：自訂樣式工具列；Default Bars：預設工具列；No Bars — hide all bars：隱藏所有工具列。\nDefault: Floating Tabs — tabs that come into full-view when hovered\nFloating Tabs — tabs that come into full-view when hovered\nStyled Bars\nDefault Bars\nNo Bars — hide all bars\n側邊工具列自訂\n在此自訂側邊工具列和側邊欄元素。\n導航、導航面板、側邊面板與側邊欄標籤頁\n在此自訂上述元素。\n對話方塊\n調整設定、社群外掛、主題和 Publish 對話方塊的寬度與高度。\n捲軸尺寸\nDefault: 0.35\n0.35\n反向連結面板樣式\n啟用後，應用反向連結面板樣式。\nEditor\nCallouts, CSSClass and Ancillaries\nPlugins\nMinimal Cards and Image Grid\nAdvanced Settings",
+  "storedSettings": {
+    "V1-Willemstad-Root@@no-animations": true,
+    "Willemstad-Core@@no-animations": true
+  }
+}

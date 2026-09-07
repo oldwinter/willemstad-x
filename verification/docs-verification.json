@@ -1,0 +1,95 @@
+{
+  "defaults": {
+    "ssopt-theme-contrast-light": false,
+    "ssopt-theme-contrast-dark": false,
+    "ssopt-tc-cross-l": false,
+    "ssopt-tc-cross-d": false,
+    "ssopt-tc-accent-cross-l": false,
+    "ssopt-tc-accent-cross-d": false,
+    "ssopt-focused-mode": false,
+    "ssopt-super-focused-mode": false,
+    "distant-opacity": 0.2,
+    "near-fade-factor": 0.15,
+    "ssopt-invert-pdf-dark": false,
+    "ssopt-block-width-pdfembed": false,
+    "magnifier-bw-pdfembed": 1.5,
+    "ratio-bw-pdfembed-source": 1,
+    "ratio-bw-pdfembed-reading": 0.96,
+    "global-block-width-mode": "auto"
+  },
+  "checks": [
+    {
+      "id": "ssopt-focused-mode",
+      "behavior": {
+        "sidebars": [
+          "none",
+          "none"
+        ],
+        "ribbon": [
+          "none",
+          "none"
+        ],
+        "status": [
+          "none"
+        ],
+        "tabs": [
+          "flex"
+        ],
+        "active": "1",
+        "far": "0.2"
+      }
+    },
+    {
+      "id": "ssopt-super-focused-mode",
+      "behavior": {
+        "sidebars": [
+          "none",
+          "none"
+        ],
+        "ribbon": [
+          "none",
+          "none"
+        ],
+        "status": [
+          "none"
+        ],
+        "tabs": [
+          "none"
+        ],
+        "active": "1",
+        "far": "0.2"
+      }
+    },
+    {
+      "id": "cross-colour-dependencies",
+      "enabled": [
+        "contrast",
+        "base palette",
+        "accent palette"
+      ]
+    },
+    {
+      "id": "pdf-controls",
+      "ebookSettings": []
+    }
+  ],
+  "screenshots": [
+    "focused-mode-settings.png",
+    "ssopt-focused-mode.png",
+    "ssopt-super-focused-mode.png",
+    "cross-colour-ui-settings.png",
+    "cross-colour-ui-enabled.png",
+    "pdf-viewer-settings.png",
+    "pdf-embed-settings.png"
+  ],
+  "commands": [
+    {
+      "id": "obsidian-style-settings:style-settings-class-toggle-pluglets-iem-settings-ssopt-focused-mode",
+      "name": "Style Settings: Toggle Focused Mode"
+    },
+    {
+      "id": "obsidian-style-settings:style-settings-class-toggle-pluglets-iem-settings-ssopt-super-focused-mode",
+      "name": "Style Settings: Toggle Super Focused Mode"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "language": "zh",
+  "pluginVersion": "1.0.9",
+  "sections": [
+    "V1-Willemstad-Info",
+    "V1-Willemstad-Root",
+    "V1-Willemstad-Typography",
+    "V1-Willemstad-Colours",
+    "V1-Willemstad-UI",
+    "V1-Willemstad-Editor",
+    "V1-Willemstad-Ancillaries",
+    "V1-Willemstad-Plugins",
+    "V1-Willemstad-Credits",
+    "pluglets-iem-settings",
+    "cssc-latex-settings",
+    "cssc-cornell-settings"
+  ],
+  "errors": [],
+  "title": "禁用动画",
+  "description": "启用后，禁用本主题的所有动画。",
+  "text": "Import\nExport\nTheme Information\nRoot Options and Settings\n禁用动画\n启用后，禁用本主题的所有动画。\n禁用背景模糊滤镜\nWillemstad 默认启用背景模糊滤镜，在性能较低的设备上可能略微影响性能。启用此项后，禁用本主题设置的所有背景模糊滤镜。\n重新启用阴影\nWillemstad 默认移除 Obsidian 中的全部阴影。启用后，恢复被本主题禁用的阴影。\n隐藏滚动条\n启用后，将 Windows 和 Linux 中 Obsidian 的非原生滚动条轨道设为零宽度，使界面更简洁。\n隐藏工具提示\n启用后，隐藏鼠标悬停在按钮等界面元素上时出现的工具提示。\n圆角半径\n控制本主题各元素的圆角半径，部分元素的圆角也由此值计算得出。默认为 6px。\n默认： 6\n6\n图片圆角半径\n控制主题中图片的默认圆角半径。接受有效的 CSS 圆角值，例如 8px、0 或 var(--radius-m)。设为 0 可取消图片圆角。\n默认： var(--radius-s)\n分隔线宽度\n控制主题中分隔线的粗细。\n默认： 1\n1\nGlobal Typography\nGlobal Colours\nApp UI\nEditor\nCallouts, Inline CSSClass and Ancillaries\nPlugins\nCredits\nImmersive Editing Modes — Focused & Super Focused Mode\n Display\nCornell Notes",
+  "storedSettings": {
+    "V1-Willemstad-Root@@no-animations": true,
+    "Willemstad-Core@@no-animations": true
+  }
+}

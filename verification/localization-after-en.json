@@ -1,0 +1,26 @@
+{
+  "language": "en",
+  "pluginVersion": "1.0.9",
+  "sections": [
+    "V1-Willemstad-Info",
+    "V1-Willemstad-Root",
+    "V1-Willemstad-Typography",
+    "V1-Willemstad-Colours",
+    "V1-Willemstad-UI",
+    "V1-Willemstad-Editor",
+    "V1-Willemstad-Ancillaries",
+    "V1-Willemstad-Plugins",
+    "V1-Willemstad-Credits",
+    "pluglets-iem-settings",
+    "cssc-latex-settings",
+    "cssc-cornell-settings"
+  ],
+  "errors": [],
+  "title": "No Animations",
+  "description": "When enabled, this disables all animations in this theme.",
+  "text": "Import\nExport\nTheme Information\nRoot Options and Settings\nNo Animations\nWhen enabled, this disables all animations in this theme.\nNo Blur Backdrop Filter\nThe blur filter is activated by default in Willemstad, and might cause slight performance degradation on less powerful devices. When enabled, this disables all blur backdrop filters set by this theme.\nRe-enable Shadows\nWillemstad removes all shadows in Obsidian by default. When enabled, this enables all shadows disabled by this theme.\nHide Scrollbars\nWhen enabled, Obsidian’s non-native scrollbars in Windows and Linux are replaced with zero-width tracks, giving the interface a neater look.\nHide Tooltips\nWhen enabled, this hides all tooltips that appear when hovering over buttons and other UI elements.\nBorder Radius\nThis setting controls the border radius of all elements in this theme, and/or are calculated from this value. The default value is 6px.\nDefault: 6\n6\nBorder Radius of Images\nControls the default border radius for images throughout the theme. Accepts any valid CSS radius value (e.g., 8px, 0, var(--radius-m)). Set '0' if you do not want your images to take a border radius.\nDefault: var(--radius-s)\nDivider Width\nControls the thickness of divider lines throughout the theme.\nDefault: 1\n1\nGlobal Typography\nGlobal Colours\nApp UI\nEditor\nCallouts, Inline CSSClass and Ancillaries\nPlugins\nCredits\nImmersive Editing Modes — Focused & Super Focused Mode\n Display\nCornell Notes",
+  "storedSettings": {
+    "V1-Willemstad-Root@@no-animations": true,
+    "Willemstad-Core@@no-animations": true
+  }
+}

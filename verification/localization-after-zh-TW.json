@@ -1,0 +1,26 @@
+{
+  "language": "zh-TW",
+  "pluginVersion": "1.0.9",
+  "sections": [
+    "V1-Willemstad-Info",
+    "V1-Willemstad-Root",
+    "V1-Willemstad-Typography",
+    "V1-Willemstad-Colours",
+    "V1-Willemstad-UI",
+    "V1-Willemstad-Editor",
+    "V1-Willemstad-Ancillaries",
+    "V1-Willemstad-Plugins",
+    "V1-Willemstad-Credits",
+    "pluglets-iem-settings",
+    "cssc-latex-settings",
+    "cssc-cornell-settings"
+  ],
+  "errors": [],
+  "title": "停用動畫",
+  "description": "啟用後，停用本主題的所有動畫。",
+  "text": "Import\nExport\nTheme Information\nRoot Options and Settings\n停用動畫\n啟用後，停用本主題的所有動畫。\n停用背景模糊濾鏡\nWillemstad 預設啟用背景模糊濾鏡，在效能較低的裝置上可能略微影響效能。啟用此項後，停用本主題設定的所有背景模糊濾鏡。\n重新啟用陰影\nWillemstad 預設移除 Obsidian 中的全部陰影。啟用後，恢復被本主題停用的陰影。\n隱藏捲軸\n啟用後，將 Windows 和 Linux 中 Obsidian 的非原生捲軸軌道設為零寬度，使介面更簡潔。\n隱藏工具提示\n啟用後，隱藏滑鼠懸停在按鈕等介面元素上時出現的工具提示。\n圓角半徑\n控制本主題各元素的圓角半徑，部分元素的圓角也由此值計算得出。預設為 6px。\nDefault: 6\n6\n圖片圓角半徑\n控制主題中圖片的預設圓角半徑。接受有效的 CSS 圓角值，例如 8px、0 或 var(--radius-m)。設為 0 可取消圖片圓角。\nDefault: var(--radius-s)\n分隔線寬度\n控制主題中分隔線的粗細。\nDefault: 1\n1\nGlobal Typography\nGlobal Colours\nApp UI\nEditor\nCallouts, Inline CSSClass and Ancillaries\nPlugins\nCredits\nImmersive Editing Modes — Focused & Super Focused Mode\n Display\nCornell Notes",
+  "storedSettings": {
+    "V1-Willemstad-Root@@no-animations": true,
+    "Willemstad-Core@@no-animations": true
+  }
+}

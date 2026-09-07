@@ -1,0 +1,19 @@
+{
+  "language": "en",
+  "pluginVersion": "1.0.9",
+  "sections": [
+    "Willemstad-Core",
+    "Willemstad-Editor",
+    "Willemstad-Ancillary",
+    "Willemstad-Plugins",
+    "Minimal-Cards",
+    "Willemstad-Adv-Settings"
+  ],
+  "errors": [],
+  "title": "No Animations",
+  "description": "When enabled, this disables all animations in this theme.",
+  "text": "Import\nExport\nCore\nTHEME DOCUMENTATION\nwillemstad.cc\nPlease install the 'Settings Search' plugin by javalent to find settings faster.\nPlease note that Willemstad is only supported on the default (non-legacy) editor on desktop at the moment. Mobile support will be rolled out at a later date.\nColour Palettes\nChoose a colour palette!\nDefault: 🟢 Revolution — London School of Hygiene and Tropical Medicine (LSHTM)\n🟢 Revolution — London School of Hygiene and Tropical Medicine (LSHTM)\n❄️ Adaptation — Noord [Willemstad-style Nord]\n🖌️ Custom Colours\nFont Pairings + Enable Custom Fonts\nThere are two suggested font typeface pairings with Willemstad, available here.\nDefault: 🟢 Manrope + DM Sans\n🟢 Manrope + DM Sans\n⚫ Inter (v3.19)\n⭕ Custom Fonts\nTrue Black mode\nWhen enabled, this makes the dark mode True Black.\nNo Animations\nWhen enabled, this disables all animations in this theme.\nUse Standard Obsidian Icons\nWhen enabled, this replaces the custom Willemstad icon set with the standard Obsidian icons.\nStartup Screen\nStartup Background Image, Dotted Grid Overlay, Loading Message Prefix, Gradient Startup Progress Bar\nTitlebar\nChoose which titlebar style you would like to use for Obsidian.\nDefault: 🌥️ Default Bar\n💫 Mini-sized Bar\n🌥️ Default Bar\n❌ No Bar — Completely removes bar\nTitlebar Customisation\nCustomise the titlebar elements here.\nStatus Bar\nChoose which status bar you would like to use for Obsidian.\nDefault: 💫 Conjuring — Hidden until hovered, mini-size\n💫 Conjuring — Hidden until hovered, mini-size\n🌥️ Enduring — Persistent, mini-size\n☀️ Unchanging — Persistent, full-length (Obsidian default)\n❌ Hiding — Completely removes bar\nRibbon\nChoose which ribbon/sidebar/side docks style you would like to use for Obsidian.\nDefault: Floating Tabs — tabs that come into full-view when hovered\nFloating Tabs — tabs that come into full-view when hovered\nStyled Bars\nDefault Bars\nNo Bars — hide all bars\nRibbon Customisation\nCustomise the ribbon/sidebar elements here.\nNavigation, Navigation Pane, Sidebar Panes and Sidebar Tabs\nCustomise the abovementioned elements here.\nModals\nChange the widths and heights of modals (the settings/community plugins/themes/Publish menus).\nScrollbar Size\nDefault: 0.35\n0.35\nBacklink Pane Styling\nWhen toggled, this styles the backlink panes.\nEditor\nCallouts, CSSClass and Ancillaries\nPlugins\nMinimal Cards and Image Grid\nAdvanced Settings",
+  "storedSettings": {
+    "V1-Willemstad-Root@@no-animations": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "base": "a8bd0eb",
+  "parser": "js-yaml 4.1.0 plus YAML AST range validation",
+  "locales": [
+    "zh",
+    "zh-TW"
+  ],
+  "records": [
+    {
+      "file": "theme.css",
+      "sections": 12,
+      "settings": 480,
+      "translatedTitlesPerLocale": 480,
+      "translatedDescriptionsPerLocale": 380,
+      "dropdownExplanationsPerLocale": 41,
+      "originalBytesPreserved": true,
+      "originalSemanticsPreserved": true
+    },
+    {
+      "file": "obsidian.css",
+      "sections": 6,
+      "settings": 296,
+      "translatedTitlesPerLocale": 295,
+      "translatedDescriptionsPerLocale": 177,
+      "dropdownExplanationsPerLocale": 10,
+      "originalBytesPreserved": true,
+      "originalSemanticsPreserved": true
+    }
+  ]
+}

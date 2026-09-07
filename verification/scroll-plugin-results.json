@@ -1,0 +1,353 @@
+{
+  "environment": "Real Obsidian 1.13.7 Windows; official Scroll to Top 2.1.6; isolated vault and profile",
+  "extraArgs": [],
+  "plugin": {
+    "id": "obsidian-scroll-to-top-plugin",
+    "name": "Scroll to Top",
+    "version": "2.1.6",
+    "minAppVersion": "0.15.0",
+    "description": "This is a plugin for Obsidian that adds a button to scroll to the top of the current note.",
+    "author": "cloudhao1999",
+    "authorUrl": "https://github.com/cloudhao1999/obsidian-scroll-to-top-plugin",
+    "isDesktopOnly": false,
+    "dir": ".obsidian/plugins/obsidian-scroll-to-top-plugin"
+  },
+  "results": [
+    {
+      "phase": "before",
+      "mode": "source",
+      "forceSmooth": false,
+      "actions": [
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 536
+          },
+          "action": "bottom",
+          "top": 26650,
+          "max": 26650,
+          "cursor": {
+            "line": 0,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 461.546875,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "smooth"
+        },
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 423
+          },
+          "action": "top",
+          "top": 0,
+          "max": 26672,
+          "cursor": {
+            "line": 0,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 157.25,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "smooth"
+        },
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 418
+          },
+          "action": "cursor",
+          "top": 10879,
+          "max": 26779,
+          "cursor": {
+            "line": 462,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 495.671875,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "smooth"
+        }
+      ],
+      "cursorButton": "visible"
+    },
+    {
+      "phase": "before",
+      "mode": "live-preview",
+      "forceSmooth": false,
+      "actions": [
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 418
+          },
+          "action": "bottom",
+          "top": 26757,
+          "max": 26757,
+          "cursor": {
+            "line": 462,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 461.796875,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "smooth"
+        },
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 431
+          },
+          "action": "top",
+          "top": 0,
+          "max": 26757,
+          "cursor": {
+            "line": 0,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 157.25,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "smooth"
+        },
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 428
+          },
+          "action": "cursor",
+          "top": 10879,
+          "max": 26779,
+          "cursor": {
+            "line": 462,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 495.671875,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "smooth"
+        }
+      ],
+      "cursorButton": "visible"
+    },
+    {
+      "phase": "before",
+      "mode": "reading",
+      "forceSmooth": false,
+      "actions": [
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 416
+          },
+          "action": "bottom",
+          "top": 20624,
+          "max": 21080,
+          "cursor": {
+            "line": 462,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 904.34375,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "smooth"
+        },
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 425
+          },
+          "action": "top",
+          "top": 0,
+          "max": 20635,
+          "cursor": {
+            "line": 462,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 153.03125,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "smooth"
+        }
+      ],
+      "cursorButton": "hidden"
+    },
+    {
+      "phase": "after",
+      "mode": "source",
+      "forceSmooth": false,
+      "actions": [
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 419
+          },
+          "action": "bottom",
+          "top": 26757,
+          "max": 26757,
+          "cursor": {
+            "line": 462,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 461.796875,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "auto"
+        },
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 450
+          },
+          "action": "top",
+          "top": 0,
+          "max": 26757,
+          "cursor": {
+            "line": 0,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 157.25,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "auto"
+        },
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 408
+          },
+          "action": "cursor",
+          "top": 10879,
+          "max": 26779,
+          "cursor": {
+            "line": 462,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 495.671875,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "auto"
+        }
+      ],
+      "cursorButton": "visible"
+    },
+    {
+      "phase": "after",
+      "mode": "live-preview",
+      "forceSmooth": false,
+      "actions": [
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 419
+          },
+          "action": "bottom",
+          "top": 26757,
+          "max": 26757,
+          "cursor": {
+            "line": 462,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 461.796875,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "auto"
+        },
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 409
+          },
+          "action": "top",
+          "top": 0,
+          "max": 26757,
+          "cursor": {
+            "line": 0,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 157.25,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "auto"
+        },
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 407
+          },
+          "action": "cursor",
+          "top": 10879,
+          "max": 26779,
+          "cursor": {
+            "line": 462,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 495.671875,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "auto"
+        }
+      ],
+      "cursorButton": "visible"
+    },
+    {
+      "phase": "after",
+      "mode": "reading",
+      "forceSmooth": false,
+      "actions": [
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 432
+          },
+          "action": "bottom",
+          "top": 20635,
+          "max": 21080,
+          "cursor": {
+            "line": 462,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 893.34375,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "auto"
+        },
+        {
+          "settled": {
+            "stable": true,
+            "elapsed": 422
+          },
+          "action": "top",
+          "top": 0,
+          "max": 20635,
+          "cursor": {
+            "line": 462,
+            "ch": 0
+          },
+          "lastLine": 1118,
+          "targetTop": 153.03125,
+          "targetVisible": true,
+          "passed": true,
+          "scrollBehavior": "auto"
+        }
+      ],
+      "cursorButton": "hidden"
+    }
+  ]
+}
