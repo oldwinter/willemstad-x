@@ -1,0 +1,420 @@
+{
+  "testedAt": "2026-09-07T16:51:01.317Z",
+  "branch": "codex-willemstad-integration-test",
+  "head": "6651131c24881ddaf20a754ca2e888c2d958fdd2",
+  "environment": {
+    "app": "Obsidian 1.13.7",
+    "platform": "Windows",
+    "plugin": "Style Settings 1.0.9",
+    "flags": [
+      "--enable-smooth-scrolling"
+    ]
+  },
+  "commits": [
+    {
+      "branch": "codex-willemstad-pr82-verified",
+      "commit": "b7f63d902d986d286f4b4becb4d450a5874e5f22"
+    },
+    {
+      "branch": "codex-willemstad-66-frosted-status-colors",
+      "commit": "e83ed5cc6444807e9fdd44bfe6cc756aa544e9ce"
+    },
+    {
+      "branch": "codex-willemstad-79-translucent-colors",
+      "commit": "6266f37a72c88118dd205dfb798ccf12bdcc205f"
+    },
+    {
+      "branch": "codex-willemstad-no-icon",
+      "commit": "feeb298ce32d3da16cfe47b709defa5fcdc1b7dd"
+    },
+    {
+      "branch": "codex-willemstad-block-widths",
+      "commit": "59e31f1128b59149203410963858fe5f52a94e4e"
+    },
+    {
+      "branch": "codex-willemstad-scroll",
+      "commit": "1585b5ac2e41e22ea780235b24d812c3590a5ff9"
+    },
+    {
+      "branch": "codex-willemstad-documentation",
+      "commit": "76a1bfa58366a967c848c51bb55c583b95b4e9a7"
+    },
+    {
+      "branch": "codex-willemstad-zh",
+      "commit": "ec5dede33ee4be4c09c0e7cd0c8ac85643be75fa"
+    }
+  ],
+  "mergedCommits": [
+    "b7f63d902d986d286f4b4becb4d450a5874e5f22",
+    "965daffc869cc21020a791dd7cd7fa81a1afe9f3",
+    "6266f37a72c88118dd205dfb798ccf12bdcc205f",
+    "feeb298ce32d3da16cfe47b709defa5fcdc1b7dd",
+    "69c356f4d2c4324663a1cf9f93d472edbf8e1a4f",
+    "1585b5ac2e41e22ea780235b24d812c3590a5ff9",
+    "76a1bfa58366a967c848c51bb55c583b95b4e9a7",
+    "ec5dede33ee4be4c09c0e7cd0c8ac85643be75fa",
+    "e83ed5cc6444807e9fdd44bfe6cc756aa544e9ce",
+    "59e31f1128b59149203410963858fe5f52a94e4e"
+  ],
+  "mergeResolutions": [
+    {
+      "incoming": "ec5dede",
+      "file": "theme.css",
+      "setting": "info-editor-block-widths",
+      "resolution": "Kept expanded English from 69c356f; retained locale metadata pending updated feature translation."
+    },
+    {
+      "incoming": "59e31f1",
+      "file": "theme.css",
+      "setting": "info-editor-block-widths",
+      "resolution": "Kept expanded English and replaced both old locale descriptions with expanded description.zh and description.zh-TW from 59e31f1 verbatim."
+    }
+  ],
+  "unresolvedConflicts": [],
+  "checks": [
+    {
+      "name": "All new feature settings and expanded block-width information preserve current feature-branch metadata",
+      "status": "pass",
+      "entries": 63
+    },
+    {
+      "name": "All expected commits are ancestors; three CSS files and all settings blocks parse",
+      "status": "pass",
+      "settingsSections": 12
+    },
+    {
+      "name": "Widths + ALH 1440px/Live Preview/line 8",
+      "status": "pass",
+      "enabled": {
+        "cursor": {
+          "line": 8,
+          "ch": 2
+        },
+        "overflow": 0,
+        "lineWidth": 968.4375,
+        "pseudoWidth": "968.438px",
+        "pseudoContent": "\"\""
+      }
+    },
+    {
+      "name": "Widths + ALH 1440px/Live Preview/line 11",
+      "status": "pass",
+      "enabled": {
+        "cursor": {
+          "line": 11,
+          "ch": 0
+        },
+        "overflow": 0,
+        "lineWidth": 968.4375,
+        "pseudoWidth": "968.438px",
+        "pseudoContent": "\"\""
+      }
+    },
+    {
+      "name": "Widths + ALH 1440px/Live Preview/line 14",
+      "status": "pass",
+      "enabled": {
+        "cursor": {
+          "line": 14,
+          "ch": 2
+        },
+        "overflow": 0,
+        "lineWidth": 968.4375,
+        "pseudoWidth": "968.438px",
+        "pseudoContent": "\"\""
+      }
+    },
+    {
+      "name": "Widths + ALH 1440px/Source/line 8",
+      "status": "pass",
+      "enabled": {
+        "cursor": {
+          "line": 8,
+          "ch": 2
+        },
+        "overflow": 0,
+        "lineWidth": 652.4375,
+        "pseudoWidth": "652.438px",
+        "pseudoContent": "\"\""
+      }
+    },
+    {
+      "name": "Widths + ALH 1440px/Source/line 11",
+      "status": "pass",
+      "enabled": {
+        "cursor": {
+          "line": 11,
+          "ch": 0
+        },
+        "overflow": 0,
+        "lineWidth": 652.4375,
+        "pseudoWidth": "652.438px",
+        "pseudoContent": "\"\""
+      }
+    },
+    {
+      "name": "Widths + ALH 1440px/Source/line 14",
+      "status": "pass",
+      "enabled": {
+        "cursor": {
+          "line": 14,
+          "ch": 2
+        },
+        "overflow": 0,
+        "lineWidth": 652.4375,
+        "pseudoWidth": "652.438px",
+        "pseudoContent": "\"\""
+      }
+    },
+    {
+      "name": "Widths + ALH 680px/Live Preview/line 8",
+      "status": "pass",
+      "enabled": {
+        "cursor": {
+          "line": 8,
+          "ch": 2
+        },
+        "overflow": 0,
+        "lineWidth": 524.4375,
+        "pseudoWidth": "524.438px",
+        "pseudoContent": "\"\""
+      }
+    },
+    {
+      "name": "Widths + ALH 680px/Live Preview/line 11",
+      "status": "pass",
+      "enabled": {
+        "cursor": {
+          "line": 11,
+          "ch": 0
+        },
+        "overflow": 0,
+        "lineWidth": 524.4375,
+        "pseudoWidth": "524.438px",
+        "pseudoContent": "\"\""
+      }
+    },
+    {
+      "name": "Widths + ALH 680px/Live Preview/line 14",
+      "status": "pass",
+      "enabled": {
+        "cursor": {
+          "line": 14,
+          "ch": 2
+        },
+        "overflow": 0,
+        "lineWidth": 524.4375,
+        "pseudoWidth": "524.438px",
+        "pseudoContent": "\"\""
+      }
+    },
+    {
+      "name": "Widths + ALH 680px/Source/line 8",
+      "status": "pass",
+      "enabled": {
+        "cursor": {
+          "line": 8,
+          "ch": 2
+        },
+        "overflow": 0,
+        "lineWidth": 524.4375,
+        "pseudoWidth": "524.438px",
+        "pseudoContent": "\"\""
+      }
+    },
+    {
+      "name": "Widths + ALH 680px/Source/line 11",
+      "status": "pass",
+      "enabled": {
+        "cursor": {
+          "line": 11,
+          "ch": 0
+        },
+        "overflow": 0,
+        "lineWidth": 524.4375,
+        "pseudoWidth": "524.438px",
+        "pseudoContent": "\"\""
+      }
+    },
+    {
+      "name": "Widths + ALH 680px/Source/line 14",
+      "status": "pass",
+      "enabled": {
+        "cursor": {
+          "line": 14,
+          "ch": 2
+        },
+        "overflow": 0,
+        "lineWidth": 524.4375,
+        "pseudoWidth": "524.438px",
+        "pseudoContent": "\"\""
+      }
+    },
+    {
+      "name": "Widened no-icon callout preserves nested icon source",
+      "status": "pass",
+      "icons": [
+        {
+          "metadata": "no-icon",
+          "icon": "none",
+          "title": "flex",
+          "color": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "metadata": "",
+          "icon": "flex",
+          "title": "flex",
+          "color": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "name": "Cornell inline + no-icon remains excluded from widening source",
+      "status": "pass",
+      "cornell": [
+        {
+          "metadata": "inline",
+          "margin": "0px",
+          "width": "652.438px",
+          "icon": "flex"
+        },
+        {
+          "metadata": "inline no-icon",
+          "margin": "0px",
+          "width": "652.438px",
+          "icon": "none"
+        }
+      ]
+    },
+    {
+      "name": "Scroll-to-top remains immediate with smooth scrolling enabled source",
+      "status": "pass",
+      "scroll": {
+        "behavior": "auto",
+        "bottom": 26581,
+        "immediateTop": 0
+      }
+    },
+    {
+      "name": "Widened no-icon callout preserves nested icon preview",
+      "status": "pass",
+      "icons": [
+        {
+          "metadata": "no-icon",
+          "icon": "none",
+          "title": "flex",
+          "color": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "metadata": "",
+          "icon": "flex",
+          "title": "flex",
+          "color": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "name": "Cornell inline + no-icon remains excluded from widening preview",
+      "status": "pass",
+      "cornell": [
+        {
+          "metadata": "inline",
+          "margin": "187px",
+          "width": "513px",
+          "icon": "flex"
+        },
+        {
+          "metadata": "inline no-icon",
+          "margin": "187px",
+          "width": "513px",
+          "icon": "none"
+        }
+      ]
+    },
+    {
+      "name": "Scroll-to-top remains immediate with smooth scrolling enabled preview",
+      "status": "pass",
+      "scroll": {
+        "behavior": "auto",
+        "bottom": 20610,
+        "immediateTop": 0
+      }
+    },
+    {
+      "name": "Cross-colour + frosted status + translucent tint light",
+      "status": "pass",
+      "colors": {
+        "expectedTint": "oklch(0.15 0 0 / 0.6)",
+        "actualTint": "oklch(0.15 0 0 / 0.6)",
+        "expectedText": "oklch(0.3 0 0)",
+        "actualText": "oklch(0.3 0 0)",
+        "statusBackground": "rgba(0, 0, 0, 0)"
+      },
+      "simulation": "macOS selectors on Windows renderer"
+    },
+    {
+      "name": "Cross-colour + frosted status + translucent tint dark",
+      "status": "pass",
+      "colors": {
+        "expectedTint": "oklch(0.91 0 0 / 0.6)",
+        "actualTint": "oklch(0.91 0 0 / 0.6)",
+        "expectedText": "oklch(0.68 0 0)",
+        "actualText": "oklch(0.68 0 0)",
+        "statusBackground": "rgba(0, 0, 0, 0)"
+      },
+      "simulation": "macOS selectors on Windows renderer"
+    },
+    {
+      "name": "Integrated settings load and new feature titles en",
+      "status": "pass",
+      "title": "Enable Block Widths for Gallery Callouts",
+      "statusTitle": "Use Sidebar Colours for Frosted Status Bar",
+      "togglesPersistAcrossLanguages": true,
+      "sections": 12,
+      "errors": [],
+      "globalMode": "auto"
+    },
+    {
+      "name": "Integrated settings load and new feature titles zh",
+      "status": "pass",
+      "title": "启用画廊式图片标注内容块宽度",
+      "statusTitle": "毛玻璃状态栏使用侧边栏配色",
+      "togglesPersistAcrossLanguages": true,
+      "sections": 12,
+      "errors": [],
+      "globalMode": "auto"
+    },
+    {
+      "name": "Integrated settings load and new feature titles zh-TW",
+      "status": "pass",
+      "title": "啟用畫廊式圖片標註內容塊寬度",
+      "statusTitle": "毛玻璃狀態列使用側邊欄配色",
+      "togglesPersistAcrossLanguages": true,
+      "sections": 12,
+      "errors": [],
+      "globalMode": "auto"
+    }
+  ],
+  "screenshots": [
+    "integration-widths-alh.png",
+    "integration-settings-zh-TW.png",
+    "integration-settings-status-zh-TW.png"
+  ],
+  "limitations": [
+    "Translucency uses macOS selector states in a real Windows renderer, not native macOS vibrancy.",
+    "This is targeted interaction smoke testing, not every feature or platform regression suite.",
+    "The intermittent upstream Style Settings startup defect from issue 60 was not reproduced."
+  ],
+  "cssSha256": {
+    "theme.css": "73b70f5407e50e04ec13eabf1298a14397af2c93ac90783f16ee20a4f022c155",
+    "obsidian.css": "3f4c458b3016e6687ab24f508b5ec6d3881b534aacb85772494ae01db9a85b6e",
+    "publish.css": "3a9f568c11341459bcb7ea64ce8964f45be1ab28fca0f6bf6fa288233f50c731"
+  },
+  "localeCounts": {
+    "title.zh": 542,
+    "title.zh-TW": 542,
+    "description.zh": 429,
+    "description.zh-TW": 429
+  },
+  "status": "pass"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "worktree": "ui-status",
+    "baselineCommit": "965daffc869cc21020a791dd7cd7fa81a1afe9f3",
+    "translatedSettings": 1,
+    "localizedFieldsPerLocale": 2,
+    "localeLinesAdded": 4,
+    "originalTextPreserved": true,
+    "originalSemanticsPreserved": true
+  },
+  {
+    "worktree": "widths",
+    "baselineCommit": "69c356f4d2c4324663a1cf9f93d472edbf8e1a4f",
+    "translatedSettings": 62,
+    "localizedFieldsPerLocale": 110,
+    "localeLinesAdded": 220,
+    "originalTextPreserved": true,
+    "originalSemanticsPreserved": true
+  }
+]
