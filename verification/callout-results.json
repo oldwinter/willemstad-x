@@ -1,0 +1,730 @@
+[
+  {
+    "distribution": "theme.css",
+    "phase": "before",
+    "mode": "live-preview",
+    "values": [
+      {
+        "title": "Normal title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Title without icon",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Combined metadata",
+        "metadata": "no-bg no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Foldable title",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Outer title",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Nested title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Different token",
+        "metadata": "custom-no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Hidden title",
+        "metadata": "no-icon no-title",
+        "icon": true,
+        "titleVisible": false
+      }
+    ]
+  },
+  {
+    "distribution": "theme.css",
+    "phase": "before",
+    "mode": "reading",
+    "values": [
+      {
+        "title": "Normal title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Title without icon",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Combined metadata",
+        "metadata": "no-bg no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Foldable title",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Outer title",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Nested title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Different token",
+        "metadata": "custom-no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Hidden title",
+        "metadata": "no-icon no-title",
+        "icon": true,
+        "titleVisible": false
+      }
+    ]
+  },
+  {
+    "distribution": "theme.css",
+    "phase": "after",
+    "mode": "live-preview",
+    "values": [
+      {
+        "title": "Normal title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Title without icon",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Combined metadata",
+        "metadata": "no-bg no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Foldable title",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Outer title",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Nested title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Different token",
+        "metadata": "custom-no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Hidden title",
+        "metadata": "no-icon no-title",
+        "icon": false,
+        "titleVisible": false
+      }
+    ]
+  },
+  {
+    "distribution": "theme.css",
+    "phase": "after",
+    "mode": "reading",
+    "values": [
+      {
+        "title": "Normal title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Title without icon",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Combined metadata",
+        "metadata": "no-bg no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Foldable title",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Outer title",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Nested title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Different token",
+        "metadata": "custom-no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Hidden title",
+        "metadata": "no-icon no-title",
+        "icon": false,
+        "titleVisible": false
+      }
+    ]
+  },
+  {
+    "distribution": "obsidian.css",
+    "phase": "before",
+    "mode": "live-preview",
+    "values": [
+      {
+        "title": "Normal title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Title without icon",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Combined metadata",
+        "metadata": "no-bg no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Foldable title",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Outer title",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Nested title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Different token",
+        "metadata": "custom-no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Hidden title",
+        "metadata": "no-icon no-title",
+        "icon": true,
+        "titleVisible": false
+      }
+    ]
+  },
+  {
+    "distribution": "obsidian.css",
+    "phase": "before",
+    "mode": "reading",
+    "values": [
+      {
+        "title": "Normal title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Title without icon",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Combined metadata",
+        "metadata": "no-bg no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Foldable title",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Outer title",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Nested title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Different token",
+        "metadata": "custom-no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Hidden title",
+        "metadata": "no-icon no-title",
+        "icon": true,
+        "titleVisible": false
+      }
+    ]
+  },
+  {
+    "distribution": "obsidian.css",
+    "phase": "after",
+    "mode": "live-preview",
+    "values": [
+      {
+        "title": "Normal title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Title without icon",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Combined metadata",
+        "metadata": "no-bg no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Foldable title",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Outer title",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Nested title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Different token",
+        "metadata": "custom-no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Hidden title",
+        "metadata": "no-icon no-title",
+        "icon": false,
+        "titleVisible": false
+      }
+    ]
+  },
+  {
+    "distribution": "obsidian.css",
+    "phase": "after",
+    "mode": "reading",
+    "values": [
+      {
+        "title": "Normal title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Title without icon",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Combined metadata",
+        "metadata": "no-bg no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Foldable title",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Outer title",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Nested title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Different token",
+        "metadata": "custom-no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Hidden title",
+        "metadata": "no-icon no-title",
+        "icon": false,
+        "titleVisible": false
+      }
+    ]
+  },
+  {
+    "distribution": "publish.css",
+    "phase": "before",
+    "mode": "live-preview",
+    "values": [
+      {
+        "title": "Normal title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Title without icon",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Combined metadata",
+        "metadata": "no-bg no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Foldable title",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Outer title",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Nested title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Different token",
+        "metadata": "custom-no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Hidden title",
+        "metadata": "no-icon no-title",
+        "icon": true,
+        "titleVisible": false
+      }
+    ]
+  },
+  {
+    "distribution": "publish.css",
+    "phase": "before",
+    "mode": "reading",
+    "values": [
+      {
+        "title": "Normal title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Title without icon",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Combined metadata",
+        "metadata": "no-bg no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Foldable title",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Outer title",
+        "metadata": "no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Nested title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Different token",
+        "metadata": "custom-no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Hidden title",
+        "metadata": "no-icon no-title",
+        "icon": true,
+        "titleVisible": false
+      }
+    ]
+  },
+  {
+    "distribution": "publish.css",
+    "phase": "after",
+    "mode": "live-preview",
+    "values": [
+      {
+        "title": "Normal title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Title without icon",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Combined metadata",
+        "metadata": "no-bg no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Foldable title",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Outer title",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Nested title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Different token",
+        "metadata": "custom-no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Hidden title",
+        "metadata": "no-icon no-title",
+        "icon": false,
+        "titleVisible": false
+      }
+    ]
+  },
+  {
+    "distribution": "publish.css",
+    "phase": "after",
+    "mode": "reading",
+    "values": [
+      {
+        "title": "Normal title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Title without icon",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Combined metadata",
+        "metadata": "no-bg no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Foldable title",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Outer title",
+        "metadata": "no-icon",
+        "icon": false,
+        "titleVisible": true
+      },
+      {
+        "title": "Nested title",
+        "metadata": "",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Different token",
+        "metadata": "custom-no-icon",
+        "icon": true,
+        "titleVisible": true
+      },
+      {
+        "title": "Hidden title",
+        "metadata": "no-icon no-title",
+        "icon": false,
+        "titleVisible": false
+      }
+    ]
+  },
+  {
+    "phase": "before",
+    "cornell": true,
+    "print": false,
+    "margins": [
+      {
+        "metadata": "inline",
+        "left": "187px",
+        "icon": "flex"
+      },
+      {
+        "metadata": "inline no-icon",
+        "left": "0px",
+        "icon": "flex"
+      }
+    ]
+  },
+  {
+    "phase": "before",
+    "cornell": true,
+    "print": true,
+    "margins": [
+      {
+        "metadata": "inline",
+        "left": "187px",
+        "icon": "flex"
+      },
+      {
+        "metadata": "inline no-icon",
+        "left": "0px",
+        "icon": "flex"
+      }
+    ]
+  },
+  {
+    "phase": "after",
+    "cornell": true,
+    "print": false,
+    "margins": [
+      {
+        "metadata": "inline",
+        "left": "187px",
+        "icon": "flex"
+      },
+      {
+        "metadata": "inline no-icon",
+        "left": "187px",
+        "icon": "none"
+      }
+    ]
+  },
+  {
+    "phase": "after",
+    "cornell": true,
+    "print": true,
+    "margins": [
+      {
+        "metadata": "inline",
+        "left": "187px",
+        "icon": "flex"
+      },
+      {
+        "metadata": "inline no-icon",
+        "left": "187px",
+        "icon": "none"
+      }
+    ]
+  }
+]
