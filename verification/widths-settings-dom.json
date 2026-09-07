@@ -1,0 +1,295 @@
+{
+  "headings": [
+    {
+      "text": "Theme Information",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"0\" data-id=\"V1-Willemstad-Info\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></s"
+    },
+    {
+      "text": "Root Options and Settings",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"0\" data-id=\"V1-Willemstad-Root\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></s"
+    },
+    {
+      "text": "Global Typography",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"0\" data-id=\"V1-Willemstad-Typography\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></pa"
+    },
+    {
+      "text": "Global Colours",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"0\" data-id=\"V1-Willemstad-Colours\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path>"
+    },
+    {
+      "text": "App UI",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"0\" data-id=\"V1-Willemstad-UI\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg"
+    },
+    {
+      "text": "Editor",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"0\" data-id=\"V1-Willemstad-Editor\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>E"
+    },
+    {
+      "text": "Additional Block Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"additional-block-widths\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></spa"
+    },
+    {
+      "text": "Standard Callouts Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-callout\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\">"
+    },
+    {
+      "text": "Columns Callouts Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-columns\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\">"
+    },
+    {
+      "text": "Image Callouts Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-image-callout\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L"
+    },
+    {
+      "text": "Gallery Callouts Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-gallery\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg>"
+    },
+    {
+      "text": "Image Grid Callouts Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-image-grid\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 "
+    },
+    {
+      "text": "Images Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-image\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></"
+    },
+    {
+      "text": "Videos Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-video\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></"
+    },
+    {
+      "text": "Audio Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-audio\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></"
+    },
+    {
+      "text": "Blockquotes Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-blockquote\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 "
+    },
+    {
+      "text": "Code Blocks Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-codeblock\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8"
+    },
+    {
+      "text": "Lists Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-list\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></p"
+    },
+    {
+      "text": "Note Embeds Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-note-embed\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 "
+    },
+    {
+      "text": "Document Titlebar\nTweak the document titlebar.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"document-titlebar\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>Docu"
+    },
+    {
+      "text": "Codeblocks\nOptions to change codeblock display.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"codeblock-settings\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>Cod"
+    },
+    {
+      "text": "Active Line Highlight\nOptions to change the active line highlighting in the editing modes.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"active-line-highlight\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>"
+    },
+    {
+      "text": "Editor Pane Manipulation (Readable Line Lengths and Pane Margins)\nOptions to change the line lengths and pane margin/padding of the editor.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"variable-line-lengths\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>"
+    },
+    {
+      "text": "Headers\nOptions to change the headers.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"headers\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>Headers<span c"
+    },
+    {
+      "text": "Coloured Headers\nOptions for coloured headers.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"coloured-headers\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg"
+    },
+    {
+      "text": "Header Text ColoursThese settings allow you to set the color for each header level from the set accent and rainbow palettes, should you prefer coloured text. These settings will automatically show you the options for the current light/dark theme mode. You are able to set different header text colours for both modes without them affecting each other.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"3\" data-id=\"header-text-colours\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>He"
+    },
+    {
+      "text": "Light Mode",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"4\" data-id=\"header-text-colours-light\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></s"
+    },
+    {
+      "text": "Dark Mode",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"4\" data-id=\"header-text-colours-dark\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></sp"
+    },
+    {
+      "text": "Header Typography\nProvides detailed control over the font size, weight, and style for each header level.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"header-typography-settings\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></"
+    },
+    {
+      "text": "Header Hexes\nOptions to change the header hexes (# at the start of a heading).",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"header-hexes\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></s"
+    },
+    {
+      "text": "Empty State Screen\nOptions to customise the empty state screen (the screen that is displayed when no note is opened).",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"empty-state-screen\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>Emp"
+    },
+    {
+      "text": "Highlights\nOptions to change highlighting colours.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"typography-highlight\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>H"
+    },
+    {
+      "text": "Frontmatter/Properties\nOptions to manipulate and control the frontmatter. Also known as 'Properties' in Obsidian parlance.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"Frontmatter\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>Frontmatte"
+    },
+    {
+      "text": "Embeds\nOptions to control the appearance of embedded notes and files.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"embeds-settings\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>Embeds"
+    },
+    {
+      "text": "Lists\nOptions to manipulate and control user-created lists.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"Lists\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>Lists<span class"
+    },
+    {
+      "text": "Tables\nOptions to manipulate and control Markdown tables.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"table-settings\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>Tables<"
+    },
+    {
+      "text": "Bases\nOptions to manipulate and control the Bases core plugin.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"bases-settings\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>Bases<s"
+    },
+    {
+      "text": "Canvas\nOptions to manipulate items in the Canvas.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"canvas-settings\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>Canvas"
+    },
+    {
+      "text": "Grid and Dots",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"3\" data-id=\"canvas-settings-grid\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>G"
+    },
+    {
+      "text": "PDF Viewer\nOptions to manipulate and control the PDF viewer. For PDF embeds, please refer to the Embeds section above.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"pdf-viewer-settings\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></span>PD"
+    },
+    {
+      "text": "Ancillary Editor Options\nOptions to manipulate and control other aspects of the editor.",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"ancillary-editor-options\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></sp"
+    },
+    {
+      "text": "Callouts, Inline CSSClass and Ancillaries",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"0\" data-id=\"V1-Willemstad-Ancillaries\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></p"
+    },
+    {
+      "text": "Plugins",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"0\" data-id=\"V1-Willemstad-Plugins\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path>"
+    },
+    {
+      "text": "Credits",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"0\" data-id=\"V1-Willemstad-Credits\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path>"
+    },
+    {
+      "text": "Immersive Editing Modes — Focused & Super Focused Mode",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"0\" data-id=\"pluglets-iem-settings\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path>"
+    },
+    {
+      "text": " Display",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"0\" data-id=\"cssc-latex-settings\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></"
+    },
+    {
+      "text": "Cornell Notes",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"0\" data-id=\"cssc-cornell-settings\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path>"
+    }
+  ],
+  "rows": [
+    {
+      "id": "info-editor-block-widths",
+      "text": "Note on Block Widths\n\nBlock Widths are optional and must be enabled to take effect. Controls are available for Bases, Tables, iFrames, PDF Embeds, Callouts, Images, Video, Audio, Blockquotes, Code Blocks, Lists, and Note Embeds. Additional controls below apply in Live Preview and Reading Mode; Source Mode keeps its normal text layout.",
+      "html": "<div class=\"setting-item style-settings-info-text\" tabindex=\"-1\" data-id=\"info-editor-block-widths\"><div class=\"setting-item-info\"><div class=\"setting-item-name\">Note on Block Widths</div><div class=\"setting-item-description style-settings-markdown\"><p dir=\"auto\">Block Widths are optional and must be enabled to take effect. Controls are available for <strong>Bases</strong>, <strong>Tables</strong>, <strong>iFrames</strong>, <strong>PDF Embeds</strong>, <strong>Callouts</strong>, <strong>Images</"
+    },
+    {
+      "id": "global-block-width-mode",
+      "text": "Block Widths — Master Control\nUse this to master-control for all block width features.\nDefault: Manual (Use individual toggles)\nManual (Use individual toggles)\nForce All On\nForce All Off",
+      "html": "<div class=\"setting-item\" tabindex=\"-1\" data-id=\"global-block-width-mode\"><div class=\"setting-item-info\"><div class=\"setting-item-name\">Block Widths — Master Control</div><div class=\"setting-item-description\">Use this to master-control for all block width features.<div><small><strong>Default: </strong>Manual (Use individual toggles)</small></div></div></div><div class=\"setting-item-control\"><select class=\"dropdown\" style=\"--dropdown-fitted-width: 231px;\"><option value=\"auto\">Manual (Use individu"
+    },
+    {
+      "id": "additional-block-widths",
+      "text": "Additional Block Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"2\" data-id=\"additional-block-widths\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg></spa"
+    },
+    {
+      "id": "block-width-settings-callout",
+      "text": "Standard Callouts Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-callout\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\">"
+    },
+    {
+      "id": "block-width-settings-columns",
+      "text": "Columns Callouts Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-columns\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\">"
+    },
+    {
+      "id": "block-width-settings-image-callout",
+      "text": "Image Callouts Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-image-callout\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L"
+    },
+    {
+      "id": "block-width-settings-gallery",
+      "text": "Gallery Callouts Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-gallery\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></path></svg>"
+    },
+    {
+      "id": "ssopt-block-width-gallery",
+      "text": "Enable Block Widths for Gallery Callouts\nGallery callouts using [!images|gallery].",
+      "html": "<div class=\"setting-item mod-toggle\" tabindex=\"-1\" data-id=\"ssopt-block-width-gallery\"><div class=\"setting-item-info\"><div class=\"setting-item-name\">Enable Block Widths for Gallery Callouts</div><div class=\"setting-item-description\">Gallery callouts using [!images|gallery].</div></div><div class=\"setting-item-control\"><label class=\"checkbox-container is-enabled\" tabindex=\"0\"><input type=\"checkbox\" tabindex=\"-1\"></label><div class=\"clickable-icon extra-setting-button\" tabindex=\"0\" aria-label=\"Res"
+    },
+    {
+      "id": "block-width-settings-image-grid",
+      "text": "Image Grid Callouts Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-image-grid\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 "
+    },
+    {
+      "id": "block-width-settings-image",
+      "text": "Images Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-image\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></"
+    },
+    {
+      "id": "block-width-settings-video",
+      "text": "Videos Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-video\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></"
+    },
+    {
+      "id": "block-width-settings-audio",
+      "text": "Audio Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-audio\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></"
+    },
+    {
+      "id": "block-width-settings-blockquote",
+      "text": "Blockquotes Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-blockquote\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 "
+    },
+    {
+      "id": "block-width-settings-codeblock",
+      "text": "Code Blocks Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-codeblock\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8"
+    },
+    {
+      "id": "block-width-settings-list",
+      "text": "Lists Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-list\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 8\"></p"
+    },
+    {
+      "id": "block-width-settings-note-embed",
+      "text": "Note Embeds Widths",
+      "html": "<div class=\"setting-item setting-item-heading style-settings-heading is-collapsed\" tabindex=\"-1\" data-level=\"3\" data-id=\"block-width-settings-note-embed\"><div class=\"setting-item-info\"><div class=\"setting-item-name\"><span class=\"style-settings-collapse-indicator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon right-triangle\"><path d=\"M3 8L12 17L21 "
+    },
+    {
+      "id": "ssopt-block-width-iframe",
+      "text": "Enable Block Widths for iFrames\nEnables a modern, content-aware width system for iFrames (e.g. YouTube videos, Google forms). When off, tables will take Obsidian's original settings.",
+      "html": "<div class=\"setting-item mod-toggle\" tabindex=\"-1\" data-id=\"ssopt-block-width-iframe\"><div class=\"setting-item-info\"><div class=\"setting-item-name\">Enable Block Widths for iFrames</div><div class=\"setting-item-description\">Enables a modern, content-aware width system for iFrames (e.g. YouTube videos, Google forms). When off, tables will take Obsidian's original settings.</div></div><div class=\"setting-item-control\"><label class=\"checkbox-container\" tabindex=\"0\"><input type=\"checkbox\" tabindex=\"-"
+    },
+    {
+      "id": "ssopt-block-width-pdfembed",
+      "text": "Enable Block Widths for PDF Embeds\nEnables a modern, content-aware width system for PDF embeds. When off, PDF embeds will have a simple, standard layout.",
+      "html": "<div class=\"setting-item mod-toggle\" tabindex=\"-1\" data-id=\"ssopt-block-width-pdfembed\"><div class=\"setting-item-info\"><div class=\"setting-item-name\">Enable Block Widths for PDF Embeds</div><div class=\"setting-item-description\">Enables a modern, content-aware width system for PDF embeds. When off, PDF embeds will have a simple, standard layout.</div></div><div class=\"setting-item-control\"><label class=\"checkbox-container\" tabindex=\"0\"><input type=\"checkbox\" tabindex=\"-1\"></label><div class=\"clic"
+    },
+    {
+      "id": "ssopt-block-width-tables",
+      "text": "Enable Block Widths for Tables\nEnables a modern, content-aware block width system for tables. When off, tables will take Obsidian's original settings.",
+      "html": "<div class=\"setting-item mod-toggle\" tabindex=\"-1\" data-id=\"ssopt-block-width-tables\"><div class=\"setting-item-info\"><div class=\"setting-item-name\">Enable Block Widths for Tables</div><div class=\"setting-item-description\">Enables a modern, content-aware block width system for tables. When off, tables will take Obsidian's original settings.</div></div><div class=\"setting-item-control\"><label class=\"checkbox-container\" tabindex=\"0\"><input type=\"checkbox\" tabindex=\"-1\"></label><div class=\"clickable"
+    },
+    {
+      "id": "ssopt-block-width-bases",
+      "text": "Enable Block Widths for Bases\nEnables a modern, content-aware block width system for Bases.",
+      "html": "<div class=\"setting-item mod-toggle\" tabindex=\"-1\" data-id=\"ssopt-block-width-bases\"><div class=\"setting-item-info\"><div class=\"setting-item-name\">Enable Block Widths for Bases</div><div class=\"setting-item-description\">Enables a modern, content-aware block width system for Bases.</div></div><div class=\"setting-item-control\"><label class=\"checkbox-container\" tabindex=\"0\"><input type=\"checkbox\" tabindex=\"-1\"></label><div class=\"clickable-icon extra-setting-button\" tabindex=\"0\" aria-label=\"Restore"
+    }
+  ],
+  "text": "Import\nExport\nTheme Information\nRoot Options and Settings\nGlobal Typography\nGlobal Colours\nApp UI\nEditor\nNote on Typography\n\nGlobal typography settings (like global font sizes, underlines, bold, italic, and strikethrough) are controlled in the Global Typography section. Settings specific to the editor (like Header and Canvas font sizes) can be found within this Editor section.\n\nNote on Block Widths\n\nBlock Widths are optional and must be enabled to take effect. Controls are available for Bases, Tables, iFrames, PDF Embeds, Callouts, Images, Video, Audio, Blockquotes, Code Blocks, Lists, and Note Embeds. Additional controls below apply in Live Preview and Reading Mode; Source Mode keeps its normal text layout.\n\nBlock Widths — Master Control\nUse this to master-control for all block width features.\nDefault: Manual (Use individual toggles)\nManual (Use individual toggles)\nForce All On\nForce All Off\nAdditional Block Widths\nStandard Callouts Widths\nColumns Callouts Widths\nImage Callouts Widths\nGallery Callouts Widths\nEnable Block Widths for Gallery Callouts\nGallery callouts using [!images|gallery].\nGallery Callouts Content Width Magnifier\nWidth relative to the note's line length. The maximum width ratio limits this to the available pane.\nDefault: 1.5\n3.00\nGallery Callouts Max Width Ratio (Live Preview)\nMaximum width as a ratio of the available pane, excluding its margins.\nDefault: 1\n1."
+}

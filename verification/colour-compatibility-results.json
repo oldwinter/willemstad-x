@@ -1,0 +1,609 @@
+[
+  {
+    "file": "theme.css",
+    "phase": "before",
+    "mode": "light",
+    "result": [
+      {
+        "type": "note",
+        "colour": "rgb(0, 191, 111)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.556977 0.147662 155.298)"
+      },
+      {
+        "type": "info",
+        "colour": "rgb(0, 170, 199)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.529659 0.102391 215.674)"
+      },
+      {
+        "type": "warning",
+        "colour": "rgb(255, 182, 26)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.673918 0.141876 78.6263)"
+      },
+      {
+        "type": "success",
+        "colour": "rgb(0, 158, 76)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.461776 0.139928 150.979)"
+      },
+      {
+        "type": "example",
+        "colour": "rgb(125, 84, 178)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.383426 0.123884 301.824)"
+      },
+      {
+        "type": "custom",
+        "colour": "oklch(0.7 0.15 330)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.55 0.1275 330)"
+      }
+    ]
+  },
+  {
+    "file": "theme.css",
+    "phase": "before",
+    "mode": "dark",
+    "result": [
+      {
+        "type": "note",
+        "colour": "rgb(0, 191, 111)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.806977 0.26058 155.298)"
+      },
+      {
+        "type": "info",
+        "colour": "rgb(0, 170, 199)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.779659 0.18069 215.674)"
+      },
+      {
+        "type": "warning",
+        "colour": "rgb(255, 182, 26)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.923918 0.250369 78.6263)"
+      },
+      {
+        "type": "success",
+        "colour": "rgb(0, 158, 76)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.711776 0.246932 150.979)"
+      },
+      {
+        "type": "example",
+        "colour": "rgb(125, 84, 178)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.633426 0.21862 301.824)"
+      },
+      {
+        "type": "custom",
+        "colour": "oklch(0.7 0.15 330)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.8 0.225 330)"
+      }
+    ]
+  },
+  {
+    "file": "theme.css",
+    "phase": "after",
+    "mode": "light",
+    "result": [
+      {
+        "type": "note",
+        "colour": "rgb(0, 191, 111)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.556977 0.147662 155.298)"
+      },
+      {
+        "type": "info",
+        "colour": "rgb(0, 170, 199)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.529659 0.102391 215.674)"
+      },
+      {
+        "type": "warning",
+        "colour": "rgb(255, 182, 26)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.673918 0.141876 78.6263)"
+      },
+      {
+        "type": "success",
+        "colour": "rgb(0, 158, 76)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.461776 0.139928 150.979)"
+      },
+      {
+        "type": "example",
+        "colour": "rgb(125, 84, 178)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.383426 0.123884 301.824)"
+      },
+      {
+        "type": "custom",
+        "colour": "oklch(0.7 0.15 330)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.55 0.1275 330)"
+      }
+    ]
+  },
+  {
+    "file": "theme.css",
+    "phase": "after",
+    "mode": "dark",
+    "result": [
+      {
+        "type": "note",
+        "colour": "rgb(0, 191, 111)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.806977 0.26058 155.298)"
+      },
+      {
+        "type": "info",
+        "colour": "rgb(0, 170, 199)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.779659 0.18069 215.674)"
+      },
+      {
+        "type": "warning",
+        "colour": "rgb(255, 182, 26)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.923918 0.250369 78.6263)"
+      },
+      {
+        "type": "success",
+        "colour": "rgb(0, 158, 76)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.711776 0.246932 150.979)"
+      },
+      {
+        "type": "example",
+        "colour": "rgb(125, 84, 178)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.633426 0.21862 301.824)"
+      },
+      {
+        "type": "custom",
+        "colour": "oklch(0.7 0.15 330)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.8 0.225 330)"
+      }
+    ]
+  },
+  {
+    "file": "obsidian.css",
+    "phase": "before",
+    "mode": "light",
+    "result": [
+      {
+        "type": "note",
+        "colour": "0, 191, 111",
+        "validColour": false,
+        "background": "rgba(0, 191, 111, 0.125)",
+        "text": "rgb(0, 191, 111)"
+      },
+      {
+        "type": "info",
+        "colour": "0, 170, 199",
+        "validColour": false,
+        "background": "rgba(0, 170, 199, 0.125)",
+        "text": "rgb(0, 170, 199)"
+      },
+      {
+        "type": "warning",
+        "colour": "255, 182, 26",
+        "validColour": false,
+        "background": "rgba(255, 182, 26, 0.125)",
+        "text": "rgb(255, 182, 26)"
+      },
+      {
+        "type": "success",
+        "colour": "0, 158, 76",
+        "validColour": false,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "rgb(0, 158, 76)"
+      },
+      {
+        "type": "example",
+        "colour": "125, 84, 178",
+        "validColour": false,
+        "background": "rgba(125, 84, 178, 0.125)",
+        "text": "rgb(125, 84, 178)"
+      },
+      {
+        "type": "custom",
+        "colour": "oklch(0.7 0.15 330)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.7 0.15 330)"
+      }
+    ]
+  },
+  {
+    "file": "obsidian.css",
+    "phase": "before",
+    "mode": "dark",
+    "result": [
+      {
+        "type": "note",
+        "colour": "0, 191, 111",
+        "validColour": false,
+        "background": "rgba(0, 191, 111, 0.125)",
+        "text": "rgb(0, 191, 111)"
+      },
+      {
+        "type": "info",
+        "colour": "0, 170, 199",
+        "validColour": false,
+        "background": "rgba(0, 170, 199, 0.125)",
+        "text": "rgb(0, 170, 199)"
+      },
+      {
+        "type": "warning",
+        "colour": "255, 182, 26",
+        "validColour": false,
+        "background": "rgba(255, 182, 26, 0.125)",
+        "text": "rgb(255, 182, 26)"
+      },
+      {
+        "type": "success",
+        "colour": "0, 158, 76",
+        "validColour": false,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "rgb(0, 158, 76)"
+      },
+      {
+        "type": "example",
+        "colour": "125, 84, 178",
+        "validColour": false,
+        "background": "rgba(125, 84, 178, 0.125)",
+        "text": "rgb(161, 132, 200)"
+      },
+      {
+        "type": "custom",
+        "colour": "oklch(0.7 0.15 330)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.7 0.15 330)"
+      }
+    ]
+  },
+  {
+    "file": "obsidian.css",
+    "phase": "after",
+    "mode": "light",
+    "result": [
+      {
+        "type": "note",
+        "colour": "rgb(0, 191, 111)",
+        "validColour": true,
+        "background": "color(srgb 0 0.74902 0.435294 / 0.125)",
+        "text": "rgb(0, 191, 111)"
+      },
+      {
+        "type": "info",
+        "colour": "rgb(0, 170, 199)",
+        "validColour": true,
+        "background": "color(srgb 0 0.666667 0.780392 / 0.125)",
+        "text": "rgb(0, 170, 199)"
+      },
+      {
+        "type": "warning",
+        "colour": "rgb(255, 182, 26)",
+        "validColour": true,
+        "background": "color(srgb 1 0.713726 0.101961 / 0.125)",
+        "text": "rgb(255, 182, 26)"
+      },
+      {
+        "type": "success",
+        "colour": "rgb(0, 158, 76)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "rgb(0, 158, 76)"
+      },
+      {
+        "type": "example",
+        "colour": "rgb(125, 84, 178)",
+        "validColour": true,
+        "background": "color(srgb 0.490196 0.329412 0.698039 / 0.125)",
+        "text": "rgb(125, 84, 178)"
+      },
+      {
+        "type": "custom",
+        "colour": "oklch(0.7 0.15 330)",
+        "validColour": true,
+        "background": "color(srgb 0.821402 0.47526 0.793604 / 0.125)",
+        "text": "oklch(0.7 0.15 330)"
+      }
+    ]
+  },
+  {
+    "file": "obsidian.css",
+    "phase": "after",
+    "mode": "dark",
+    "result": [
+      {
+        "type": "note",
+        "colour": "rgb(0, 191, 111)",
+        "validColour": true,
+        "background": "color(srgb 0 0.74902 0.435294 / 0.125)",
+        "text": "rgb(0, 191, 111)"
+      },
+      {
+        "type": "info",
+        "colour": "rgb(0, 170, 199)",
+        "validColour": true,
+        "background": "color(srgb 0 0.666667 0.780392 / 0.125)",
+        "text": "rgb(0, 170, 199)"
+      },
+      {
+        "type": "warning",
+        "colour": "rgb(255, 182, 26)",
+        "validColour": true,
+        "background": "color(srgb 1 0.713726 0.101961 / 0.125)",
+        "text": "rgb(255, 182, 26)"
+      },
+      {
+        "type": "success",
+        "colour": "rgb(0, 158, 76)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "rgb(0, 158, 76)"
+      },
+      {
+        "type": "example",
+        "colour": "rgb(125, 84, 178)",
+        "validColour": true,
+        "background": "color(srgb 0.490196 0.329412 0.698039 / 0.125)",
+        "text": "rgb(161, 132, 200)"
+      },
+      {
+        "type": "custom",
+        "colour": "oklch(0.7 0.15 330)",
+        "validColour": true,
+        "background": "color(srgb 0.821402 0.47526 0.793604 / 0.125)",
+        "text": "oklch(0.7 0.15 330)"
+      }
+    ]
+  },
+  {
+    "file": "publish.css",
+    "phase": "before",
+    "mode": "light",
+    "result": [
+      {
+        "type": "note",
+        "colour": "0, 191, 111",
+        "validColour": false,
+        "background": "rgba(0, 191, 111, 0.125)",
+        "text": "rgb(0, 191, 111)"
+      },
+      {
+        "type": "info",
+        "colour": "0, 170, 199",
+        "validColour": false,
+        "background": "rgba(0, 170, 199, 0.125)",
+        "text": "rgb(0, 170, 199)"
+      },
+      {
+        "type": "warning",
+        "colour": "255, 182, 26",
+        "validColour": false,
+        "background": "rgba(255, 182, 26, 0.125)",
+        "text": "rgb(255, 182, 26)"
+      },
+      {
+        "type": "success",
+        "colour": "0, 158, 76",
+        "validColour": false,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "rgb(0, 158, 76)"
+      },
+      {
+        "type": "example",
+        "colour": "125, 84, 178",
+        "validColour": false,
+        "background": "rgba(125, 84, 178, 0.125)",
+        "text": "rgb(125, 84, 178)"
+      },
+      {
+        "type": "custom",
+        "colour": "oklch(0.7 0.15 330)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.7 0.15 330)"
+      }
+    ]
+  },
+  {
+    "file": "publish.css",
+    "phase": "before",
+    "mode": "dark",
+    "result": [
+      {
+        "type": "note",
+        "colour": "0, 191, 111",
+        "validColour": false,
+        "background": "rgba(0, 191, 111, 0.125)",
+        "text": "rgb(0, 191, 111)"
+      },
+      {
+        "type": "info",
+        "colour": "0, 170, 199",
+        "validColour": false,
+        "background": "rgba(0, 170, 199, 0.125)",
+        "text": "rgb(0, 170, 199)"
+      },
+      {
+        "type": "warning",
+        "colour": "255, 182, 26",
+        "validColour": false,
+        "background": "rgba(255, 182, 26, 0.125)",
+        "text": "rgb(255, 182, 26)"
+      },
+      {
+        "type": "success",
+        "colour": "0, 158, 76",
+        "validColour": false,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "rgb(0, 158, 76)"
+      },
+      {
+        "type": "example",
+        "colour": "125, 84, 178",
+        "validColour": false,
+        "background": "rgba(125, 84, 178, 0.125)",
+        "text": "rgb(161, 132, 200)"
+      },
+      {
+        "type": "custom",
+        "colour": "oklch(0.7 0.15 330)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "oklch(0.7 0.15 330)"
+      }
+    ]
+  },
+  {
+    "file": "publish.css",
+    "phase": "after",
+    "mode": "light",
+    "result": [
+      {
+        "type": "note",
+        "colour": "rgb(0, 191, 111)",
+        "validColour": true,
+        "background": "color(srgb 0 0.74902 0.435294 / 0.125)",
+        "text": "rgb(0, 191, 111)"
+      },
+      {
+        "type": "info",
+        "colour": "rgb(0, 170, 199)",
+        "validColour": true,
+        "background": "color(srgb 0 0.666667 0.780392 / 0.125)",
+        "text": "rgb(0, 170, 199)"
+      },
+      {
+        "type": "warning",
+        "colour": "rgb(255, 182, 26)",
+        "validColour": true,
+        "background": "color(srgb 1 0.713726 0.101961 / 0.125)",
+        "text": "rgb(255, 182, 26)"
+      },
+      {
+        "type": "success",
+        "colour": "rgb(0, 158, 76)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "rgb(0, 158, 76)"
+      },
+      {
+        "type": "example",
+        "colour": "rgb(125, 84, 178)",
+        "validColour": true,
+        "background": "color(srgb 0.490196 0.329412 0.698039 / 0.125)",
+        "text": "rgb(125, 84, 178)"
+      },
+      {
+        "type": "custom",
+        "colour": "oklch(0.7 0.15 330)",
+        "validColour": true,
+        "background": "color(srgb 0.821402 0.47526 0.793604 / 0.125)",
+        "text": "oklch(0.7 0.15 330)"
+      }
+    ]
+  },
+  {
+    "file": "publish.css",
+    "phase": "after",
+    "mode": "dark",
+    "result": [
+      {
+        "type": "note",
+        "colour": "rgb(0, 191, 111)",
+        "validColour": true,
+        "background": "color(srgb 0 0.74902 0.435294 / 0.125)",
+        "text": "rgb(0, 191, 111)"
+      },
+      {
+        "type": "info",
+        "colour": "rgb(0, 170, 199)",
+        "validColour": true,
+        "background": "color(srgb 0 0.666667 0.780392 / 0.125)",
+        "text": "rgb(0, 170, 199)"
+      },
+      {
+        "type": "warning",
+        "colour": "rgb(255, 182, 26)",
+        "validColour": true,
+        "background": "color(srgb 1 0.713726 0.101961 / 0.125)",
+        "text": "rgb(255, 182, 26)"
+      },
+      {
+        "type": "success",
+        "colour": "rgb(0, 158, 76)",
+        "validColour": true,
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "rgb(0, 158, 76)"
+      },
+      {
+        "type": "example",
+        "colour": "rgb(125, 84, 178)",
+        "validColour": true,
+        "background": "color(srgb 0.490196 0.329412 0.698039 / 0.125)",
+        "text": "rgb(161, 132, 200)"
+      },
+      {
+        "type": "custom",
+        "colour": "oklch(0.7 0.15 330)",
+        "validColour": true,
+        "background": "color(srgb 0.821402 0.47526 0.793604 / 0.125)",
+        "text": "oklch(0.7 0.15 330)"
+      }
+    ]
+  },
+  {
+    "canvas": [
+      {
+        "text": "Custom canvas colour",
+        "colour": "#dc45a0",
+        "width": 300
+      },
+      {
+        "text": "Built-in red colour",
+        "colour": "#fb464c",
+        "width": 300
+      },
+      {
+        "text": "Built-in green colour",
+        "colour": "#44cf6e",
+        "width": 300
+      }
+    ]
+  }
+]

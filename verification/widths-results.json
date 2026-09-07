@@ -1,0 +1,548 @@
+{
+  "version": "Obsidian 1.13.7 on Windows",
+  "checks": [
+    {
+      "case": "source/callout",
+      "normal": 656,
+      "expanded": 972,
+      "narrow": 492,
+      "capped": 799.1875
+    },
+    {
+      "case": "source/columns",
+      "normal": 652.4375,
+      "expanded": 968.4375,
+      "narrow": 489.328125,
+      "capped": 799.1875
+    },
+    {
+      "case": "source/image-callout",
+      "normal": 656,
+      "expanded": 972,
+      "narrow": 492,
+      "capped": 799.1875
+    },
+    {
+      "case": "source/gallery",
+      "normal": 656,
+      "expanded": 972,
+      "narrow": 492,
+      "capped": 799.1875
+    },
+    {
+      "case": "source/image-grid",
+      "normal": 656,
+      "expanded": 972,
+      "narrow": 492,
+      "capped": 799.1875
+    },
+    {
+      "case": "source/image",
+      "normal": 656,
+      "expanded": 972,
+      "narrow": 492,
+      "capped": 799.1875
+    },
+    {
+      "case": "source/video",
+      "normal": 656,
+      "expanded": 972,
+      "narrow": 492,
+      "capped": 799.1875
+    },
+    {
+      "case": "source/audio",
+      "normal": 656,
+      "expanded": 972,
+      "narrow": 492,
+      "capped": 799.1875
+    },
+    {
+      "case": "source/blockquote",
+      "normal": 652.4375,
+      "expanded": 968.4375,
+      "narrow": 489.328125,
+      "capped": 799.1875
+    },
+    {
+      "case": "source/codeblock",
+      "normal": 652.4375,
+      "expanded": 968.4375,
+      "narrow": 489.328125,
+      "capped": 799.1875
+    },
+    {
+      "case": "source/list",
+      "normal": 652.4375,
+      "expanded": 968.4375,
+      "narrow": 489.328125,
+      "capped": 799.1875
+    },
+    {
+      "case": "source/note-embed",
+      "normal": 656,
+      "expanded": 972,
+      "narrow": 492,
+      "capped": 799.1875
+    },
+    {
+      "case": "preview/callout",
+      "normal": 700,
+      "expanded": 1050,
+      "narrow": 525,
+      "capped": 799.1875
+    },
+    {
+      "case": "preview/columns",
+      "normal": 700,
+      "expanded": 1050,
+      "narrow": 525,
+      "capped": 799.1875
+    },
+    {
+      "case": "preview/image-callout",
+      "normal": 700,
+      "expanded": 1050,
+      "narrow": 525,
+      "capped": 799.1875
+    },
+    {
+      "case": "preview/gallery",
+      "normal": 700,
+      "expanded": 1050,
+      "narrow": 525,
+      "capped": 799.1875
+    },
+    {
+      "case": "preview/image-grid",
+      "normal": 700,
+      "expanded": 1050,
+      "narrow": 525,
+      "capped": 799.1875
+    },
+    {
+      "case": "preview/image",
+      "normal": 700,
+      "expanded": 1050,
+      "narrow": 525,
+      "capped": 799.1875
+    },
+    {
+      "case": "preview/video",
+      "normal": 700,
+      "expanded": 1050,
+      "narrow": 525,
+      "capped": 799.1875
+    },
+    {
+      "case": "preview/audio",
+      "normal": 700,
+      "expanded": 1050,
+      "narrow": 525,
+      "capped": 799.1875
+    },
+    {
+      "case": "preview/blockquote",
+      "normal": 700,
+      "expanded": 1050,
+      "narrow": 525,
+      "capped": 799.1875
+    },
+    {
+      "case": "preview/codeblock",
+      "normal": 700,
+      "expanded": 1050,
+      "narrow": 525,
+      "capped": 799.1875
+    },
+    {
+      "case": "preview/list",
+      "normal": 700,
+      "expanded": 1050,
+      "narrow": 525,
+      "capped": 799.1875
+    },
+    {
+      "case": "preview/note-embed",
+      "normal": 700,
+      "expanded": 1050,
+      "narrow": 525,
+      "capped": 799.1875
+    },
+    {
+      "case": "excluded source/aside",
+      "width": 656
+    },
+    {
+      "case": "excluded source/infobox",
+      "width": 656
+    },
+    {
+      "case": "excluded source/toolbar",
+      "width": 656
+    },
+    {
+      "case": "excluded source/inline",
+      "width": 656
+    },
+    {
+      "case": "excluded source/float",
+      "width": 656
+    },
+    {
+      "case": "excluded source/explicit-image",
+      "width": 180
+    },
+    {
+      "case": "excluded preview/aside",
+      "width": 700
+    },
+    {
+      "case": "excluded preview/infobox",
+      "width": 700
+    },
+    {
+      "case": "excluded preview/toolbar",
+      "width": 700
+    },
+    {
+      "case": "excluded preview/inline",
+      "width": 700
+    },
+    {
+      "case": "excluded preview/float",
+      "width": 700
+    },
+    {
+      "case": "excluded preview/explicit-image",
+      "width": 180
+    },
+    {
+      "case": "gallery isolation source/callout"
+    },
+    {
+      "case": "gallery isolation source/columns"
+    },
+    {
+      "case": "gallery isolation source/image-callout"
+    },
+    {
+      "case": "gallery isolation source/image-grid"
+    },
+    {
+      "case": "gallery isolation preview/callout"
+    },
+    {
+      "case": "gallery isolation preview/columns"
+    },
+    {
+      "case": "gallery isolation preview/image-callout"
+    },
+    {
+      "case": "gallery isolation preview/image-grid"
+    },
+    {
+      "case": "source layout and editable Live Preview blockquote"
+    },
+    {
+      "case": "source layout and editable Live Preview codeblock"
+    },
+    {
+      "case": "source layout and editable Live Preview list"
+    },
+    {
+      "case": "readable line length off source/callout",
+      "width": 1288,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off source/columns",
+      "width": 1284.4375,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off source/image-callout",
+      "width": 1288,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off source/gallery",
+      "width": 1288,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off source/image-grid",
+      "width": 1288,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off source/image",
+      "width": 1288,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off source/video",
+      "width": 1288,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off source/audio",
+      "width": 1288,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off source/blockquote",
+      "width": 1284.4375,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off source/codeblock",
+      "width": 1284.4375,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off source/list",
+      "width": 1284.4375,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off source/note-embed",
+      "width": 1288,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off preview/callout",
+      "width": 1278.71875,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off preview/columns",
+      "width": 1278.71875,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off preview/image-callout",
+      "width": 1278.71875,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off preview/gallery",
+      "width": 1278.71875,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off preview/image-grid",
+      "width": 1278.71875,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off preview/image",
+      "width": 1278.71875,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off preview/video",
+      "width": 1278.71875,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off preview/audio",
+      "width": 1278.71875,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off preview/blockquote",
+      "width": 1278.71875,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off preview/codeblock",
+      "width": 1278.71875,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off preview/list",
+      "width": 1278.71875,
+      "overflow": 0
+    },
+    {
+      "case": "readable line length off preview/note-embed",
+      "width": 1278.71875,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane source/callout",
+      "width": 528,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane source/columns",
+      "width": 524.4375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane source/image-callout",
+      "width": 528,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane source/gallery",
+      "width": 528,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane source/image-grid",
+      "width": 528,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane source/image",
+      "width": 528,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane source/video",
+      "width": 528,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane source/audio",
+      "width": 528,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane source/blockquote",
+      "width": 524.4375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane source/codeblock",
+      "width": 524.4375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane source/list",
+      "width": 524.4375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane source/note-embed",
+      "width": 528,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane preview/callout",
+      "width": 549.109375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane preview/columns",
+      "width": 549.109375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane preview/image-callout",
+      "width": 549.109375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane preview/gallery",
+      "width": 549.109375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane preview/image-grid",
+      "width": 549.109375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane preview/image",
+      "width": 549.109375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane preview/video",
+      "width": 549.109375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane preview/audio",
+      "width": 549.109375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane preview/blockquote",
+      "width": 549.109375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane preview/codeblock",
+      "width": 549.109375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane preview/list",
+      "width": 549.109375,
+      "overflow": 0
+    },
+    {
+      "case": "narrow pane preview/note-embed",
+      "width": 549.109375,
+      "overflow": 0
+    },
+    {
+      "case": "no line numbers callout",
+      "width": 1050
+    },
+    {
+      "case": "no line numbers columns",
+      "width": 1050
+    },
+    {
+      "case": "no line numbers image-callout",
+      "width": 1050
+    },
+    {
+      "case": "no line numbers gallery",
+      "width": 1050
+    },
+    {
+      "case": "no line numbers image-grid",
+      "width": 1050
+    },
+    {
+      "case": "no line numbers image",
+      "width": 1050
+    },
+    {
+      "case": "no line numbers video",
+      "width": 1050
+    },
+    {
+      "case": "no line numbers audio",
+      "width": 1050
+    },
+    {
+      "case": "no line numbers blockquote",
+      "width": 1050
+    },
+    {
+      "case": "no line numbers codeblock",
+      "width": 1050
+    },
+    {
+      "case": "no line numbers list",
+      "width": 1050
+    },
+    {
+      "case": "no line numbers note-embed",
+      "width": 1050
+    },
+    {
+      "case": "nested columns and embedded blocks source"
+    },
+    {
+      "case": "nested columns and embedded blocks preview"
+    }
+  ]
+}

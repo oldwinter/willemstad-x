@@ -1,0 +1,52 @@
+[
+  {
+    "case": "source/Ordered",
+    "before": 656,
+    "after": 972
+  },
+  {
+    "case": "source/Tasks",
+    "before": 656,
+    "after": 972
+  },
+  {
+    "case": "source/Heading",
+    "before": 656,
+    "after": 972
+  },
+  {
+    "case": "source/Block",
+    "before": 656,
+    "after": 972
+  },
+  {
+    "case": "source/Video",
+    "before": 656,
+    "after": 656
+  },
+  {
+    "case": "preview/Ordered",
+    "before": 700,
+    "after": 1050
+  },
+  {
+    "case": "preview/Tasks",
+    "before": 700,
+    "after": 1050
+  },
+  {
+    "case": "preview/Heading",
+    "before": 700,
+    "after": 1050
+  },
+  {
+    "case": "preview/Block",
+    "before": 700,
+    "after": 1050
+  },
+  {
+    "case": "preview/Video",
+    "before": 700,
+    "after": 700
+  }
+]
