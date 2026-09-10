@@ -23655,6 +23655,16 @@ body {
   color: var(--col-highlight-text);
 }
 
+@media (hover: hover) {
+  .search-result-file-match:hover {
+    background-color: var(--background-modifier-hover);
+  }
+}
+
+.search-result-file-match.mobile-tap {
+  background-color: var(--background-modifier-hover);
+}
+
 /* Search */
 
 /* options for First Level Items */
