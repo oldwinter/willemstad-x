@@ -23508,6 +23508,10 @@ body.ssopt-sticky-nav-folder-title .nav-folder > .nav-folder-title {
   min-height: calc(2 * var(--icon-size) + var(--size-4-2));
 }
 
+.search-result-file-match:has(> .search-result-file-match-replace-button) {
+  padding-block-end: calc(max(var(--input-height), 2em) + var(--size-4-2));
+}
+
 .nav-header ~ .search-input-container {
   width: calc(100% - (var(--header-margin) + var(--account-scrollbar-size)) - (var(--header-margin) + var(--header-padding)));
   margin-left: calc(var(--header-margin) + var(--header-padding));
