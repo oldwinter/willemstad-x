@@ -23504,6 +23504,8 @@ body.ssopt-sticky-nav-folder-title .nav-folder > .nav-folder-title {
 
 .search-result-file-match {
   padding: var(--header-padding);
+  padding-inline-end: calc(var(--icon-size) + var(--size-4-2));
+  min-height: calc(2 * var(--icon-size) + var(--size-4-2));
 }
 
 .nav-header ~ .search-input-container {
