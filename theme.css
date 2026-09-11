@@ -23659,9 +23659,19 @@ body {
   .search-result-file-match:hover {
     background-color: var(--background-modifier-hover);
   }
+
+  .search-result-file-match:hover .search-result-hover-button {
+    color: var(--text-normal);
+    background-color: var(--background-modifier-hover);
+  }
 }
 
 .search-result-file-match.mobile-tap {
+  background-color: var(--background-modifier-hover);
+}
+
+.search-result-file-match.mobile-tap .search-result-hover-button {
+  color: var(--text-normal);
   background-color: var(--background-modifier-hover);
 }
 
