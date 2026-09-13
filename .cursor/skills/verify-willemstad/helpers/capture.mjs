@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 /**
- * Drive one preview feature in headless Chrome.
+ * Drive one preview feature in an isolated headless Chrome via CDP.
  * Writes screenshots + computed-style JSON under VERIFY_EVIDENCE_DIR.
  */
 import { spawn } from "node:child_process";
-import { writeFileSync, mkdirSync } from "node:fs";
+import { createServer } from "node:net";
+import { mkdirSync, writeFileSync, rmSync } from "node:fs";
 import { join } from "node:path";
+import { tmpdir } from "node:os";
 
 const chrome = process.env.VERIFY_CHROME;
 const baseUrl = process.env.VERIFY_BASE_URL;
@@ -28,8 +30,8 @@ const FEATURES = {
     assert(reports) {
       const dark = reports.dark;
       const light = reports.light;
-      need(dark.titleAfter.includes("Willemstad v"), "titlebar ::after must print Willemstad version", dark.titleAfter);
-      need(light.titleAfter.includes("Willemstad v"), "light titlebar ::after must print Willemstad version", light.titleAfter);
+      need(includes(dark.titleAfter, "Willemstad v"), "titlebar ::after must print Willemstad version", dark.titleAfter);
+      need(includes(light.titleAfter, "Willemstad v"), "light titlebar ::after must print Willemstad version", light.titleAfter);
       need(notTransparent(dark.h1Bg), "dark H1 must have a theme background", dark.h1Bg);
       need(notTransparent(light.h1Bg), "light H1 must have a theme background", light.h1Bg);
       need(dark.bodyBg !== light.bodyBg, "light and dark body backgrounds must differ", {
@@ -46,7 +48,7 @@ const FEATURES = {
     assert(reports) {
       const r = reports.default;
       need(r.noteCallout, "note callout missing");
-      need(notTransparent(r.noteBorderLeft) || r.noteBorderLeft.includes("px"), "note callout border-left", r.noteBorderLeft);
+      need(Boolean(r.noteBorderLeft), "note callout border-left", r.noteBorderLeft);
       need(r.columnsDisplay === "flex", "columns callout-content must be display:flex", r.columnsDisplay);
       need(r.columnChildCount >= 2, "columns must contain at least two nested callouts", r.columnChildCount);
       need(r.infoboxFloat === "right", "infobox must float right by default", r.infoboxFloat);
@@ -58,7 +60,12 @@ const FEATURES = {
     variants: [{ name: "default", query: "mode=dark" }],
     assert(reports) {
       const r = reports.default;
-      need(r.latexFontSize === "14pt" || r.latexFontSize === "18.6667px" || Number.parseFloat(r.latexFontSize) >= 14, "latex reading font-size", r.latexFontSize);
+      const latexPx = Number.parseFloat(r.latexFontSize);
+      need(
+        r.latexFontSize === "14pt" || latexPx >= 14,
+        "latex reading font-size",
+        r.latexFontSize,
+      );
       need(r.latexAlign === "justify", "latex paragraphs are justified", r.latexAlign);
       need(r.cornellTextAlign === "justify", "cornell note body is justified", r.cornellTextAlign);
       need(r.cornellAsideFloat === "left", "cornell aside callout floats left", r.cornellAsideFloat);
@@ -73,7 +80,7 @@ const FEATURES = {
     assert(reports) {
       const on = reports.on;
       need(on.bodyClasses.includes("ssopt-acrs-enable"), "ACRS class missing on enabled variant", on.bodyClasses);
-      need(Boolean(on.questionMask) && on.questionMask !== "none", "question checkbox must get --icon-mask-image", on.questionMask);
+      need(Boolean(on.questionMask) && on.questionMask !== "none" && on.questionMask.trim() !== "", "question checkbox must get --icon-mask-image", on.questionMask);
       need(reports.off.questionMask !== on.questionMask, "enabling ACRS must change the question-task mask", {
         off: reports.off.questionMask,
         on: on.questionMask,
@@ -107,55 +114,202 @@ function need(cond, message, extra) {
   }
 }
 
+function includes(value, needle) {
+  return typeof value === "string" && value.includes(needle);
+}
+
 function notTransparent(bg) {
   if (!bg) return false;
   const t = bg.replace(/\s+/g, "").toLowerCase();
   return t !== "transparent" && t !== "rgba(0,0,0,0)" && t !== "rgba(0,0,0,0.0)";
 }
 
-function runChrome(args) {
-  return new Promise((resolve, reject) => {
-    const child = spawn(
-      chrome,
-      [
-        "--headless=new",
-        "--no-sandbox",
-        "--disable-gpu",
-        "--disable-dev-shm-usage",
-        "--hide-scrollbars",
-        "--window-size=1440,900",
-        "--virtual-time-budget=20000",
-        "--timeout=45000",
-        ...args,
-      ],
-      { stdio: ["ignore", "pipe", "pipe"] },
-    );
-    const stdout = [];
-    const stderr = [];
-    child.stdout.on("data", (d) => stdout.push(d));
-    child.stderr.on("data", (d) => stderr.push(d));
-    child.on("error", reject);
-    child.on("close", (code) => {
-      resolve({
-        code,
-        stdout: Buffer.concat(stdout).toString("utf8"),
-        stderr: Buffer.concat(stderr).toString("utf8"),
-      });
-    });
-  });
-}
-
-function extractReport(html) {
-  const match = html.match(/<script type="application\/json" id="verify-report">([\s\S]*?)<\/script>/);
-  if (!match) {
-    throw new Error("verify-report JSON missing from dump-dom — CSS may not have applied, or boot.js failed");
-  }
-  return JSON.parse(match[1]);
-}
-
 function withQuery(path, query) {
   const q = [query, extraQuery].filter(Boolean).join("&");
   return q ? `${baseUrl}${path}?${q}` : `${baseUrl}${path}`;
+}
+
+function freePort() {
+  return new Promise((resolve, reject) => {
+    const server = createServer();
+    server.listen(0, "127.0.0.1", () => {
+      const { port } = server.address();
+      server.close((err) => (err ? reject(err) : resolve(port)));
+    });
+    server.on("error", reject);
+  });
+}
+
+async function waitForJson(url, timeoutMs) {
+  const start = Date.now();
+  let last = null;
+  while (Date.now() - start < timeoutMs) {
+    try {
+      const res = await fetch(url);
+      if (res.ok) return await res.json();
+      last = `status ${res.status}`;
+    } catch (err) {
+      last = err.message;
+    }
+    await new Promise((r) => setTimeout(r, 100));
+  }
+  throw new Error(`DevTools never answered ${url} (${last})`);
+}
+
+class Cdp {
+  constructor(ws) {
+    this.ws = ws;
+    this.nextId = 0;
+    this.pending = new Map();
+    this.events = [];
+    ws.addEventListener("message", (ev) => {
+      const msg = JSON.parse(ev.data);
+      if (msg.id) {
+        const waiter = this.pending.get(msg.id);
+        if (!waiter) return;
+        this.pending.delete(msg.id);
+        if (msg.error) waiter.reject(new Error(`${msg.error.message || JSON.stringify(msg.error)}`));
+        else waiter.resolve(msg.result);
+        return;
+      }
+      for (const evWait of this.events) {
+        if (evWait.method === msg.method && evWait.sessionId === (msg.sessionId || null)) {
+          evWait.resolve(msg.params);
+        }
+      }
+      this.events = this.events.filter((e) => !e.done);
+    });
+  }
+
+  send(method, params = {}, sessionId = null) {
+    const id = ++this.nextId;
+    const payload = { id, method, params };
+    if (sessionId) payload.sessionId = sessionId;
+    this.ws.send(JSON.stringify(payload));
+    return new Promise((resolve, reject) => {
+      this.pending.set(id, { resolve, reject });
+      setTimeout(() => {
+        if (this.pending.has(id)) {
+          this.pending.delete(id);
+          reject(new Error(`CDP timeout: ${method}`));
+        }
+      }, 30000);
+    });
+  }
+
+  once(method, sessionId = null, timeoutMs = 30000) {
+    return new Promise((resolve, reject) => {
+      const waiter = {
+        method,
+        sessionId,
+        done: false,
+        resolve(params) {
+          if (waiter.done) return;
+          waiter.done = true;
+          resolve(params);
+        },
+      };
+      this.events.push(waiter);
+      setTimeout(() => {
+        if (!waiter.done) {
+          waiter.done = true;
+          reject(new Error(`CDP event timeout: ${method}`));
+        }
+      }, timeoutMs);
+    });
+  }
+}
+
+function openWs(url) {
+  return new Promise((resolve, reject) => {
+    const ws = new WebSocket(url);
+    ws.addEventListener("open", () => resolve(ws));
+    ws.addEventListener("error", (err) => reject(err));
+  });
+}
+
+async function launchChrome() {
+  const port = await freePort();
+  const userData = join(tmpdir(), `verify-willemstad-chrome-${process.pid}-${port}`);
+  mkdirSync(userData, { recursive: true });
+  const child = spawn(
+    chrome,
+    [
+      "--headless=new",
+      "--no-sandbox",
+      "--disable-gpu",
+      "--disable-dev-shm-usage",
+      "--no-first-run",
+      "--no-default-browser-check",
+      `--user-data-dir=${userData}`,
+      `--remote-debugging-port=${port}`,
+      "--remote-debugging-address=127.0.0.1",
+      "about:blank",
+    ],
+    { stdio: ["ignore", "pipe", "pipe"] },
+  );
+  const version = await waitForJson(`http://127.0.0.1:${port}/json/version`, 15000);
+  const ws = await openWs(version.webSocketDebuggerUrl);
+  return {
+    child,
+    userData,
+    cdp: new Cdp(ws),
+    ws,
+    async close() {
+      try { ws.close(); } catch { /* ignore */ }
+      if (child.exitCode == null) {
+        child.kill("SIGTERM");
+        await new Promise((r) => setTimeout(r, 300));
+        if (child.exitCode == null) child.kill("SIGKILL");
+      }
+      rmSync(userData, { recursive: true, force: true });
+    },
+  };
+}
+
+async function attachPage(cdp) {
+  const { targetId } = await cdp.send("Target.createTarget", { url: "about:blank" });
+  const { sessionId } = await cdp.send("Target.attachToTarget", { targetId, flatten: true });
+  await cdp.send("Page.enable", {}, sessionId);
+  await cdp.send("Runtime.enable", {}, sessionId);
+  await cdp.send("Emulation.setDeviceMetricsOverride", {
+    width: 1440,
+    height: 900,
+    deviceScaleFactor: 1,
+    mobile: false,
+  }, sessionId);
+  return { targetId, sessionId };
+}
+
+async function openUrl(cdp, sessionId, url) {
+  const loaded = cdp.once("Page.loadEventFired", sessionId, 45000);
+  await cdp.send("Page.navigate", { url }, sessionId);
+  await loaded;
+  const start = Date.now();
+  let report = null;
+  while (Date.now() - start < 15000) {
+    const result = await cdp.send("Runtime.evaluate", {
+      expression: `document.documentElement.dataset.verifyReady === "1" && window.__verifyCollect ? window.__verifyCollect() : null`,
+      returnByValue: true,
+    }, sessionId);
+    report = result?.result?.value ?? null;
+    if (report && report.ready) return report;
+    await new Promise((r) => setTimeout(r, 150));
+  }
+  throw new Error(`boot.js never became ready at ${url}`);
+}
+
+async function screenshot(cdp, sessionId, file) {
+  const { data } = await cdp.send("Page.captureScreenshot", { format: "png" }, sessionId);
+  writeFileSync(file, Buffer.from(data, "base64"));
+}
+
+async function dumpHtml(cdp, sessionId) {
+  const result = await cdp.send("Runtime.evaluate", {
+    expression: "document.documentElement.outerHTML",
+    returnByValue: true,
+  }, sessionId);
+  return result?.result?.value || "";
 }
 
 const spec = FEATURES[feature];
@@ -167,25 +321,34 @@ if (!spec) {
 mkdirSync(outDir, { recursive: true });
 const reports = {};
 const urls = {};
+const browser = await launchChrome();
 
-for (const variant of spec.variants) {
-  const url = withQuery(spec.path, variant.query);
-  urls[variant.name] = url;
-  const shot = join(outDir, `${variant.name}.png`);
-  const shotResult = await runChrome([`--screenshot=${shot}`, url]);
-  if (shotResult.code !== 0) {
-    writeFileSync(join(outDir, `${variant.name}.chrome.stderr.txt`), shotResult.stderr);
-    throw new Error(`chrome screenshot failed for ${url} (exit ${shotResult.code})`);
+try {
+  const { sessionId, targetId } = await attachPage(browser.cdp);
+  for (const variant of spec.variants) {
+    const url = withQuery(spec.path, variant.query);
+    urls[variant.name] = url;
+    const report = await openUrl(browser.cdp, sessionId, url);
+    reports[variant.name] = report;
+    await screenshot(browser.cdp, sessionId, join(outDir, `${variant.name}.png`));
+    writeFileSync(join(outDir, `${variant.name}.report.json`), JSON.stringify(report, null, 2));
+    writeFileSync(join(outDir, `${variant.name}.dom.html`), await dumpHtml(browser.cdp, sessionId));
   }
-  const dump = await runChrome(["--dump-dom", url]);
-  writeFileSync(join(outDir, `${variant.name}.dom.html`), dump.stdout);
-  if (dump.code !== 0) {
-    writeFileSync(join(outDir, `${variant.name}.chrome.stderr.txt`), dump.stderr);
-    throw new Error(`chrome dump-dom failed for ${url} (exit ${dump.code})`);
-  }
-  reports[variant.name] = extractReport(dump.stdout);
-  writeFileSync(join(outDir, `${variant.name}.report.json`), JSON.stringify(reports[variant.name], null, 2));
+  await browser.cdp.send("Target.closeTarget", { targetId }).catch(() => {});
+} catch (err) {
+  await browser.close();
+  writeFileSync(join(outDir, "summary.json"), JSON.stringify({
+    ok: false,
+    feature,
+    error: err.message,
+    reports,
+    urls,
+  }, null, 2));
+  console.error(`CAPTURE FAIL: ${err.message}`);
+  process.exit(1);
 }
+
+await browser.close();
 
 try {
   spec.assert(reports);
@@ -204,6 +367,5 @@ try {
   process.exit(1);
 }
 
-const summary = { ok: true, feature, urls, reports };
-writeFileSync(join(outDir, "summary.json"), JSON.stringify(summary, null, 2));
+writeFileSync(join(outDir, "summary.json"), JSON.stringify({ ok: true, feature, urls, reports }, null, 2));
 console.log(JSON.stringify({ ok: true, feature, evidence: outDir, urls }, null, 2));

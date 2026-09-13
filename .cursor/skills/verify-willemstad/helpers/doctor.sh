@@ -35,8 +35,17 @@ assert int(health.get("port")) == port
 assert int(health.get("themeCssBytes", 0)) > 100000
 PY
 
-css_head="$(curl -fsS --max-time 5 "${VERIFY_BASE_URL}/theme.css" | head -c 4000)" || fail "/theme.css not served"
-printf '%s' "${css_head}" | grep -q "Willemstad | v$(manifest_version)" || fail "/theme.css header is not this checkout's theme"
+python3 - "${VERIFY_BASE_URL}/theme.css" "$(manifest_version)" <<'PY' || fail "/theme.css header is not this checkout's theme"
+import sys, urllib.request
+url, version = sys.argv[1], sys.argv[2]
+with urllib.request.urlopen(url, timeout=30) as resp:
+    if resp.status != 200:
+        raise SystemExit(f"status {resp.status}")
+    banner = resp.read(4000).decode("utf-8", "replace")
+needle = f"Willemstad | v{version}"
+if needle not in banner:
+    raise SystemExit("banner missing")
+PY
 
 curl -fsS --max-time 3 "${VERIFY_BASE_URL}/preview/reading.html" >/dev/null || fail "/preview/reading.html missing"
 curl -fsS --max-time 3 "${VERIFY_BASE_URL}/preview/callouts.html" >/dev/null || fail "/preview/callouts.html missing"

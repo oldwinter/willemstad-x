@@ -73,7 +73,7 @@ Harness: **preview HTTP + headless Chrome** (`helpers/capture.mjs`).
 .cursor/skills/verify-willemstad/helpers/drive.sh focused-mode
 ```
 
-`drive.sh` runs doctor first, then opens each mapped variant, writes a 1440×900 screenshot, dumps the DOM, and asserts computed styles from `#verify-report`.
+`drive.sh` runs doctor first, then opens each mapped variant in an isolated headless Chrome (own `--user-data-dir` + DevTools port — never the user's profile). It waits for `boot.js` (`dataset.verifyReady` + `window.__verifyCollect`), writes a 1440×900 screenshot, and asserts computed styles.
 
 Stable handles (from this theme, not coordinates):
 
@@ -99,8 +99,8 @@ Do not verify by editing CSS variables in the console or by hitting a test-only 
 Proof lives under `$VERIFY_EVIDENCE_DIR/<UTC-stamp>-<feature>/` and **survives cleanup**. A passing drive writes:
 
 - `<variant>.png` — the painted preview after `theme.css` applied (action + result: dark and light, or off/on toggle)
-- `<variant>.report.json` — computed styles from the real selectors above
-- `<variant>.dom.html` — Chrome dump-dom used to extract `#verify-report`
+- `<variant>.report.json` — computed styles from `window.__verifyCollect()` after load
+- `<variant>.dom.html` — serialized DOM after the probe ran
 - `summary.json` — `{ "ok": true, "feature", "urls", "reports" }`
 
 Standards:

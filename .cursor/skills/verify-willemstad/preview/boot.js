@@ -69,16 +69,9 @@
     };
   }
 
-  async function finish() {
-    try {
-      if (document.fonts && document.fonts.ready) {
-        await document.fonts.ready;
-      }
-    } catch (_) {
-      /* ignore */
-    }
-    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
-    const report = collect();
+  window.__verifyCollect = collect;
+
+  function writeReport(report) {
     let node = document.getElementById("verify-report");
     if (!node) {
       node = document.createElement("script");
@@ -88,6 +81,19 @@
     }
     node.textContent = JSON.stringify(report);
     document.documentElement.dataset.verifyReady = "1";
+  }
+
+  async function finish() {
+    // Embedded @font-face in theme.css can leave document.fonts.ready pending.
+    const fonts = document.fonts && document.fonts.ready
+      ? Promise.race([
+          document.fonts.ready,
+          new Promise((r) => setTimeout(r, 1500)),
+        ])
+      : Promise.resolve();
+    await fonts;
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    writeReport(collect());
   }
 
   if (document.readyState === "complete") finish();
