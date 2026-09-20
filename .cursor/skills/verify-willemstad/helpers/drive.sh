@@ -19,13 +19,12 @@ case "${FEATURE}" in
     ;;
 esac
 
+require_cmd node
+require_theme_css
 load_run_meta || exit 1
 "${SCRIPT_DIR}/doctor.sh" >/dev/null
-
-chrome="$(find_chrome)" || {
-  echo "verify-willemstad: Chrome/Chromium required to drive the preview" >&2
-  exit 4
-}
+require_chrome
+chrome="$(find_chrome)"
 
 stamp="$(date -u +%Y%m%dT%H%M%SZ)"
 out_dir="${VERIFY_EVIDENCE_DIR}/${stamp}-${FEATURE}"

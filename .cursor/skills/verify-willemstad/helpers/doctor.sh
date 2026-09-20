@@ -16,6 +16,9 @@ ok() {
   echo "DOCTOR OK: $*"
 }
 
+require_cmd python3
+require_cmd curl
+require_theme_css
 load_run_meta || fail "no launch metadata"
 
 pid_is_alive "${VERIFY_PID}" || fail "pid ${VERIFY_PID} is not running"

@@ -7,6 +7,10 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # shellcheck disable=SC1091
 source "${SCRIPT_DIR}/lib.sh"
 
+require_cmd python3
+require_cmd curl
+require_theme_css
+
 if [[ "${VERIFY_BIND}" != "127.0.0.1" && "${VERIFY_BIND}" != "localhost" && "${VERIFY_BIND}" != "::1" ]]; then
   echo "verify-willemstad: refuse non-loopback bind ${VERIFY_BIND}" >&2
   exit 2
