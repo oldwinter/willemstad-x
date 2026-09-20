@@ -7,6 +7,10 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # shellcheck disable=SC1091
 source "${SCRIPT_DIR}/lib.sh"
 
+require_cmd python3
+require_cmd curl
+require_theme_css
+
 fail() {
   echo "DOCTOR FAIL: $*" >&2
   exit 1
@@ -16,9 +20,6 @@ ok() {
   echo "DOCTOR OK: $*"
 }
 
-require_cmd python3
-require_cmd curl
-require_theme_css
 load_run_meta || fail "no launch metadata"
 
 pid_is_alive "${VERIFY_PID}" || fail "pid ${VERIFY_PID} is not running"
