@@ -41,7 +41,7 @@ Copyright 2022-2025 Melvin Ting (@tingmelvin)
         ──────────────────────────────────────────────────────────────────────── */
 
 :root {
-  --willemstad-release: v1.11.1 Newfoundland;
+  --willemstad-release: "v1.11.1 Newfoundland";
 }
 
 /* AA01-1-1 */

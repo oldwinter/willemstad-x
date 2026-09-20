@@ -17,9 +17,17 @@ class ReleaseTokenTests(unittest.TestCase):
         match = re.search(r"--willemstad-release:\s*([^;]+);", THEME)
         self.assertIsNotNone(match, "theme.css must declare --willemstad-release")
         value = match.group(1).strip()
+        # content: concatenates this token with a string. An unquoted ident
+        # makes the whole content declaration invalid and Chrome drops it
+        # (computed content: none). Keep the value a CSS string.
         self.assertTrue(
-            value.startswith("v" + MANIFEST["version"]),
-            f"{value!r} must start with v{MANIFEST['version']}",
+            len(value) >= 2 and value[0] == value[-1] == '"',
+            f"{value!r} must be a quoted CSS string",
+        )
+        inner = value[1:-1]
+        self.assertTrue(
+            inner.startswith("v" + MANIFEST["version"]),
+            f"{inner!r} must start with v{MANIFEST['version']}",
         )
 
     def test_titlebar_and_community_card_use_the_token(self):
