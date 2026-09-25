@@ -7,6 +7,8 @@ description: Verify Willemstad (willemstad-x), an Obsidian CSS theme, by launchi
 
 Willemstad is a compiled Obsidian theme, not a process. The user-facing surface is **Obsidian desktop** with `theme.css` selected under Settings → Appearance. This repo has no `package.json`, no Makefile, and no `start` script. `publish.css` is a stale Publish stylesheet (header still says v0.5.4) and is **not** the primary surface.
 
+The command API is the root `justfile`. `just` / `just ci` / `just check` require python3, curl, node, a checked-out `theme.css`, and Chrome/Chromium. Missing any of those exits 2 with `try: just deps`. `just deps` restores `theme.css` from this checkout; it does not apt-install Chromium.
+
 There is no Obsidian binary in a typical agent environment, and attaching to a user's live vault would corrupt their session. Verification therefore drives an **isolated preview**: a loopback HTTP server that serves **this checkout's** `theme.css` onto static HTML that uses the real Obsidian class names the theme selects on (`theme-dark` / `theme-light`, `.workspace-leaf-content[data-type="markdown"]`, `.callout[data-callout=…]`, `.latex`, `.cornell`, `li[data-task]`, `body.ssopt-*`).
 
 The preview is scaffolding. It proves the compiled CSS. It does **not** prove Style Settings' RealDisplay UI, the command palette, plugin chrome, or mobile Obsidian (officially unsupported).
@@ -31,7 +33,7 @@ Defaults (override per isolated instance):
 | `VERIFY_PORT` | `47821` | If occupied by something else, launch **exits**. Do not steal it. |
 | `VERIFY_RUN_DIR` | `/tmp/verify-willemstad` | pid + `meta.env` for this instance |
 | `VERIFY_EVIDENCE_DIR` | `/tmp/verify-willemstad/evidence` | Proof artifacts. Cleanup never deletes this. |
-| `VERIFY_CHROME` | first of `google-chrome-stable`, `google-chrome`, `chromium` | Driver binary |
+| `VERIFY_CHROME` | first of `google-chrome-stable`, `google-chrome`, `chromium` | Driver binary. Missing → `try: just deps`. |
 
 Two instances may run side by side only with **different** `VERIFY_PORT` **and** `VERIFY_RUN_DIR`. Never point this harness at a running Obsidian vault, and never kill by process name (`obsidian`, `chrome`, `python`).
 
@@ -127,6 +129,7 @@ All executable; invoke from repo root (or any cwd — they locate the repo by wa
 
 | Script | What it does |
 | --- | --- |
+| `helpers/deps.sh` | `--check` for `just ci`; default restores `theme.css` and reports missing Chrome |
 | `helpers/launch.sh` | Starts `helpers/serve.py` on loopback; writes pid/meta; prints `BASE_URL=` |
 | `helpers/doctor.sh` | Read-only health + version identity |
 | `helpers/drive.sh <feature>` | Doctor, then Chrome capture + assertions |

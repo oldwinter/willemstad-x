@@ -7,19 +7,21 @@ _LIB_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SKILL_DIR="$(cd "${_LIB_DIR}/.." && pwd)"
 REPO_ROOT="$(cd "${SKILL_DIR}/../../.." && pwd)"
 
-# Walk up until theme.css + manifest.json are siblings (repo root).
+# Walk up until manifest.json is at the repo root. theme.css is required
+# separately so a sparse/partial checkout can still print a next step.
 _probe="${REPO_ROOT}"
 for _ in 1 2 3 4; do
-  if [[ -f "${_probe}/theme.css" && -f "${_probe}/manifest.json" ]]; then
+  if [[ -f "${_probe}/manifest.json" ]]; then
     REPO_ROOT="${_probe}"
     break
   fi
   _probe="$(cd "${_probe}/.." && pwd)"
 done
 
-if [[ ! -f "${REPO_ROOT}/theme.css" || ! -f "${REPO_ROOT}/manifest.json" ]]; then
-  echo "verify-willemstad: cannot find theme.css + manifest.json above ${SKILL_DIR}" >&2
-  exit 1
+if [[ ! -f "${REPO_ROOT}/manifest.json" ]]; then
+  echo "error  manifest.json is not checked out" >&2
+  echo "try: just deps" >&2
+  exit 2
 fi
 
 VERIFY_BIND="${VERIFY_BIND:-127.0.0.1}"
@@ -30,6 +32,31 @@ VERIFY_EVIDENCE_DIR="${VERIFY_EVIDENCE_DIR:-/tmp/verify-willemstad/evidence}"
 RUN_PID_FILE="${VERIFY_RUN_DIR}/server.pid"
 RUN_META_FILE="${VERIFY_RUN_DIR}/meta.env"
 RUN_LOG_FILE="${VERIFY_RUN_DIR}/server.log"
+
+require_cmd() {
+  local name="$1"
+  if ! command -v "${name}" >/dev/null 2>&1; then
+    echo "error  ${name} is not installed" >&2
+    echo "try: just deps" >&2
+    exit 2
+  fi
+}
+
+require_theme_css() {
+  if [[ ! -f "${REPO_ROOT}/theme.css" ]]; then
+    echo "error  theme.css is not checked out" >&2
+    echo "try: just deps" >&2
+    exit 2
+  fi
+}
+
+require_chrome() {
+  if ! find_chrome >/dev/null; then
+    echo "error  chromium is not installed" >&2
+    echo "try: just deps" >&2
+    exit 2
+  fi
+}
 
 find_chrome() {
   local candidate
