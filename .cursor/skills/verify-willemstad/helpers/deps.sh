@@ -53,13 +53,9 @@ if [[ ! -f "${REPO_ROOT}/theme.css" ]]; then
   fi
 fi
 
-if ! find_chrome >/dev/null; then
+if [[ "${CHECK_ONLY}" -eq 0 ]] && ! find_chrome >/dev/null; then
   echo "error  chromium is not installed" >&2
-  if [[ "${CHECK_ONLY}" -eq 1 ]]; then
-    echo "try: just deps" >&2
-  else
-    echo "try: install google-chrome-stable or chromium, then rerun just deps" >&2
-  fi
+  echo "try: install google-chrome-stable or chromium, then rerun just deps" >&2
   missing=1
 fi
 
@@ -67,4 +63,8 @@ if [[ "${missing}" -ne 0 ]]; then
   exit 2
 fi
 
-echo "verify-willemstad: python3 curl node theme.css chromium ok"
+if [[ "${CHECK_ONLY}" -eq 1 ]]; then
+  echo "verify-willemstad: python3 curl node theme.css ok"
+else
+  echo "verify-willemstad: python3 curl node theme.css chromium ok"
+fi

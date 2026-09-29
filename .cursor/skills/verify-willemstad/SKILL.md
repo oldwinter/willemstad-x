@@ -7,7 +7,7 @@ description: Verify Willemstad (willemstad-x), an Obsidian CSS theme, by launchi
 
 Willemstad is a compiled Obsidian theme, not a process. The user-facing surface is **Obsidian desktop** with `theme.css` selected under Settings → Appearance. This repo has no `package.json`, no Makefile, and no `start` script. `publish.css` is a stale Publish stylesheet (header still says v0.5.4) and is **not** the primary surface.
 
-The command API is the root `justfile`. `just` / `just ci` / `just check` require python3, curl, node, a checked-out `theme.css`, and Chrome/Chromium. Missing any of those exits 2 with `try: just deps`. `just deps` restores `theme.css` from this checkout; it does not apt-install Chromium.
+The command API is the root `justfile`. `just` / `just ci` / `just check` require python3, curl, node, and a checked-out `theme.css`; they run the complete static and unit-test gate without Chrome. Browser-driving commands require Chrome/Chromium and exit 2 with `try: just deps` when it is missing. `just deps` restores `theme.css` from this checkout; it does not apt-install Chromium.
 
 There is no Obsidian binary in a typical agent environment, and attaching to a user's live vault would corrupt their session. Verification therefore drives an **isolated preview**: a loopback HTTP server that serves **this checkout's** `theme.css` onto static HTML that uses the real Obsidian class names the theme selects on (`theme-dark` / `theme-light`, `.workspace-leaf-content[data-type="markdown"]`, `.callout[data-callout=…]`, `.latex`, `.cornell`, `li[data-task]`, `body.ssopt-*`).
 
@@ -34,6 +34,7 @@ Defaults (override per isolated instance):
 | `VERIFY_RUN_DIR` | `/tmp/verify-willemstad` | pid + `meta.env` for this instance |
 | `VERIFY_EVIDENCE_DIR` | `/tmp/verify-willemstad/evidence` | Proof artifacts. Cleanup never deletes this. |
 | `VERIFY_CHROME` | first of `google-chrome-stable`, `google-chrome`, `chromium` | Driver binary. Missing → `try: just deps`. |
+| `VERIFY_CHROME_NO_SANDBOX` | unset | Set to `1` only in a constrained container that cannot start Chrome's sandbox. Local verification keeps the sandbox enabled. |
 
 Two instances may run side by side only with **different** `VERIFY_PORT` **and** `VERIFY_RUN_DIR`. Never point this harness at a running Obsidian vault, and never kill by process name (`obsidian`, `chrome`, `python`).
 
@@ -43,7 +44,7 @@ Teardown:
 .cursor/skills/verify-willemstad/helpers/cleanup.sh
 ```
 
-That sends SIGTERM (then SIGKILL) to **only** the pid recorded in `$VERIFY_RUN_DIR/server.pid`.
+That sends SIGTERM (then SIGKILL) only when the pid, process start time, and `serve.py` command match the identity recorded at launch. A live mismatched pid is refused.
 
 ## Doctor
 
@@ -75,7 +76,7 @@ Harness: **preview HTTP + headless Chrome** (`helpers/capture.mjs`).
 .cursor/skills/verify-willemstad/helpers/drive.sh focused-mode
 ```
 
-`drive.sh` runs doctor first, then opens each mapped variant in an isolated headless Chrome (own `--user-data-dir` + DevTools port — never the user's profile). It waits for `boot.js` (`dataset.verifyReady` + `window.__verifyCollect`), writes a 1440×900 screenshot, and asserts computed styles.
+`drive.sh` runs doctor first, then opens each mapped variant in an isolated, sandboxed headless Chrome (own `--user-data-dir` + DevTools port — never the user's profile). It waits for `boot.js` (`dataset.verifyReady` + `window.__verifyCollect`), writes a 1440×900 screenshot, and asserts computed styles. Use `VERIFY_CHROME_NO_SANDBOX=1` only when a constrained container cannot start Chrome otherwise.
 
 Stable handles (from this theme, not coordinates):
 
@@ -98,7 +99,7 @@ Do not verify by editing CSS variables in the console or by hitting a test-only 
 
 ## Evidence
 
-Proof lives under `$VERIFY_EVIDENCE_DIR/<UTC-stamp>-<feature>/` and **survives cleanup**. A passing drive writes:
+Proof lives under `$VERIFY_EVIDENCE_DIR/<UTC-stamp>-<feature>.<unique-suffix>/` and **survives cleanup**. The directory is allocated atomically so parallel or rapid repeat runs cannot overwrite one another. A passing drive writes:
 
 - `<variant>.png` — the painted preview after `theme.css` applied (action + result: dark and light, or off/on toggle)
 - `<variant>.report.json` — computed styles from `window.__verifyCollect()` after load
@@ -121,7 +122,7 @@ If `summary.json` has `"ok": false`, treat the feature as unproven. Cleanup, fix
 .cursor/skills/verify-willemstad/helpers/cleanup.sh
 ```
 
-Kills only the recorded server pid. Removes `$VERIFY_RUN_DIR/server.pid` and `meta.env`. Does **not** delete `$VERIFY_EVIDENCE_DIR`. After cleanup, `ls` the evidence directory from the drive stdout line `EVIDENCE_DIR=...` and confirm the screenshots and `summary.json` are still there.
+Kills only the recorded server pid after its start time and command match the launch metadata. Refuses a live mismatched pid. Removes `$VERIFY_RUN_DIR/server.pid` and `meta.env` after a successful or already-stopped cleanup. Does **not** delete `$VERIFY_EVIDENCE_DIR`. After cleanup, `ls` the evidence directory from the drive stdout line `EVIDENCE_DIR=...` and confirm the screenshots and `summary.json` are still there.
 
 ## Helpers
 
@@ -136,6 +137,8 @@ All executable; invoke from repo root (or any cwd — they locate the repo by wa
 | `helpers/cleanup.sh` | Stop the pid we started |
 | `helpers/serve.py` | HTTP: `/healthz`, `/theme.css`, `/preview/*` |
 | `helpers/capture.mjs` | Headless Chrome screenshots + `#verify-report` assertions |
+| `helpers/chrome-args.mjs` | Builds sandboxed Chrome arguments with explicit container opt-out |
+| `helpers/cdp.mjs` | CDP request/event lifecycle with bounded, cleared timers |
 | `helpers/lib.sh` | Shared paths; sourced by the shell scripts, not run directly |
 
 `preview/harness.css` and `preview/boot.js` are scaffolding. `boot.js` applies `?mode=` / `?opt=` and writes `<script type="application/json" id="verify-report">`.

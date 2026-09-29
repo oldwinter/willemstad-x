@@ -26,9 +26,7 @@ load_run_meta || exit 1
 require_chrome
 chrome="$(find_chrome)"
 
-stamp="$(date -u +%Y%m%dT%H%M%SZ)"
-out_dir="${VERIFY_EVIDENCE_DIR}/${stamp}-${FEATURE}"
-mkdir -p "${out_dir}"
+out_dir="$(new_evidence_dir "${FEATURE}")"
 
 VERIFY_CHROME="${chrome}" \
 VERIFY_BASE_URL="${VERIFY_BASE_URL}" \
