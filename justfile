@@ -20,7 +20,8 @@ check:
 ci: check
 
 test:
-    python3 -m unittest discover -s tests -p 'test_justfile.py' -v
+    python3 -m unittest discover -s test -p 'test_*.py' -v
+    python3 -m unittest discover -s tests -p 'test_*.py' -v
 
 # May fetch theme.css. Not in the ci/check closure.
 deps:
