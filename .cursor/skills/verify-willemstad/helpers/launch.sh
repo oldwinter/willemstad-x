@@ -21,6 +21,14 @@ mkdir -p "${VERIFY_RUN_DIR}" "${VERIFY_EVIDENCE_DIR}"
 if [[ -f "${RUN_PID_FILE}" ]]; then
   old_pid="$(cat "${RUN_PID_FILE}")"
   if pid_is_alive "${old_pid}"; then
+    if ! load_run_meta; then
+      echo "verify-willemstad: live pid ${old_pid} has invalid metadata; refuse to reuse" >&2
+      exit 3
+    fi
+    if [[ "${VERIFY_PID}" != "${old_pid}" ]] || ! pid_matches_verify_server "${old_pid}" "${VERIFY_PID_START}"; then
+      echo "verify-willemstad: live pid ${old_pid} does not match recorded verifier identity; refuse to reuse" >&2
+      exit 3
+    fi
     if curl -fsS --max-time 2 "$(base_url)/healthz" >/dev/null; then
       echo "verify-willemstad: reusing pid ${old_pid} at $(base_url)"
       echo "BASE_URL=$(base_url)"
@@ -72,10 +80,20 @@ if [[ "${ready}" -ne 1 ]]; then
   exit 4
 fi
 
+server_start="$(process_start "${server_pid}")"
+if [[ -z "${server_start}" ]]; then
+  echo "verify-willemstad: could not record process identity for pid ${server_pid}" >&2
+  kill "${server_pid}" 2>/dev/null || true
+  wait "${server_pid}" 2>/dev/null || true
+  rm -f "${RUN_PID_FILE}"
+  exit 4
+fi
+
 {
   echo "VERIFY_BIND=${VERIFY_BIND}"
   echo "VERIFY_PORT=${VERIFY_PORT}"
   echo "VERIFY_PID=${server_pid}"
+  echo "VERIFY_PID_START=${server_start}"
   echo "VERIFY_BASE_URL=$(base_url)"
   echo "VERIFY_REPO_ROOT=${REPO_ROOT}"
   echo "VERIFY_SKILL_DIR=${SKILL_DIR}"

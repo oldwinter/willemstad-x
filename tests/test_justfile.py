@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import shutil
 import subprocess
 import unittest
 from pathlib import Path
@@ -29,18 +28,6 @@ def _run_helper(name: str, *args: str) -> subprocess.CompletedProcess[str]:
     )
 
 
-def _chrome_on_path() -> bool:
-    for candidate in (
-        "google-chrome-stable",
-        "google-chrome",
-        "chromium",
-        "chromium-browser",
-    ):
-        if shutil.which(candidate):
-            return True
-    return False
-
-
 class JustfileDepsNextStepTests(unittest.TestCase):
     def test_just_test_discovers_release_and_harness_suites(self) -> None:
         text = (ROOT / "justfile").read_text(encoding="utf-8")
@@ -53,28 +40,43 @@ class JustfileDepsNextStepTests(unittest.TestCase):
         self.assertIn("deps.sh --check", text)
         self.assertIn("just deps", text)
 
-    def test_just_default_without_theme_or_chrome_prints_try_deps(self) -> None:
-        if (ROOT / "theme.css").is_file() and _chrome_on_path():
-            self.skipTest("theme.css and chromium are present")
-        result = _run_just()
-        self.assertEqual(result.returncode, 2, result.stderr + result.stdout)
-        self.assertIn("try: just deps", result.stderr)
-        self.assertTrue(
-            "theme.css is not checked out" in result.stderr
-            or "chromium is not installed" in result.stderr,
-            result.stderr,
-        )
-        self.assertNotIn("no justfile found", result.stderr)
-        self.assertNotIn("cannot find theme.css + manifest.json", result.stderr)
+    def test_just_default_targets_ci(self) -> None:
+        text = (ROOT / "justfile").read_text(encoding="utf-8")
+        self.assertIn("default: ci", text)
 
-    def test_just_check_and_ci_without_theme_or_chrome_print_try_deps(self) -> None:
-        if (ROOT / "theme.css").is_file() and _chrome_on_path():
-            self.skipTest("theme.css and chromium are present")
-        for args in (("check",), ("ci",)):
-            with self.subTest(args=args):
-                result = _run_just(*args)
-                self.assertEqual(result.returncode, 2, result.stderr + result.stdout)
-                self.assertIn("try: just deps", result.stderr)
+    def test_just_check_does_not_require_chrome(self) -> None:
+        result = _run_just("check")
+        self.assertEqual(result.returncode, 0, result.stderr + result.stdout)
+        self.assertNotIn("chromium is not installed", result.stderr)
+
+    def test_ci_includes_check_and_all_tests(self) -> None:
+        text = (ROOT / "justfile").read_text(encoding="utf-8")
+        self.assertIn("ci: check test", text)
+
+    def test_github_actions_runs_canonical_ci_gate(self) -> None:
+        workflow = (ROOT / ".github" / "workflows" / "ci.yml").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("actions/checkout@v7", workflow)
+        self.assertIn("actions/setup-python@v7", workflow)
+        self.assertIn("actions/setup-node@v7", workflow)
+        self.assertIn("extractions/setup-just@v4", workflow)
+        self.assertIn("just ci", workflow)
+
+    def test_python_bytecode_paths_are_ignored(self) -> None:
+        result = subprocess.run(
+            [
+                "git",
+                "check-ignore",
+                "test/__pycache__/sample.pyc",
+                "tests/__pycache__/sample.pyc",
+                ".cursor/skills/verify-willemstad/helpers/__pycache__/serve.pyc",
+            ],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr + result.stdout)
 
     def test_launch_without_theme_css_prints_try_deps(self) -> None:
         if (ROOT / "theme.css").is_file():

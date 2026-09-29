@@ -22,6 +22,7 @@ require_theme_css
 load_run_meta || fail "no launch metadata"
 
 pid_is_alive "${VERIFY_PID}" || fail "pid ${VERIFY_PID} is not running"
+pid_matches_verify_server "${VERIFY_PID}" "${VERIFY_PID_START}" || fail "pid ${VERIFY_PID} identity does not match this verifier server"
 
 health="$(curl -fsS --max-time 3 "${VERIFY_BASE_URL}/healthz")" || fail "/healthz not reachable at ${VERIFY_BASE_URL}"
 

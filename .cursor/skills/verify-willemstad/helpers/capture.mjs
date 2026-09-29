@@ -8,6 +8,8 @@ import { createServer } from "node:net";
 import { mkdirSync, writeFileSync, rmSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
+import { buildChromeArgs } from "./chrome-args.mjs";
+import { Cdp } from "./cdp.mjs";
 
 const chrome = process.env.VERIFY_CHROME;
 const baseUrl = process.env.VERIFY_BASE_URL;
@@ -156,70 +158,6 @@ async function waitForJson(url, timeoutMs) {
   throw new Error(`DevTools never answered ${url} (${last})`);
 }
 
-class Cdp {
-  constructor(ws) {
-    this.ws = ws;
-    this.nextId = 0;
-    this.pending = new Map();
-    this.events = [];
-    ws.addEventListener("message", (ev) => {
-      const msg = JSON.parse(ev.data);
-      if (msg.id) {
-        const waiter = this.pending.get(msg.id);
-        if (!waiter) return;
-        this.pending.delete(msg.id);
-        if (msg.error) waiter.reject(new Error(`${msg.error.message || JSON.stringify(msg.error)}`));
-        else waiter.resolve(msg.result);
-        return;
-      }
-      for (const evWait of this.events) {
-        if (evWait.method === msg.method && evWait.sessionId === (msg.sessionId || null)) {
-          evWait.resolve(msg.params);
-        }
-      }
-      this.events = this.events.filter((e) => !e.done);
-    });
-  }
-
-  send(method, params = {}, sessionId = null) {
-    const id = ++this.nextId;
-    const payload = { id, method, params };
-    if (sessionId) payload.sessionId = sessionId;
-    this.ws.send(JSON.stringify(payload));
-    return new Promise((resolve, reject) => {
-      this.pending.set(id, { resolve, reject });
-      setTimeout(() => {
-        if (this.pending.has(id)) {
-          this.pending.delete(id);
-          reject(new Error(`CDP timeout: ${method}`));
-        }
-      }, 30000);
-    });
-  }
-
-  once(method, sessionId = null, timeoutMs = 30000) {
-    return new Promise((resolve, reject) => {
-      const waiter = {
-        method,
-        sessionId,
-        done: false,
-        resolve(params) {
-          if (waiter.done) return;
-          waiter.done = true;
-          resolve(params);
-        },
-      };
-      this.events.push(waiter);
-      setTimeout(() => {
-        if (!waiter.done) {
-          waiter.done = true;
-          reject(new Error(`CDP event timeout: ${method}`));
-        }
-      }, timeoutMs);
-    });
-  }
-}
-
 function openWs(url) {
   return new Promise((resolve, reject) => {
     const ws = new WebSocket(url);
@@ -234,18 +172,11 @@ async function launchChrome() {
   mkdirSync(userData, { recursive: true });
   const child = spawn(
     chrome,
-    [
-      "--headless=new",
-      "--no-sandbox",
-      "--disable-gpu",
-      "--disable-dev-shm-usage",
-      "--no-first-run",
-      "--no-default-browser-check",
-      `--user-data-dir=${userData}`,
-      `--remote-debugging-port=${port}`,
-      "--remote-debugging-address=127.0.0.1",
-      "about:blank",
-    ],
+    buildChromeArgs({
+      userData,
+      port,
+      allowNoSandbox: process.env.VERIFY_CHROME_NO_SANDBOX === "1",
+    }),
     { stdio: ["ignore", "pipe", "pipe"] },
   );
   const version = await waitForJson(`http://127.0.0.1:${port}/json/version`, 15000);

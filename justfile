@@ -15,9 +15,12 @@ check:
     bash -n {{helpers}}/drive.sh
     bash -n {{helpers}}/cleanup.sh
     bash -n {{helpers}}/deps.sh
+    node --check {{helpers}}/chrome-args.mjs
+    node --check {{helpers}}/cdp.mjs
+    node --check {{helpers}}/capture.mjs
     python3 -m py_compile {{helpers}}/serve.py
 
-ci: check
+ci: check test
 
 test:
     python3 -m unittest discover -s test -p 'test_*.py' -v
