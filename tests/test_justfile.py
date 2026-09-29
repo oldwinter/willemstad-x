@@ -42,6 +42,11 @@ def _chrome_on_path() -> bool:
 
 
 class JustfileDepsNextStepTests(unittest.TestCase):
+    def test_just_test_discovers_release_and_harness_suites(self) -> None:
+        text = (ROOT / "justfile").read_text(encoding="utf-8")
+        self.assertIn("unittest discover -s test -p 'test_*.py' -v", text)
+        self.assertIn("unittest discover -s tests -p 'test_*.py' -v", text)
+
     def test_justfile_guards_missing_verify_tools(self) -> None:
         text = (ROOT / "justfile").read_text(encoding="utf-8")
         self.assertIn("try: just deps", (HELPERS / "deps.sh").read_text(encoding="utf-8"))
