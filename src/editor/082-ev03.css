@@ -653,6 +653,14 @@ body div.callout:is([data-callout-metadata*="no-t"], [data-callout-metadata*="no
   border-radius: var(--callout-radius);
 }
 
+/* `|no-icon` hides the title icon but keeps the title itself — the counterpart to
+ * `|no-title`. `~=` rather than `*=` because callout metadata is a
+ * whitespace-separated word list (`|no-bg no-icon`), and a substring match would
+ * also fire on unrelated keywords that merely contain the text. */
+body div.callout[data-callout-metadata~="no-icon"] > .callout-title > .callout-icon {
+  display: none;
+}
+
 body div.callout:is([data-callout-metadata*="yes-t"], [data-callout-metadata*="show-title"]) > .callout-title {
   display: flex;
 }

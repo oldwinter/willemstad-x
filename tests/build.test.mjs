@@ -38,8 +38,8 @@ import { ROOT, THEME_PATH, PUBLISH_PATH, SRC_DIR, themeBytes, sha256, rel } from
  * still does its real job: any change to the shipped bytes has to be noticed and
  * acknowledged here.
  */
-const THEME_SHA256 = '82ff894e3d84c9a36285700fadee1b82e1b54907038355b08166e58cca03bdc9';
-const THEME_BYTES = 5_256_101;
+const THEME_SHA256 = '7d6cb99f8153b228fbdd2eb975adefe57a411c49137c0bd8f510e143fb10f347';
+const THEME_BYTES = 5_256_518;
 
 /** publish.css is the frozen v0.5.4 track: not built from src/, must not move. */
 const PUBLISH_SHA256 = 'b3fc5fed16567bb32ac9f7ea72e10eba81697c22930e7b8347bdef1622b3adb1';
