@@ -16,7 +16,17 @@ class ReleaseTokenTests(unittest.TestCase):
     def test_release_token_tracks_manifest_version(self):
         match = re.search(r"--willemstad-release:\s*([^;]+);", THEME)
         self.assertIsNotNone(match, "theme.css must declare --willemstad-release")
-        value = match.group(1).strip()
+        raw = match.group(1).strip()
+        # The value must be a quoted string, not a bare token sequence. It is
+        # substituted into `content`, which only accepts <content-list>; an
+        # unquoted `v1.11.1 Newfoundland` makes both declarations invalid at
+        # computed-value time, so the version text silently disappears. Quoted,
+        # the substitution produces two adjacent strings, which concatenate.
+        self.assertTrue(
+            len(raw) >= 2 and raw[0] == '"' and raw[-1] == '"',
+            f"{raw!r} must be a double-quoted string so it stays valid inside content",
+        )
+        value = raw[1:-1]
         self.assertTrue(
             value.startswith("v" + MANIFEST["version"]),
             f"{value!r} must start with v{MANIFEST['version']}",
