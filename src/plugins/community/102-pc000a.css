@@ -36,6 +36,9 @@
 }
 
 .style-settings-container .pickr-reset > button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-left: var(--size-4-1);
   padding: 0 var(--size-4-1);
 }

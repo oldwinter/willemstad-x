@@ -10,6 +10,32 @@
 
 .search-result-file-match {
   padding: var(--header-padding);
+  padding-inline-end: calc(var(--icon-size) + var(--size-4-2));
+  min-height: calc(2 * var(--icon-size) + var(--size-4-2));
+}
+
+.search-result-file-match:has(> .search-result-file-match-replace-button) {
+  padding-block-end: calc(max(var(--input-height), 2em) + var(--size-4-2));
+}
+
+@media (hover: hover) {
+  .search-result-file-match:hover {
+    background-color: var(--background-modifier-hover);
+  }
+
+  .search-result-file-match:hover .search-result-hover-button {
+    color: var(--text-normal);
+    background-color: var(--background-modifier-hover);
+  }
+}
+
+.search-result-file-match.mobile-tap {
+  background-color: var(--background-modifier-hover);
+}
+
+.search-result-file-match.mobile-tap .search-result-hover-button {
+  color: var(--text-normal);
+  background-color: var(--background-modifier-hover);
 }
 
 .nav-header ~ .search-input-container {

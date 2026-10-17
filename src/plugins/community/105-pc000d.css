@@ -27,7 +27,7 @@ body.css-settings-manager.theme-dark .setting-item[data-id^="col-highlight-"] .t
 
 /* set the font and stuff */
 .setting-item:where([data-id^="col-highlight-0"]) .pickr button {
-  width: 12em;
+  min-width: min(12em, 50vw);
 }
 
 .setting-item:where([data-id^="col-highlight-0"]) .pickr button::after {
@@ -51,7 +51,7 @@ body.theme-dark .setting-item:where([data-id^="col-highlight-0"]) .theme-dark .p
 }
 
 .setting-item:where([data-id^="col-highlight-1"]) .pickr button {
-  width: 12em;
+  min-width: min(12em, 50vw);
 }
 
 .setting-item:where([data-id^="col-highlight-1"]) .pickr button::after {
@@ -75,7 +75,7 @@ body.theme-dark .setting-item:where([data-id^="col-highlight-1"]) .theme-dark .p
 }
 
 .setting-item:where([data-id^="col-highlight-2"]) .pickr button {
-  width: 12em;
+  min-width: min(12em, 50vw);
 }
 
 .setting-item:where([data-id^="col-highlight-2"]) .pickr button::after {
@@ -99,7 +99,7 @@ body.theme-dark .setting-item:where([data-id^="col-highlight-2"]) .theme-dark .p
 }
 
 .setting-item:where([data-id^="col-highlight-3"]) .pickr button {
-  width: 12em;
+  min-width: min(12em, 50vw);
 }
 
 .setting-item:where([data-id^="col-highlight-3"]) .pickr button::after {

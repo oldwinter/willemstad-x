@@ -68,13 +68,15 @@ body:where(.ssopt-codeblock-lang-old) .markdown-rendered pre[class*="language-"]
 
 /* 2 | NEW STYLE */
 body:not(.ssopt-codeblock-lang-old, .ssopt-codeblock-lang-none) .markdown-rendered pre[class*="language-"]::after {
-  position: absolute;
-  right: var(--size-4-2);
-  bottom: var(--size-4-2);
+  display: block;
+  margin-top: var(--size-4-2);
   padding: var(--size-2-1) var(--size-4-1);
   font-family: var(--font-interface);
   font-size: var(--font-ui-smaller);
   color: var(--text-muted);
+  text-align: right;
+  white-space: normal;
+  overflow-wrap: anywhere;
   content: attr(class);
 }
 

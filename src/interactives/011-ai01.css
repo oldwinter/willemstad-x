@@ -34,5 +34,9 @@ body {
   --icon-size: var(--header-icon-size);
 }
 
+.markdown-source-view.mod-cm6 .cm-callout > .markdown-rendered > .callout > .callout-title {
+  padding-inline-end: calc(var(--header-icon-size) + 2 * var(--header-padding) + 2 * var(--size-2-2));
+}
+
 /* Buttons */
 
