@@ -41,13 +41,14 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
+      # pnpm must be on PATH before setup-node's `cache: pnpm` step looks for it.
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
       - uses: actions/setup-node@v7
         with:
           node-version: '22'
           cache: pnpm
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 9
       - run: pnpm install --frozen-lockfile
       - run: pnpm run verify
 
