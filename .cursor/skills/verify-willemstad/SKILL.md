@@ -5,9 +5,11 @@ description: Verify Willemstad (willemstad-x), an Obsidian CSS theme, by launchi
 
 # Verify Willemstad
 
-Willemstad is a compiled Obsidian theme, not a process. The user-facing surface is **Obsidian desktop** with `theme.css` selected under Settings → Appearance. This repo has no `package.json`, no Makefile, and no `start` script. `publish.css` is a stale Publish stylesheet (header still says v0.5.4) and is **not** the primary surface.
+Willemstad is a compiled Obsidian theme, not a process. The user-facing surface is **Obsidian desktop** with `theme.css` selected under Settings → Appearance. The source-side gate is the `verify` script in `package.json` (`pnpm run verify`), which is what CI's `sources` job runs. `publish.css` is a stale Publish stylesheet (header still says v0.5.4) and is **not** the primary surface.
 
 The command API is the root `justfile`. `just` / `just ci` / `just check` require python3, curl, node, and a checked-out `theme.css`; they run the complete static and unit-test gate without Chrome. Browser-driving commands require Chrome/Chromium and exit 2 with `try: just deps` when it is missing. `just deps` restores `theme.css` from this checkout; it does not apt-install Chromium.
+
+Every `just` recipe goes through bash, so on a host where msys2 cannot start (`bash.exe: couldn't create signal pipe, Win32 error 5` — a Low-integrity sandbox, see the global `~/.agents/AGENTS.md` §3.5) `just` is unavailable and only the static gate can run, via `pnpm run verify`. The browser half is portable underneath its bash wrappers: `helpers/serve.py`, `helpers/cdp.mjs`, `helpers/chrome-args.mjs` are Python/Node, while `launch.sh` / `drive.sh` / `deps.sh` / `cleanup.sh` / `lib.sh` are not.
 
 There is no Obsidian binary in a typical agent environment, and attaching to a user's live vault would corrupt their session. Verification therefore drives an **isolated preview**: a loopback HTTP server that serves **this checkout's** `theme.css` onto static HTML that uses the real Obsidian class names the theme selects on (`theme-dark` / `theme-light`, `.workspace-leaf-content[data-type="markdown"]`, `.callout[data-callout=…]`, `.latex`, `.cornell`, `li[data-task]`, `body.ssopt-*`).
 

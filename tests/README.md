@@ -5,7 +5,7 @@ on Node's built-in `node:test`, so `pnpm install` only needs the four dev
 dependencies the lint and parse tests require.
 
 ```bash
-pnpm test                                   # everything (93 tests, ~8 s)
+pnpm test                                   # everything; the runner prints the count
 node --test "tests/**/*.test.mjs"           # same thing, explicit glob
 node --test tests/build.test.mjs            # one file
 node --test --test-name-pattern="budget" "tests/**/*.test.mjs"
@@ -25,12 +25,9 @@ This fork's first milestone changed **no rendered output**: `theme.css` was
 byte-identical to the last upstream release. That invariant was **retired on
 purpose** when the eight known defects were fixed — it had already proved the
 `src/` split lossless, and keeping it would only have blocked the fixes. The fork
-now pins its own rebuilt baseline:
-
-```
-sha256  0384718b4397846158efa2db0621cf274f4551f21e24306fca629ab755a6d2a4
-bytes   5,257,337
-```
+now pins its own rebuilt baseline — `THEME_SHA256` / `THEME_BYTES` in
+`build.test.mjs`, the only place those numbers appear. Prose points at that file
+instead of copying the values, and `docs-claims.test.mjs` enforces the rule.
 
 Everything else — the `src/` split, the build, the tests — is scaffolding around
 that artifact. If a test ever needs to change that hash, the change is a *visual*
@@ -43,26 +40,27 @@ this directory.
 
 ## What each file guards
 
-| file | tests | guards against |
-|---|---|---|
-| `build.test.mjs` | 7 | artifact ≠ source; artifact ≠ pinned baseline |
-| `structure.test.mjs` | 6 | a partial that is not valid CSS on its own; orphan/duplicate includes |
-| `syntax.test.mjs` | 10 | invalid CSS; `@import`; BOM; mixed line endings; leaked build directives |
-| `style-settings.test.mjs` | 14 | broken panel YAML; duplicate setting ids; unknown types; dead toggles |
-| `variables.test.mjs` | 9 | a `var(--x)` typo whose declaration silently vanishes |
-| `assets.test.mjs` | 10 | corrupt base64; wrong font magic; icon/font out of sync with `src/assets/` |
-| `manifest.test.mjs` | 12 | release metadata drift; lost licence banner |
-| `version.test.mjs` | 11 | the three version records disagreeing |
-| `budget.test.mjs` | 7 | the file growing back |
-| `stylelint.test.mjs` | 7 | a lint config that silently stops catching things |
+| file | guards against |
+|---|---|
+| `build.test.mjs` | artifact ≠ source; artifact ≠ pinned baseline |
+| `structure.test.mjs` | a partial that is not valid CSS on its own; orphan/duplicate includes |
+| `syntax.test.mjs` | invalid CSS; `@import`; BOM; mixed line endings; leaked build directives |
+| `style-settings.test.mjs` | broken panel YAML; duplicate setting ids; unknown types; dead toggles |
+| `variables.test.mjs` | a `var(--x)` typo whose declaration silently vanishes |
+| `assets.test.mjs` | corrupt base64; wrong font magic; icon/font out of sync with `src/assets/` |
+| `manifest.test.mjs` | release metadata drift; lost licence banner |
+| `version.test.mjs` | the three version records disagreeing |
+| `budget.test.mjs` | the file growing back |
+| `stylelint.test.mjs` | a lint config that silently stops catching things |
+| `docs-claims.test.mjs` | prose copying a baseline hash or a test count |
 
-93 tests, ~8 s wall clock.
+Run `pnpm test` for the case count and the wall clock; neither is recorded here.
 
 ### `build.test.mjs` — the artifact matches its source
 
 Runs `node scripts/build.mjs --check` and asserts the assembled `theme.css`
-equals what is committed, plus the pinned hash above. Also runs `--audit` and
-pins `publish.css` (the frozen v0.5.4 track) by hash.
+equals what is committed, plus the pinned baseline constants in this file. Also
+runs `--audit` and pins `publish.css` (the frozen v0.5.4 track) by hash.
 
 **Fails when:** someone edits `theme.css` directly, or edits `src/` without
 rebuilding, or the build pipeline itself changes its output.
@@ -219,6 +217,20 @@ it was:
 - fewer warnings → either the code was fixed (lower the pin) or the rule died (check the config)
 - a rule not in the map → a new rule started firing; register or suppress it deliberately
 
+### `docs-claims.test.mjs` — prose cannot copy machine facts
+
+Scans the prose people and agents read (`README.md`, `CONTRIBUTING.md`,
+`AGENTS.md`, `docs/*.md`, this file, the verify skill) and fails if any of it
+restates a baseline hash or a test count. Those facts live in one place each:
+`tests/build.test.mjs` for the baseline, the runner for the counts.
+
+**Fails when:** someone re-adds a hash or a count to a document. Point at the
+single source instead of copying the value — a copied hash silently becomes a
+wrong hash, and it already did once (see the git history of `docs/ARCHITECTURE.md`).
+
+**Exempt:** `docs/KNOWN-ISSUES.md`, which is a historical log — its hashes and
+counts are records of what was true at the time.
+
 ---
 
 ## Layout
@@ -235,6 +247,7 @@ tests/
   version.test.mjs       scripts/check-version.mjs behaviour, incl. the formerly-pinned failure
   budget.test.mjs        size and block-length budgets
   stylelint.test.mjs     lint baseline (zero errors, per-rule warning pins)
+  docs-claims.test.mjs   prose does not restate the baseline hash or test counts
   helpers/css.mjs        shared loaders: theme.css is read+parsed once and memoised
   fixtures/obsidian-builtins.json   the registered allowlist for variables.test.mjs
 ```

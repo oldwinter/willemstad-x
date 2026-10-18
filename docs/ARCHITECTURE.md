@@ -121,7 +121,7 @@ meta → root → interactives → elements → colour → app-ui → editor
 | `theme.css` | `src/` 全量装配 | 用户安装的主题入口，**必须提交** |
 | `publish.css` | `src-publish/publish.css` | Obsidian Publish 专用，v0.5.4 冻结轨道；`src-publish/` 尚未迁移时构建不覆盖它 |
 
-`theme.css` 的字节由 `tests/build.test.mjs` 的基线断言钉住（当前 SHA-256 `0384718b4397846158efa2db0621cf274f4551f21e24306fca629ab755a6d2a4`，5,257,337 字节）。
+`theme.css` 的字节由 `tests/build.test.mjs` 的基线断言钉住（`THEME_SHA256` / `THEME_BYTES`）。那两个数只出现在那个文件里，散文一律写指针而不是抄值——抄进文档的哈希会悄悄变成错的哈希。
 
 > **历史**：基础设施里程碑期间，这条断言钉的是**上游 v1.11.1** 的哈希（`f223ca9d…`），用来证明「拆分没有改变任何一个字节」。该不变量在修复 8 个已知缺陷时**被有意退役**——留着它只会挡住修复。现在它仍然做本职工作：任何产物字节变化都必须被察觉并在此登记。缺陷修复记录见 [KNOWN-ISSUES.md](KNOWN-ISSUES.md)。
 
@@ -246,28 +246,29 @@ git check-attr eol -- theme.css publish.css \
 
 ## 6. 测试
 
-`tests/` 使用 Node 内置 `node:test`，零测试框架依赖（`package.json` 里没有 jest/vitest/mocha）。**10 个测试文件、93 个用例**，另有 2 个支撑文件（`helpers/css.mjs`、`fixtures/obsidian-builtins.json`）。
+`tests/` 使用 Node 内置 `node:test`，零测试框架依赖（`package.json` 里没有 jest/vitest/mocha）。每个文件守哪一类不变式、怎么跑、失败怎么查，见 [tests/README.md](../tests/README.md)；用例数由运行器打印，不在此处登记。
 
 ```text
 tests/
   helpers/css.mjs                  # 支撑：路径常量、postcss 解析、变量提取、sha256
   fixtures/obsidian-builtins.json  # 支撑：Obsidian 内置 CSS 变量 allowlist
   README.md                        # 支撑：每类测试防什么、怎么跑、失败怎么查
-  build.test.mjs            (7)    # 构建一致性 + 上游基线
-  structure.test.mjs        (6)    # src/ 结构完整性
-  syntax.test.mjs          (10)    # 产物 CSS 语法 / 编码 / 换行
-  style-settings.test.mjs  (14)    # Style Settings 面板与 YAML
-  variables.test.mjs        (9)    # CSS 变量引用 vs 定义
-  assets.test.mjs          (10)    # 内嵌字体 / SVG 资产
-  manifest.test.mjs        (12)    # manifest.json 字段与语义
-  version.test.mjs         (11)    # 三处版本号一致性
-  budget.test.mjs           (7)    # 体积预算
-  stylelint.test.mjs        (7)    # lint error/warning 基线与上限
+  build.test.mjs                   # 构建一致性 + 基线哈希
+  structure.test.mjs               # src/ 结构完整性
+  syntax.test.mjs                  # 产物 CSS 语法 / 编码 / 换行
+  style-settings.test.mjs          # Style Settings 面板与 YAML
+  variables.test.mjs               # CSS 变量引用 vs 定义
+  assets.test.mjs                  # 内嵌字体 / SVG 资产
+  manifest.test.mjs                # manifest.json 字段与语义
+  version.test.mjs                 # 三处版本号一致性
+  budget.test.mjs                  # 体积预算
+  stylelint.test.mjs               # lint error/warning 基线与上限
+  docs-claims.test.mjs             # 散文不得抄基线哈希 / 用例数
 ```
 
 | 文件 | 防的问题 |
 | --- | --- |
-| `build.test.mjs` | `src/` 与 `theme.css` 漂移；`--check` 必须**确定**（连跑两次结论相同）；`--audit` 无孤立分片；`theme.css` 仍与上游 v1.11.1 基线字节一致；`publish.css` 未被误改；产物体积合理 |
+| `build.test.mjs` | `src/` 与 `theme.css` 漂移；`--check` 必须**确定**（连跑两次结论相同）；`--audit` 无孤立分片；`theme.css` 与 `tests/build.test.mjs` 钉住的**当前**基线一致（上游 v1.11.1 那条不变量已在修缺陷时退役，见上文 3.3 的历史注）；`publish.css` 未被误改；产物体积合理 |
 | `structure.test.mjs` | 每个分片能独立解析（不能有跨文件未闭合注释）；注释在文件内配平；每个分片**恰好被 include 一次**（无孤儿、无重复）；入口清单只含指令 / `@charset` / 注释；清单里的路径是 POSIX 相对路径且真实存在 |
 | `syntax.test.mjs` | 产物 CSS 解析零错误；花括号配平；注释配平；无 `@import`（Obsidian 不支持）；无 BOM 且以 `@charset` 开头；UTF-8 无替换字符；**CRLF 一致（零裸 LF、零裸 CR、5 万+ 行）**；无残留指令标记；`@charset` 恰好一次且在首位 |
 | `style-settings.test.mjs` | 12 个 `@settings` 面板齐全（含两行注释形式）；YAML 可解析；面板 id 唯一非空；面板集合与预期完全一致；setting 的 `type` 合法；setting id 全局唯一；有 id 必有 title；`class-toggle` 的类名确实被 CSS 引用；`variable-*` 的 id 对应到 CSS 读取的自定义属性；`src/style-settings/*.yaml` 与 `theme.css` 内联内容同步 |
@@ -280,7 +281,7 @@ tests/
 
 测试分两层。第一层是**契约**：构建可复现、分片可独立解析、变量引用有登记、面板结构合法。第二层曾是**缺陷 pin**——断言已知缺陷仍然存在且数量稳定，修好那天转红。8 个缺陷修复后，这些 pin 已全部翻面为「断言已修复状态」（例如「12/12 面板通过严格 YAML 解析」「shorthand 覆盖必须为 0」），**不是被删除**：它们现在防的是缺陷复发。
 
-> 跑测试：`pnpm test`（全部）或 `pnpm run test:build`（只跑构建一致性，最快）。当前 `pnpm test` 结果为 **93 通过 / 0 失败 / 0 跳过**。
+> 跑测试：`pnpm test`（全部）或 `pnpm run test:build`（只跑构建一致性，最快）。通过 / 失败 / 跳过的条数以运行器输出为准，不在此处登记——写进散文的数字会在下一次加用例时过期，`tests/docs-claims.test.mjs` 会直接拦住。
 
 缺陷的修复记录、未修项与「哪些改动会影响渲染」的清单见 [KNOWN-ISSUES.md](KNOWN-ISSUES.md)。
 
